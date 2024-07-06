@@ -2,7 +2,7 @@
   font-family: 'Cera Pro';
   src: url('../assets/fonts/CeraPro-Bold.woff2') format('woff2'),
       url('../assets/fonts/CeraPro-Bold.woff') format('woff');
-  font-weight: bold;
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -20,7 +20,7 @@
   font-family: 'Cera Pro';
   src: url('../assets/fonts/CeraPro-Regular.woff2') format('woff2'),
       url('../assets/fonts/CeraPro-Regular.woff') format('woff');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -146,8 +146,99 @@
   background-repeat: no-repeat;
   border-color: #cad4e7;
   border-style: solid;
+  border-width: 4px;
   position: absolute;
   top: 75%;
   left: 6%;
   max-width: 360px !important;
+}
+
+.divider-wb {
+  height: 248px;
+  background-image: linear-gradient(0.3472222222222222turn, rgba(125, 37, 111, 1) 0%, rgba(141, 41, 127, 1) 33%, rgba(188, 61, 150, 1) 66%, rgba(236, 35, 141, 1) 100%);
+  z-index: 99;
+  position: relative;
+  margin-top: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wb {
+  border-radius: 25px;
+  background-color: #ffc9eb;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  box-shadow: 0px 5px 55px -11px rgba(0, 0, 0, 0.2);
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wb-notif {
+  border-radius: 25px;
+  background-color: #ffffff;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 128px;
+  width: 154px;
+}
+
+.notificon {
+  width: 33px;
+  height: 33px;
+}
+
+.notif-text {
+  color: #7d256f;
+  font-size: 18px;
+  font-family: 'Cera Pro';
+  line-height: 21px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.wb-title {
+  color: #333333;
+  font-size: 25px;
+  font-family: 'Cera Pro';
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.wb-p {
+  color: #333333;
+  font-size: 18px;
+  font-family: 'Cera Pro';
+  line-height: 23px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.wbicon {
+  width: 132px;
+  height: 125px;
+}
+
+.divider-r {
+  height: 250px;
+  background-image: linear-gradient(0turn, rgba(44, 59, 115, 1) 0%, rgba(40, 47, 77, 1) 100%);
+}
+
+.divider-r-text {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Cera Pro';
+  line-height: 31px;
+  font-weight: 300;
+  margin-left: 90px;
 }
