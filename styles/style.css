@@ -34,6 +34,10 @@
   font-display: swap;
 }
 
+body {
+  background-color: #fafafa;
+}
+
 
 .navbar-brand {
   max-width: 10rem;
@@ -241,4 +245,70 @@
   line-height: 31px;
   font-weight: 300;
   margin-left: 90px;
+}
+
+.section {
+  margin-top: 60px;
+}
+
+.section-title {
+  text-transform: uppercase;
+  color: #212842;
+  font-size: 30px;
+  font-family: 'Cera Pro';
+  line-height: 33px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  margin-bottom: 30px;
+}
+
+.instrument-card {
+  padding: 20px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 386px;
+  background-color: #ffffff;
+}
+
+.instrument-card-title {
+  margin-bottom: 20px;
+  font-family: 'Cera Pro';
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.35;
+  font-size: 20px;
+}
+
+.instrument-card-text {
+  font-family: 'Cera Pro';
+  font-weight: 300;
+  color: #000000;
+  line-height: 1.35;
+  font-size: 16px;
+}
+
+.instrument-img-1 {
+  background: url('../assets/img/inst1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.instrument-img-2 {
+  background: url('../assets/img/inst2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.instrument-img-3 {
+  background: url('../assets/img/inst3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.instrument-img-4 {
+  background: url('../assets/img/inst4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
