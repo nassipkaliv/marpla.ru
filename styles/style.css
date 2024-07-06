@@ -88,7 +88,7 @@ body {
   background-image: linear-gradient(0.347turn, rgba(55, 65, 110, 1) 0%, rgba(34, 41, 65, 1) 100%);
   border-color: #ffffff;
   border-style: solid;
-  padding: 22px 42px;
+  padding: 22px 35px;
   position: relative;
   height: 460px;
 }
@@ -153,7 +153,7 @@ body {
   border-width: 4px;
   position: absolute;
   top: 75%;
-  left: 6%;
+  left: 2%;
   max-width: 360px !important;
 }
 
@@ -249,6 +249,7 @@ body {
 
 .section {
   margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .section-title {
@@ -260,6 +261,7 @@ body {
   font-weight: 500;
   letter-spacing: 2.5px;
   margin-bottom: 30px;
+  padding-top: 60px;
 }
 
 .instrument-card {
@@ -311,4 +313,95 @@ body {
   background: url('../assets/img/inst4.png');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Cera Pro';
+  color: #000000 !important;
+  opacity: 0.6;
+}
+
+.nav-link.active {
+  font-weight: 600;
+  opacity: 1;
+}
+
+.title-h2 {
+  font-weight: 600;
+  font-family: 'Cera Pro';
+  font-size: 28px;
+  line-height: 1.17;
+  color: #000;
+}
+
+.tab-text {
+  color: #000;
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 500;
+  font-family: 'Cera Pro';
+}
+
+.moremore {
+  width: 263px !important;
+  height: 60px !important;
+}
+
+.tab-content {
+  border: 1px solid #eeeeee;
+  padding: 40px;
+}
+
+.nav-tabs .nav-link.active {
+  border-top: 3px solid #212842;
+}
+
+.divider {
+  height: 420px;
+  background-image: linear-gradient(0turn, rgba(44, 59, 115, 1) 0%, rgba(40, 47, 77, 1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.divider-text {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Cera Pro';
+  line-height: 31px;
+  font-weight: 300;
+}
+
+.divider-btn img {
+  margin-top: 20px;
+}
+
+.opp-title {
+  font-family: 'Cera Pro';
+  font-weight: 600;
+  color: #000000;
+  font-size: 24px;
+  line-height: 1.35;
+}
+
+.opp-text {
+  font-family: 'Cera Pro';
+  font-weight: 300;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.opp-block {
+  margin-bottom: 60px;
+}
+
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1200px;
+  }
 }
