@@ -106,6 +106,7 @@ header {
 }
 
 .off-icon {
+  font-family: 'Cera Pro';
   border-radius: 55px;
   background-color: #aab8ef;
   background-position: center center;
@@ -813,6 +814,166 @@ header {
   height: 43px !important;
   color: #fff !important;
   background: transparent url('data:image/svg+xml,<svg role="presentation" class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="%23fff" fill-rule="evenodd"><rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect><rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect></g></svg>') center / 1em auto no-repeat;
+}
+
+.bidder-p {
+  color: #333333;
+  font-size: 21px;
+  font-family: 'Cera Pro';
+  line-height: 26px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.info {
+  border-radius: 14px;
+  background-color: #d8def4;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  width: 750px;
+  height: 95px;
+  align-items: center;
+}
+
+.info-icon {
+  height: 70px;
+  width: 70px;
+}
+
+.info-title {
+  color: #333333;
+  font-size: 28px;
+  font-family: 'Cera Pro';
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.info-text {
+  color: #333333;
+  font-size: 17px;
+  font-family: 'Cera Pro';
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.info-btn {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'Cera Pro';
+  line-height: 1.55;
+  font-weight: 500;
+  border-radius: 10px;
+  background-image: linear-gradient(0.5turn, rgba(55, 65, 110, 1) 0%, rgba(34, 41, 65, 1) 99%);
+  border-color: transparent;
+  border-style: solid;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  width: 280px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.info-arrow {
+  position: absolute;
+  right: 24%;
+  top: -48%;
+}
+
+.imgItem {
+  max-height: 520px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  background-size: 68%, 89%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(178, 36, 126, 0.8);
+}
+
+.carousel-control-next, .carousel-control-prev { 
+  opacity: 1;
+}
+
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 1;
+}
+
+.underImage {
+  border-radius: 10px;
+  background-image: linear-gradient(0.389turn, rgba(125, 37, 111, 1) 0%, rgba(236, 35, 141, 1) 100%);
+  border-color: transparent;
+  border-style: solid;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Cera Pro';
+  line-height: 24px;
+  font-weight: 500;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 16px;
+}
+
+.blue-text {
+  background-color: #d8def4;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.title-h2 {
+  color: #333333;
+  font-size: 32px;
+  font-family: 'Cera Pro';
+  line-height: 38px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.steps {
+  border-radius: 55px;
+  background-color: #36406c;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  color: #ffffff;
+  font-size: 32px;
+  font-family: 'Cera Pro';
+  line-height: 38px;
+  font-weight: 500;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-title {
+  color: #333333;
+  font-size: 25px;
+  font-family: 'Cera Pro';
+  line-height: 30px;
+  font-weight: 600;
+}
+        
+.step-text {
+  color: #333333;
+  font-size: 18px;
+  font-family: 'Cera Pro';
+  line-height: 22px;
+  font-weight: 500;
 }
 
 @media (min-width: 1400px) {
