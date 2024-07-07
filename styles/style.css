@@ -976,6 +976,24 @@ header {
   font-weight: 500;
 }
 
+.adv-row {
+  padding-bottom: 50px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.adv-img {
+  width: 73px;
+  height: 73px;
+}
+
+.adv-title {
+  color: #333333;
+  font-size: 25px;
+  font-family: 'Cera Pro';
+  line-height: 30px;
+  font-weight: 600;
+}
+
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
       max-width: 1200px;
