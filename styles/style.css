@@ -66,7 +66,101 @@ header {
   position: fixed;
   top: 90%;
   right: 2%;
-  z-index: 999;
+  z-index: 1051;
+}
+
+.offcanvas {
+  background-color: #212842;
+  padding: 40px 20px;
+}
+
+.off-close {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  color: #ffffff;
+  font-size: 17px;
+  font-family: 'CeraPro', Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 600;
+  border-width: 1px;
+  border-radius: 30px;
+  background-position: center center;
+  border-color: #ffffff;
+  border-style: solid;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  position: absolute;
+  right: 2%;
+  top: 1%;
+}
+
+.head-text {
+  color: #ffffff;
+  font-size: 12px;
+  font-family: 'Cera Pro';
+  line-height: 14px;
+  font-weight: 400;
+}
+
+.off-icon {
+  border-radius: 55px;
+  background-color: #aab8ef;
+  background-position: center center;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.off-link {
+  color: #ffffff;
+  font-size: 19px;
+  font-family: 'Cera Pro';
+  line-height: 25px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.off-line {
+  width: 100%;
+  height: 1px;
+  border: 1px solid #5d6892;
+  border-bottom: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.off-head {
+  color: #5d6892;
+  font-size: 13px;
+  font-family: 'Cera Pro';
+  line-height: 1.3;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.tech-btn {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: 'Cera Pro';
+  line-height: 1.55;
+  font-weight: 500;
+  border-width: 1px;
+  border-radius: 55px;
+  background-position: center center;
+  border-color: #ffffff;
+  border-style: solid;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
 .navbar-brand {
@@ -662,6 +756,54 @@ header {
   opacity: 0.4;
 }
 
+.video-player {
+  width: 65%;
+}
+
+.video-controller {
+  width: 35%;
+  background-color: rgb(33, 40, 66) !important;
+  border-color: rgb(0, 0, 0);
+  height: 450px;
+}
+
+.controller-text {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  line-height: 1.35;
+}
+
+.video-tab {
+  text-align: left;
+  padding-left: 0;
+  color: #ffffff !important;
+  margin-left: 10px;
+  margin-right: auto;
+  flex-grow: 1;
+  font-weight: 400;
+  background: transparent !important;
+  border: none !important;
+  height: 53px;
+  opacity: 1 !important;
+  font-weight: 400 !important;
+  font-size: 15px;
+  border-top: 1px solid #000000 !important;
+  border-bottom: 1px solid #000000 !important;
+}
+
+.video-tab span {
+  font-size: 13px;
+  color: #d1d1d1;
+}
+
+.video-text {
+  color: #d1d1d1;
+  margin-left: 6px;
+  font-size: 14px;
+  font-family: 'Cera Pro';
+  font-weight: 300;
+  line-height: 1.55;
+}
 
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
