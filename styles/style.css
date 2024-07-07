@@ -44,6 +44,31 @@ header {
   z-index: 1030; /* Ensure it stays above other elements */
 }
 
+.reklama {
+  position: fixed;
+  top: 85%;
+  z-index: 999;
+}
+
+.formButton {
+  border-radius: 65px !important;
+  box-shadow: 0 19px 38px 0 rgba(34, 36, 43, .3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+  margin-bottom: 20px !important;
+  position: relative;
+  text-align: center;
+  transform: scale(1);
+  width: 65px;
+  background: linear-gradient(95deg, rgb(129, 6, 94) 20%, rgb(250, 0, 175) 80%);
+  position: fixed;
+  top: 90%;
+  right: 2%;
+  z-index: 999;
+}
+
 .navbar-brand {
   max-width: 10rem;
 }
