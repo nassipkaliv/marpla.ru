@@ -81,7 +81,7 @@ header {
   align-items: center;
   justify-content: center;
   text-decoration: none !important;
-  color: #ffffff;
+  color: #ffffff !important; 
   font-size: 17px;
   font-family: 'CeraPro', Arial, sans-serif;
   line-height: 1.55;
