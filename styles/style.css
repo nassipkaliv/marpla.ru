@@ -35,7 +35,7 @@
 }
 
 body {
-  background-color: #fafafa;
+  background-color: #fff;
 }
 
 
@@ -398,6 +398,51 @@ body {
 
 .opp-block {
   margin-bottom: 60px;
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url('data:image/svg+xml,<svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square"><g transform="translate(1.000000, 1.000000)" stroke="%23222222"><path d="M0,11 L22,11"></path><path d="M11,0 L11,22"></path></g></g></svg>');
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform .2s ease-in-out;
+  position: relative;
+  z-index: 1;
+}
+
+.accordion-button:hover::before {
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background: #eee;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url('data:image/svg+xml,<svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square"><g transform="translate(1.000000, 1.000000)" stroke="%23222222"><path d="M0,11 L22,11"></path><path d="M11,0 L11,22"></path></g></g></svg>');
+  transform: rotate(-45deg);
+}
+
+.accordion-button {
+  font-size: 24px;
+  line-height: 1.35;
+  font-family: 'Cera Pro';
+  font-weight: 600;
+  color: #000000;
+}
+
+.accordion-body {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: 'Cera Pro';
+  font-weight: 300;
+  color: #000000;
 }
 
 @media (min-width: 1400px) {
