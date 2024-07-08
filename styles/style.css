@@ -1232,6 +1232,27 @@ header {
   justify-content: center;
 }
 
+.pTitle {
+  font-size: 24px;
+  line-height: 1.35;
+  font-family: 'Cera Pro',;
+  font-weight: 600;
+  color: #000000;
+}
+
+.pText {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Cera Pro';
+  letter-spacing: 0.5px;
+  padding-top: 22px;
+  padding-bottom: 5px;
+}
+
+.pText a {
+  color: #ff8562;
+}
+
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
       max-width: 1200px;
