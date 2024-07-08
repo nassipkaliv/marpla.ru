@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <title>Телеграм бот - Внутренняя реклама на Вайлдберриз в поиске и в карточке товара, telegram bot - ставок, аукцион Wildberries, онлайн ВБ, управление Валберис, настройка WB</title>
+</head>
+<body>
+
+    <header class="sticky-top">
+        <nav class="container navbar navbar-expand-lg">
+            <div class="container px-0">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/Logo_New_2.svg" alt="Logo">
+                </a>
+                <div class="navbar-text d-none d-lg-block">
+                    — инструменты аналитики и <br> продвижения на Wildberries
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item">
+                            <a class="login" href="#">
+                                <img src="assets/img/login.svg" alt="login">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="register" href="#">
+                                <img src="assets/img/register.svg" alt="register">
+                            </a>
+                        </li>
+                        <a class="ms-3" href="#" id="navbar-toggler-header" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                            <img src="assets/img/menu.svg" alt="Меню">
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+            <a class="off-close" data-bs-dismiss="offcanvas" aria-label="Close">Х</a>
+            <div class="d-flex align-items-center gap-3">
+                <img class="logo" src="assets/img/footer-logo.svg">
+                <div class="head-text">— инструменты аналитики и продвижения на Wildberries</div>
+            </div>
+        </div>
+        <div class="offcanvas-body">
+            <div class="mt-3 d-flex align-items-center justify-content-between">
+                <div class="d-flex gap-3 align-items-center">
+                    <a class="off-icon" href="https://seo.marpla.ru/signup" >
+                        <img class="img-fluid" src="assets/img/regis.png" alt="regis">
+                    </a>
+                    <a href="https://seo.marpla.ru/signup" class="off-link">РЕГИСТРАЦИЯ</a>
+                </div>
+                <div class="d-flex gap-3 align-items-center">
+                    <a class="off-icon" href="https://seo.marpla.ru/signup" >
+                        <img class="img-fluid" src="assets/img/vhod.png" alt="regis">
+                    </a>
+                    <a href="https://seo.marpla.ru/signup" class="off-link">ВХОД</a>
+                </div>
+            </div>
+            <div class="off-line"></div>
+            <div class="off-head">Продукты:</div>
+            <div class="off-products d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-3 align-items-center">
+                    <a class="off-icon" href="#" >
+                        <img class="img-fluid" src="assets/img/sch.png" alt="regis">
+                    </a>
+                    <a href="#" class="off-link">ШКОЛА СЕЛЛЕРОВ WB</a>
+                </div>
+            </div>
+            <div class="off-products d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-3 align-items-center">
+                    <a class="off-icon" href="#" >
+                        <img class="img-fluid" src="assets/img/seo2.png" alt="regis">
+                    </a>
+                    <a href="#" class="off-link">МОДУЛЬ SEO</a>
+                </div>
+            </div>
+            <div class="off-products d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-3 align-items-center">
+                    <a class="off-icon" href="#" >
+                        <img class="img-fluid" src="assets/img/ads25.png" alt="regis">
+                    </a>
+                    <a href="#" class="off-link">МОДУЛЬ MARPLA</a>
+                </div>
+            </div>
+            <div class="off-products d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-3 align-items-center">
+                    <a class="off-icon" href="#" >
+                        <img class="img-fluid" src="assets/img/ab_test_wildberries.png" alt="regis">
+                    </a>
+                    <a href="#" class="off-link">A/B тест фото</a>
+                </div>
+            </div>
+            <div class="off-products d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-3 align-items-center">
+                    <a class="off-icon" href="#" >
+                        <img class="img-fluid" src="assets/img/mes225.png" alt="regis">
+                    </a>
+                    <a href="#" class="off-link">БОТ АВТООТВЕТЫ <br> НА ОТЗЫВЫ WB</a>
+                </div>
+            </div>
+            <div class="off-products d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-3 align-items-center">
+                    <a class="off-icon" href="#" >
+                        <img class="img-fluid" src="assets/img/position.png" alt="regis">
+                    </a>
+                    <a href="#" class="off-link">БОТ ПОЗИЦИЙ WB</a>
+                </div>
+            </div>
+            <div class="off-products d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-3 align-items-center">
+                    <a class="off-icon" href="#" >
+                        <img class="img-fluid" src="assets/img/steps.png" alt="regis">
+                    </a>
+                    <a href="#" class="off-link">БОТ РЕКЛАМНЫХ СТАВОК WB</a>
+                </div>
+            </div>
+            <div class="off-products d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-3 align-items-center">
+                    <a class="off-icon" href="#" >
+                        <img class="img-fluid" src="assets/img/how.png" alt="regis">
+                    </a>
+                    <a href="#" class="off-link">КАК ПОПАСТЬ В КАТЕГОРИИ</a>
+                </div>
+            </div>
+            <div class="off-head mt-5 mb-3">Соц.сети:</div>
+            <div class="d-flex gap-2 align-items-center">
+                <img class="img-fluid" src="assets/img/photo.svg">
+                <img class="img-fluid" src="assets/img/photo (1).svg">
+                <img class="img-fluid" src="assets/img/photo (2).svg">
+                <img class="img-fluid" src="assets/img/photo (3).svg">
+                <img class="img-fluid" src="assets/img/photo (4).svg">
+                <img class="img-fluid" src="assets/img/photo (5).svg">
+            </div>
+
+            <a class="tech-btn mt-4">
+                Техническая поддержка
+            </a>
+        </div>
+    </div>
+
+    <a class="reklama" href="https://t.me/DmitriyWB_bot?start=link_Rfk2fyXU6Y" target="_blank" rel="noopener">
+        <img class="tn-atom__img t-img loaded"  alt="reklama" src="assets/img/reklama.png">
+    </a>
+
+    <div class="formButton">
+        <img src="assets/img/formBtn.svg" alt="formBtn">
+    </div>
+
+    <div class="container section" style="padding-bottom: 120px;">
+      <div class="row  position-relative">
+        <div class="col-lg-6 col-md-12">
+          <img class="img-fluid bot_stavok" src="assets/img/bot_stavok.png">
+        </div>
+        <div class="col-lg-6 col-md-12 tsena-container">
+          <div class="tsena-title">
+            ТЕЛЕГРАММ БОТ - УЗНАТЬ РЕКЛАМНЫЕ СТАВКИ В ПОИСКЕ И В КАРТОЧКЕ НА WILDBERRIES
+          </div>
+          <div class="tsena-line"></div>
+          <div class="tsena-text">
+            Узнать реальные цены позиций рекламы в поиске и в карточке товара Wildberries. Отправьте в сообщении ПОИСКОВЫЙ ЗАПРОС или ССЫЛКУ НА КАРТОЧКУ ТОВАРА или АРТИКУЛ ТОВАРА по которому хотите получить текущие ставки.
+          </div>
+          <a href="#" class="tsena-button">
+            Запустить бота
+          </a>
+        </div>
+      </div>
+    </div> 
+
+    <div class="divider-wb">
+        <div class="container wb">
+            <div class="wb-notif">
+                <img class="notificon img-fluid" src="assets/img/notification.png" alt="notif">
+                <p class="text-center notif-text">Новое <br> уведомление</p>
+            </div>
+            <div class="wb-text">
+                <div class="wb-title">Marpla входит в список авторизованных сервисов на WB</div>
+                <div class="wb-p">
+                    Это значит, что <span style="font-weight: 600;">Marpla</span>
+                    работает с&nbsp;Wildberries по&nbsp;API и&nbsp;
+                    <span style="font-weight: 600;">удовлетворяет требованиям <br> информационной безопасности</span>
+                </div>
+            </div>
+            <div>
+                <img class="wbicon" src="assets/img/wbicon.png" alt="wbicon">
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <a href="navbar-brand" hreflang="index.html">
+                        <img class="logo" src="assets/img/footer-logo.svg">
+                    </a>
+                    <p class="footer-text">Инструменты аналитики и продвижения на Wildberries</p>
+                    <div>
+                        <img src="assets/img/mir.png" alt="MIR" style="width: 53px; margin-right: 10px;">
+                        <img src="assets/img/visa.png" alt="VISA" style="width: 53px; margin-right: 10px;">
+                        <img src="assets/img/mastercard-logo.png" alt="MasterCard" style="width: 53px;">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="footer-title">Telegram-роботы:</div>
+                    <p class="footer-link"><a href="#">Бот проверки позиций WB</a></p>
+                    <p class="footer-link"><a href="#">Бот рекламных ставок WB</a></p>
+                    <p class="footer-link"><a href="#">Бот тех. поддержки</a></p>
+                    <p class="footer-link"><a href="#">Бот автоответ на отзывы WB</a></p>
+                    <div class="mt-5 d-flex flex-column">
+                        <a href="biider.html" class="footer-title mt-3">Биддер Marpla</a>
+                        <a href="modul.html" class="footer-title">Модуль SEO</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-title">Школа продавцов WB</div>
+                    <p class="footer-link"><a href="#">Курс «Продавец PRO»</a></p>
+                    <p class="footer-link"><a href="#">Курс «Менеджер WB»</a></p>
+                    <p class="footer-link"><a href="#">Наставник Д. Толстоукаков</a></p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-right">
+                    <div class="footer-title">Электронная почта:</div>
+                    <p class="footer-link"><a href="mailto:sup-marpla@yandex.ru">sup-marpla@yandex.ru</a></p>
+                    <p class="footer-link mt-5 text-end">ИП Андреев Александр Вячеславович</p>
+                    <p class="footer-link">ИНН 210603154267</p>
+                    <p class="footer-link">ОГРНИП 321864700070411</p>
+                </div>
+            </div>
+            <div class="row footer-bottom mt-5">
+                <div class="col-lg-12 d-flex justify-content-between">
+                    <div class="d-flex gap-4">
+                        <a class="footer-under" href="#">Пользовательское соглашение</a>  
+                        <a class="footer-under" href="#">Политика оплаты и возврата</a>  
+                        <a class="footer-under" href="#">Политика конфиденциальности</a>
+                    </div>
+                    <p class="marpla">© MARPLA, 2024</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery.js/dist/js/lightgallery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lg-zoom.js/dist/lg-zoom.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        lightGallery(document.getElementById('lightgallery'), {
+            selector: '.imgItem',
+            zoom: true
+        });
+    });
+</script>
+
+</body>
+
+</html>

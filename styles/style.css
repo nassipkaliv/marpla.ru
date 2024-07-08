@@ -1241,17 +1241,18 @@ header {
 }
 
 .pText {
-  font-size: 16px;
-  font-weight: 400;
-  font-family: 'Cera Pro';
-  letter-spacing: 0.5px;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  font-family: 'Cera Pro' !important;
+  letter-spacing: 0.5px !important;
   padding-top: 22px;
   padding-bottom: 5px;
 }
 
 .pText a {
-  color: #ff8562;
+  color: #ff8562 !important;
 }
+
 
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
