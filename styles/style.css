@@ -1076,7 +1076,7 @@ header {
 .blue-inside {
   color: #333333;
   font-size: 22px;
-  font-family: 'CeraPro', Arial, sans-serif;
+  font-family: 'Cera Pro';
   line-height: 26px;
   font-weight: 600;
 }
@@ -1366,7 +1366,36 @@ header {
   border-style: solid;
 }
 
+.galka {
+  position: absolute;
+  bottom: -8%;
+  right: -15%;
+}
 
+.symbol {
+  background: url("../assets/img/symbol.svg");
+  height: 55px;
+  width: 55px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 35px;
+  font-family: 'Cera Pro';
+  line-height: 42px;
+  font-weight: 900;
+  color: #fff;
+  width: 30%;
+}
+
+.sym-blue-text {
+  width: 70%;
+}
+
+.divider-border {
+  border-radius: 55px;
+}
 
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
