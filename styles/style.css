@@ -1397,6 +1397,65 @@ header {
   border-radius: 55px;
 }
 
+.red-block-text {
+  color: #333333;
+  font-size: 20px;
+  font-family: 'Cera Pro';
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.negative-block {
+  background: url("../assets/img/negative-block.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  padding: 30px 40px;
+}
+
+.negative-block-img {
+  border-width: 1px;
+  border-radius: 17px;
+  background-color: #ffffff;
+  background-position: center center;
+  border-color: #37416e;
+  border-style: solid;
+  box-shadow: 0px 5px 55px 0px rgba(62, 72, 91, 0.1);
+  height: 110px;
+  width: 110px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.nomer {
+  border-width: 1px;
+  border-radius: 3000px;
+  background-color: #222941;
+  background-position: center center;
+  border-color: #262d48;
+  border-style: solid;
+  position: absolute;
+  color: #fff8f8;
+  font-size: 18px;
+  font-family: 'Cera Pro';
+  line-height: 1.2;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  right: -5%;
+  bottom: -3%;
+}
+
+
+
+
+
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
       max-width: 1200px;
