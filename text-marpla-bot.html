@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <title>Бот автоответов на отзывы на Wildberries. Автоматизация через Телеграм для отзывов от Marpla. Автоматизация WB, Вайлдберис, бот ответов на Вайлдбериз.</title>
+</head>
+<body>
+
+    <header class="sticky-top">
+        <nav class="container navbar navbar-expand-lg">
+            <div class="container px-0">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/Logo_New_2.svg" alt="Logo">
+                </a>
+                <div class="navbar-text d-none d-lg-block">
+                    — инструменты аналитики и <br> продвижения на Wildberries
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item">
+                            <a class="login" href="#">
+                                <img src="assets/img/login.svg" alt="login">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="register" href="#">
+                                <img src="assets/img/register.svg" alt="register">
+                            </a>
+                        </li>
+                        <a class="ms-3" href="#" id="navbar-toggler-header" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                            <img src="assets/img/menu.svg" alt="Меню">
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+            <a class="off-close" data-bs-dismiss="offcanvas" aria-label="Close">Х</a>
+            <div class="d-flex align-items-center gap-3">
+                <img class="logo" src="assets/img/footer-logo.svg">
+                <div class="head-text">— инструменты аналитики и продвижения на Wildberries</div>
+            </div>
+        </div>
+        <div class="offcanvas-body">
+            <div class="mt-3 d-flex align-items-center justify-content-between">
+                <div class="d-flex gap-3 align-items-center">
+                    <a class="off-icon" href="https://seo.marpla.ru/signup" >
+                        <img class="img-fluid" src="assets/img/regis.png" alt="regis">
+                    </a>
+                    <a href="https://seo.marpla.ru/signup" class="off-link">РЕГИСТРАЦИЯ</a>
+                </div>
+                <div class="d-flex gap-3 align-items-center">
+                    <a class="off-icon" href="https://seo.marpla.ru/signup" >
+                        <img class="img-fluid" src="assets/img/vhod.png" alt="regis">
+                    </a>
+                    <a href="https://seo.marpla.ru/signup" class="off-link">ВХОД</a>
+                </div>
+            </div>
+            <div class="off-line"></div>
+            <div class="off-head">Продукты:</div>
+            <div class="off-products d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-3 align-items-center">
+                    <a class="off-icon" href="#" >
+                        <img class="img-fluid" src="assets/img/sch.png" alt="regis">
+                    </a>
+                    <a href="#" class="off-link">ШКОЛА СЕЛЛЕРОВ WB</a>
+                </div>
+            </div>
+            <div class="off-products d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-3 align-items-center">
+                    <a class="off-icon" href="#" >
+                        <img class="img-fluid" src="assets/img/seo2.png" alt="regis">
+                    </a>
+                    <a href="#" class="off-link">МОДУЛЬ SEO</a>
+                </div>
+            </div>
+            <div class="off-products d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-3 align-items-center">
+                    <a class="off-icon" href="#" >
+                        <img class="img-fluid" src="assets/img/ads25.png" alt="regis">
+                    </a>
+                    <a href="#" class="off-link">МОДУЛЬ MARPLA</a>
+                </div>
+            </div>
+            <div class="off-products d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-3 align-items-center">
+                    <a class="off-icon" href="#" >
+                        <img class="img-fluid" src="assets/img/ab_test_wildberries.png" alt="regis">
+                    </a>
+                    <a href="#" class="off-link">A/B тест фото</a>
+                </div>
+            </div>
+            <div class="off-products d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-3 align-items-center">
+                    <a class="off-icon" href="#" >
+                        <img class="img-fluid" src="assets/img/mes225.png" alt="regis">
+                    </a>
+                    <a href="#" class="off-link">БОТ АВТООТВЕТЫ <br> НА ОТЗЫВЫ WB</a>
+                </div>
+            </div>
+            <div class="off-products d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-3 align-items-center">
+                    <a class="off-icon" href="#" >
+                        <img class="img-fluid" src="assets/img/position.png" alt="regis">
+                    </a>
+                    <a href="#" class="off-link">БОТ ПОЗИЦИЙ WB</a>
+                </div>
+            </div>
+            <div class="off-products d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-3 align-items-center">
+                    <a class="off-icon" href="#" >
+                        <img class="img-fluid" src="assets/img/steps.png" alt="regis">
+                    </a>
+                    <a href="#" class="off-link">БОТ РЕКЛАМНЫХ СТАВОК WB</a>
+                </div>
+            </div>
+            <div class="off-products d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-3 align-items-center">
+                    <a class="off-icon" href="#" >
+                        <img class="img-fluid" src="assets/img/how.png" alt="regis">
+                    </a>
+                    <a href="#" class="off-link">КАК ПОПАСТЬ В КАТЕГОРИИ</a>
+                </div>
+            </div>
+            <div class="off-head mt-5 mb-3">Соц.сети:</div>
+            <div class="d-flex gap-2 align-items-center">
+                <img class="img-fluid" src="assets/img/photo.svg">
+                <img class="img-fluid" src="assets/img/photo (1).svg">
+                <img class="img-fluid" src="assets/img/photo (2).svg">
+                <img class="img-fluid" src="assets/img/photo (3).svg">
+                <img class="img-fluid" src="assets/img/photo (4).svg">
+                <img class="img-fluid" src="assets/img/photo (5).svg">
+            </div>
+
+            <a class="tech-btn mt-4">
+                Техническая поддержка
+            </a>
+        </div>
+    </div>
+
+    <a class="reklama" href="https://t.me/DmitriyWB_bot?start=link_Rfk2fyXU6Y" target="_blank" rel="noopener">
+        <img class="tn-atom__img t-img loaded"  alt="reklama" src="assets/img/reklama.png">
+    </a>
+
+    <div class="formButton">
+        <img src="assets/img/formBtn.svg" alt="formBtn">
+    </div>
+
+
+    <div class="container section">
+      <div class="botContainer d-flex position-relative">
+        <div class="leftBotContainer">
+          <div class="telegram d-flex align-items-center gap-3">
+            <img class="telegramIcon" src="assets/img/telegram.png">
+            <div class="telegramText">Телеграм бот</div>
+          </div>
+          <h1 class="title-h1" style="color: #333333; font-size: 41px;">Ответы на отзывы в карточке товара на автопилоте</h1>
+          <div class="mt-4">
+            <ul class="botList">
+              <li>Буду отвечать на отзывы бесплатно 24/7</li>
+              <li>Я прост в установке и в управлении</li>
+              <li>Не имею ограничений на количество магазинов и количество ответов на отзывы</li>
+              <li>Работаю с методом GPT-4 (самая продвинутая версия)</li>
+            </ul>
+          </div>
+          <a href="#" class="tsena-button" style="background-image: linear-gradient(0.5turn, rgba(55, 65, 110, 1) 0%, rgba(34, 41, 65, 1) 99%); border-radius: 10px;">
+            Попробовать бесплатно
+          </a>
+        </div>
+        <div class="botRating">
+          <div class="d-flex gap-2">
+            <div class="botRatingText">5.0</div>
+            <img class="img-fluid" src="assets/img/rating.svg" alt="rating">
+          </div>
+          <div class="botRatingText mt-3">
+            Уже используют более 1000 продавцов
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="divider-wb">
+        <div class="container wb">
+            <div class="wb-notif">
+                <img class="notificon img-fluid" src="assets/img/notification.png" alt="notif">
+                <p class="text-center notif-text">Новое <br> уведомление</p>
+            </div>
+            <div class="wb-text">
+                <div class="wb-title">Marpla входит в список авторизованных сервисов на WB</div>
+                <div class="wb-p">
+                    Это значит, что <span style="font-weight: 600;">Marpla</span>
+                    работает с&nbsp;Wildberries по&nbsp;API и&nbsp;
+                    <span style="font-weight: 600;">удовлетворяет требованиям <br> информационной безопасности</span>
+                </div>
+            </div>
+            <div>
+                <img class="wbicon" src="assets/img/wbicon.png" alt="wbicon">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container section">
+      <div class="two-block row">
+        <div class="col-lg-6 col-md-12 two-block-block">
+          <h1 class="title-h1" style="color: #fff;">
+            Автоматизируйте ответы на отзывы <br> с помощью телеграм бота GPT
+          </h1>
+          <div class="card-text">
+            GPT позволяет автоматически генерировать ответы на отзывы клиентов, используя различные алгоритмы обработки естественного языка. С помощью GPT можно создать систему, которая будет анализировать отзывы, определять их тональность и генерировать ответ в зависимости от контекста.
+          </div>
+        </div>
+        <duv class="col-lg-6 col-md-12">
+          <img class="img-fluid telephone" src="assets/img/Mask_group-41-2.png">
+        </duv>
+      </div>
+      <div class="one-block">
+        <h1 class="title-h1" style="color: #333333;">Такая система может включать <br> в себя несколько этапов:</h1>
+        <div class="d-flex mt-5">
+          <div class="col-lg-4 col-md-12 block-card">
+            <div class="card-img-bg">
+              <img class="img-fluid" src="assets/img/card-img.png" alt="card-img">
+            </div>
+            <div class="step-title text-center mt-4">
+              1. Сбор отзывов
+            </div>
+            <div class="step-text text-center mt-4">
+              На этом этапе система <br>собирает все отзывы, которые были оставлены клиентами <br>на сайте или в социальных сетях
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 block-card mx-2">
+            <div class="card-img-bg">
+              <img class="img-fluid" src="assets/img/card-img2.png" alt="card-img">
+            </div>
+            <div class="step-title text-center mt-4">
+              2. Обработка отзывов
+            </div>
+            <div class="step-text text-center mt-4">
+              На данном этапе GPT анализирует полученные отзывы и определяет их тональность
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 block-card">
+            <div class="card-img-bg">
+              <img class="img-fluid" src="assets/img/card-img3.png" alt="card-img">
+            </div>
+            <div class="step-title text-center mt-4">
+              3. Генерация ответа
+            </div>
+            <div class="step-text text-center mt-4">
+              На основе анализа отзыва
+и его тональности GPT генерирует ответ, который может быть как стандартным, так и персонализированным
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container section">
+      <h1 class="title-h1 mb-lg-5">
+        Что такое биддер и как он работает?
+      </h1>
+      <p class="text-p">
+        В сфере рекламного продвижения под биддером подразумевают специализированное программное обеспечение или алгоритм, 
+        <span style="font-weight: 600;">цель которого автоматизировать проведение рекламных кампаний и управлять их настройками в режиме реального времени.</span>
+      </p>
+
+      <div class="blue-text my-3">
+        <p class="text-p mb-0">Биддер — это помощник рекламщика или владельца площадки на Wildberries. Он помогает повысить эффективность рекламы и рационально использовать ее с учетом бюджета на продвижение и особенностей целевой аудитории.</p>
+      </div>
+
+      <p class="text-p">
+        Биддерский сервис также тесно связан с конверсией и прочими ROI-показателями. Он учитывает поведение пользователей платформы в своих алгоритмах, благодаря чему 
+        <span style="font-weight: 600;">выполняется оптимизация рекламных настроек и&nbsp;рост производительности кампании.</span>
+      </p>
+    </div>
+
+    <div class="container section">
+      <h2 class="title-h2">
+        Работа биддера выглядит следующим образом:
+      </h2>
+
+      <div class="row d-flex align-items-center mb-5">
+        <div class="col-lg-5 col-md-12">
+          <div class="d-flex align-items-center gap-3">
+            <div class="steps">
+              01
+            </div>
+            <div class="step-title">Сбор, вводных данных и анализ</div>
+          </div>
+          <div class="step-text mt-4">
+            Сервис начинает свою работу со сбора данных о рекламной кампании и целевой аудитории. Анализирует ключевые слова, релевантность объявлений, выделенный бюджет и другие параметры.
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-12">
+          <img src="assets/img/step1.png" alt="step1">
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center mb-5">
+        <div class="col-lg-7 col-md-12">
+          <img src="assets/img/step2.png" alt="step2">
+        </div>
+        <div class="col-lg-5 col-md-12">
+          <div class="d-flex align-items-center gap-3">
+            <div class="steps">
+              02
+            </div>
+            <div class="step-title">Формирование алгоритма</div>
+          </div>
+          <div class="step-text mt-4">
+            На основе систематизированных данных система принимает решения о ставках на ключевые слова и показы объявлений. <br>
+            При этом учитывается ряд факторов, таких как конкуренция, ожидаемая ценность клика (CTR), данные о целевой аудитории, бюджет.
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center mb-5">
+        <div class="col-lg-6 col-md-12">
+          <div class="d-flex align-items-center gap-3">
+            <div class="steps">
+              03
+            </div>
+            <div class="step-title">Динамическое управление кампанией</div>
+          </div>
+          <div class="step-text mt-4">
+            Биддер постоянно отслеживает изменения на площадках и адаптирует рекламу в реальном времени. Например, если определенное ключевое слово становится популярным, алгоритм может увеличить ставку, чтобы поднять соответствующие объявления в выдаче.
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <img src="assets/img/step3.png" alt="step3">
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center mb-5">
+        <div class="col-lg-7 col-md-12">
+          <img src="assets/img/step4.png" alt="step4">
+        </div>
+        <div class="col-lg-5 col-md-12">
+          <div class="d-flex align-items-center gap-3">
+            <div class="steps">
+              04
+            </div>
+            <div class="step-title">Таргетирование аудитории</div>
+          </div>
+          <div class="step-text mt-4">
+            Сервис помогает рекламодателям определять целевую аудиторию на основе различных параметров, таких как пол, возраст, интересы и местоположение. Это позволяет создавать релевантные и персонализированные объявления, повышающие конверсию.
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center mb-5">
+        <div class="col-lg-6 col-md-12">
+          <div class="d-flex align-items-center gap-3">
+            <div class="steps">
+              05
+            </div>
+            <div class="step-title">Мониторинг и оптимизация</div>
+          </div>
+          <div class="step-text mt-4">
+            Биддер постоянно мониторит результаты рекламных кампаний и проводит их оптимизацию. Он может приостанавливать неэффективные объявления, перераспределять бюджет на успешные ключевые слова или площадки, а также проводить A/B-тестирование для определения перспективных стратегий.
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <img src="assets/img/step5.png" alt="step5">
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center mb-5">
+        <div class="col-lg-7 col-md-12">
+          <img src="assets/img/step6.png" alt="step6">
+        </div>
+        <div class="col-lg-5 col-md-12">
+          <div class="d-flex align-items-center gap-3">
+            <div class="steps">
+              04
+            </div>
+            <div class="step-title">Реагирование <br>
+              на изменения рынка</div>
+          </div>
+          <div class="step-text mt-4">
+            Алгоритм также учитывает внешние факторы, такие как сезонность, новости рынка или тенденции, чтобы адаптировать рекламные кампании в соответствии с ними.
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center mb-5">
+        <div class="col-lg-6 col-md-12">
+          <div class="d-flex align-items-center gap-3">
+            <div class="steps">
+              07
+            </div>
+            <div class="step-title">Репортинг и аналитика</div>
+          </div>
+          <div class="step-text mt-4">
+            В процессе работы рекламодатели получают подробные отчеты и аналитику о ходе кампании, что позволяет оценивать ROI и принимать более обоснованные решения.
+          </div>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <img src="assets/img/step7.png" alt="step7">
+      </div>
+
+      </div>
+
+      <div class="d-flex align-items-center justify-content-center position-relative">
+        <a class="info-btn">Попробовать бесплатно</a>
+      </div>
+
+    </div>
+
+    <div class="container section">
+      <h1 class="title-h1 mb-3">Преимущества сервиса</h1>
+      <p class="bidder-p text-start" style="font-weight: 500;">
+        Биддер MARPLA — инновационный сервис для рекламщиков и бизнесменов, который станет вашим помощником в управлении рекламными кампаниями и работе с карточками товаров на платформе Wildberries. 
+        <span style="font-weight: 600;">Присоединяйтесь к&nbsp;нашему ресурсу, и&nbsp;вы&nbsp;сможете:</span>
+      </p>
+
+      <div class="row adv-row mt-lg-5">
+        <div class="col-lg-6 col-md-12 d-flex gap-lg-5 pt-3">
+          <img class="adv-img" src="assets/img/adv1.png" alt="adv1">
+          <div class="adv-title">100% безопасная работа <br> по официальному API</div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="step-text">
+            Биддер подключается к Wildberries непосредственно через официальное API сервиса, поэтому риск утечки персональных данных, настроек или другой информации исключается. Работа M.BIDDER полностью согласуется с правилами маркетплейса, поэтому ваше преимущество над конкурентами будет полностью легальным
+          </div>
+        </div>
+      </div>
+
+      <div class="row adv-row mt-lg-4">
+        <div class="col-lg-6 col-md-12 d-flex gap-lg-5 pt-3">
+          <img class="adv-img" src="assets/img/adv2.png" alt="adv2">
+          <div class="adv-title">Значительное сокращение <br> расходов на рекламу</div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="step-text">
+            При использовании биддера бюджет выделенный на рекламу экономится в среднем до 60%
+          </div>
+        </div>
+      </div>
+
+      <div class="row adv-row mt-lg-4">
+        <div class="col-lg-6 col-md-12 d-flex gap-lg-5 pt-3">
+          <img class="adv-img" src="assets/img/adv3.png" alt="adv3">
+          <div class="adv-title">Безлимит на количество <br> рекламных кампаний</div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="step-text">
+            Создавайте неограниченное количество кампаний для ваших товаров
+          </div>
+        </div>
+      </div>
+
+      <div class="row adv-row mt-lg-4">
+        <div class="col-lg-6 col-md-12 d-flex gap-lg-5 pt-3">
+          <img class="adv-img" src="assets/img/adv4.png" alt="adv4">
+          <div class="adv-title">Массовое создание рекламных <br> фраз типа Поиск</div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="step-text">
+            Позволит прокачать ваши ключевые фразы и выйти в ТОП
+          </div>
+        </div>
+      </div>
+
+      <div class="row adv-row mt-lg-4">
+        <div class="col-lg-6 col-md-12 d-flex gap-lg-5 pt-3">
+          <img class="adv-img" src="assets/img/adv5.png" alt="adv5">
+          <div class="adv-title">Массовое создание рекламных <br> фраз типа Поиск</div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="step-text">
+            Позволит прокачать ваши ключевые фразы и выйти в ТОП
+          </div>
+        </div>
+      </div>
+
+      <div class="row adv-row mt-lg-4">
+        <div class="col-lg-6 col-md-12 d-flex gap-lg-5 pt-3">
+          <img class="adv-img" src="assets/img/adv6.png" alt="adv6">
+          <div class="adv-title">Менеджер фраз</div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="step-text">
+            Для автоудаления фраз сливающих бюджет
+          </div>
+        </div>
+      </div>
+
+      <div class="row adv-row mt-lg-4">
+        <div class="col-lg-6 col-md-12 d-flex gap-lg-5 pt-3">
+          <img class="adv-img" src="assets/img/adv7.png" alt="adv7">
+          <div class="adv-title">Проверка ставок и управление РК <br> поиск в 7-ми регионах</div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="step-text">
+            Мы предоставили Вам возможность контролировать позиции фраз в самых востребованных городах
+          </div>
+        </div>
+      </div>
+
+      <div class="row adv-row mt-lg-4">
+        <div class="col-lg-6 col-md-12 d-flex gap-lg-5 pt-3">
+          <img class="adv-img" src="assets/img/adv8.png" alt="adv8">
+          <div class="adv-title">Проверка позиций карточки <br> по фразам прямо из кабинета</div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="step-text">
+            Позволит Вам всегда быть в курсе ваших позиций по каждой ключевой фразе и вывести карточку на топовые места в выдаче
+          </div>
+        </div>
+      </div>
+
+      <div class="row adv-row mt-lg-4">
+        <div class="col-lg-6 col-md-12 d-flex gap-lg-5 pt-3">
+          <img class="adv-img" src="assets/img/adv9.png" alt="adv9">
+          <div class="adv-title">Группировка фраз на пресеты <br> и кластеры</div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="step-text">
+            Кластеры – это группы фраз, объединенные ВБ в одну поисковую выдачу. Пресет — это группа кластеров, объединенная общей темой - используется для настройки автокомпаний.
+           <br> <strong> Внимание. Особенность кластеров </strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="row adv-row mt-lg-4">
+        <div class="col-lg-6 col-md-12 d-flex gap-lg-5 pt-3">
+          <img class="adv-img" src="assets/img/adv10.png" alt="adv10">
+          <div class="adv-title">Функция плюс <br> и минус фраз</div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="step-text">
+            Можно изначально добавить плюс-фразы, по которым вы хотите показываться без лишнего мусора. В настройке авторекламы селлеры можете указывать минус-фразы, по которым карточка НЕ будет показываться в поисковой выдаче.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="divider big">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <a class="goTop" href="#">
+                  ВЫХОДИТЕ В ТОП НА WILDBERRIES
+                </a>
+                <h1 class="topTitle mt-4">
+                  Для начала работы с сервисом <br> MARPLA достаточно всего <br> нескольких минут!
+                </h1>
+                <p class="topText my-3">
+                  Регистрируйтесь на сайте, подключайте ваш аккаунт Wildberries и начинайте знакомство с функционалом биддера.
+                </p>
+                <p class="topText">
+                  Получите ответ на главные вопросы:
+                </p>
+                <ul class="topList">
+                  <li>Как работает реклама на WILDBERRIES?</li>
+                  <li>Как продвигать и рекламировать свой товар на Wildberries?</li>
+                  <li>Как управлять рекламой?</li>
+                  <li>Приоритетность категорий в рекламе на WILDBERRIES?</li>
+                  <li>Выход в ТОП на Wildberries?</li>
+                </ul>
+                <div class="mt-4 d-flex gap-4 align-items-center">
+                  <a class="info-btn topBtn">Попробовать бесплатно</a>
+                  <div class="topBtnText">
+                    <strong style="font-size: 16px;">ПОЛНЫЙ БЕСПЛАТНЫЙ ДОСТУП</strong> <br>
+                    в любое время
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <img class="img-fluid" src="assets/img/divider.png" alt="dividerImg">
+              </div>
+            </div>
+            <div class="techContainer">
+              <div class="techText">
+                Техподдержка пользователей дежурит круглосуточно, чтобы ответить на любые возникшие воросы.
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container section">
+      <div class="d-flex justify-content-center">
+        <div class="blue-text" style="border-radius: 10px; padding: 8px 28px;">
+          <div class="blue-inside">
+            Возможность запуска и управления всеми видами рекламы на вб
+          </div>
+        </div>
+      </div>
+      <h1 class="title-h1 text-center mt-4">
+        Какие виды рекламы доступны <br> в использовании биддера Марпла?
+      </h1>
+      <p class="text-p text-center mt-3" style="color: #000;">Биддер от MARPLA работает с целым рядом рекламных инструментов, эффективных на маркетплейсе Wildberries.  <br>
+        <span style="font-weight: 600;">Используя функционал сервиса, вы привлечете целевую аудиторию из:</span>
+      </p>
+
+      <div class="d-flex gap-2 justify-content-between">
+        <div class="col-lg-6 col-md-12 small-block">
+          <div class="block-step">
+            1. Автореклама
+          </div>
+          <div class="block-text">
+            С помощью нашей функции плюс и минус фраз Вы можете настроить нужные ключевые фразы и не сливать рекламный бюджет
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 small-block">
+          <div class="block-step">
+            2. Реклама в поиске
+          </div>
+          <div class="block-text">
+            Поможет Вам зафиксировать релевантные ключевые фразы, нужную для Вас позицию и максимальную ставку для продвижения по ключевым запросам.
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 small-block mt-2">
+        <div class="block-step">
+          3. Реклама в карточке
+        </div>
+        <div class="block-text">
+          Эта услуга позволит вам показать свои товары прямо в карточках аналогичных товаров других продавцов. Такой подход увеличивает шансы заинтересовать покупателей, уже просматривающих похожие товары. Реклама размещается непосредственно под характеристиками продавца, предлагая покупателям товары по схожим категориям. Позиция вашего товара в рекламном блоке зависит от ставки, которую вы установите. Система предоставляет информацию о ставках конкурентов и их расположении в каталоге, помогая определить оптимальную ставку для продвижения.          </div>
+      </div>
+      <div class="d-flex gap-2 justify-content-between mt-2">
+        <div class="col-lg-6 col-md-12 small-block">
+          <div class="block-step">
+            4. Реклама в рекомендациях
+          </div>
+          <div class="block-text">
+            Это продвижение направлено на рекламу товаров на главной странице сайта среди тех пользователей, которые уже интересовались подобными товарами. Такой метод позволяет достичь более высокой конверсии, предлагая товары пользователям, уже заинтересованным в данной категории товаров.          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 small-block">
+          <div class="block-step">
+            5. Поиск+Каталог
+          </div>
+          <div class="block-text">
+            Этот способ продвижения объединяет работы по поисковой выдаче и каталогами сайта, где уже представлен ваш товар. Это улучшает видимость товара как в структурированных каталогах, так и в результатах поиска, что позволяет охватить более широкую аудиторию потенциальных покупателей.          </div>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 red-block mt-2">
+        <div class="stepRow">
+          <div class="block-step p-0" style="background: transparent !important; color: #333333;">
+            6. Рекомендации по настройке РК тип поиск
+          </div>
+          <div class="block-text">
+            Сервис предоставляет конкретные рекомендации по стратегии для оптимизации рекламных кампаний с акцентом на поисковое продвижение. Она направлена на улучшение эффективности рекламных кампаний, нацеленных на поисковых пользователей.
+          </div>
+        </div>
+        <div class="stepRow">
+          <div class="block-step p-0" style="background: transparent !important; color: #333333;">
+            7. Рекомендации по настройке РК тип поиск автореклама поиск
+          </div>
+          <div class="block-text">
+            Сервис предложит рекомендации по автоматизированному управлению рекламными кампаниями в поисковой системе, что позволит максимально эффективно использовать бюджет и повышает шансы на успех кампании.          </div>
+        </div>
+        <div class="stepRow">
+          <div class="block-step p-0" style="background: transparent !important; color: #333333;">
+            8. Рекомендации по настройке РК карточка и автореклама карточка
+          </div>
+          <div class="block-text">
+            Marpla поможет настроить кампании, ориентированные на рекламу в карточках товаров, включая автоматизированные стратегии для улучшения показателей и достижения целевой аудитории.
+          </div>
+        </div>
+      </div>
+
+      <div class="divider-small d-flex align-items-center justify-content-between mt-4">
+        <div class="block-step p-0" style="background: transparent !important; color: #ffffff;">
+          Зарегистрируйтесь прямо сейчас и увеличьте <br> эффективность своих рекламных кампаний на Wildberries
+        </div>
+        <div class="mt-4 d-flex flex-column gap-2 align-items-center">
+          <a class="info-btn topBtn">Попробовать бесплатно</a>
+          <div class="topBtnText text-center">
+            <strong style="font-size: 16px;">ПОЛНЫЙ БЕСПЛАТНЫЙ ДОСТУП</strong> <br>
+            в любое время
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="divider big">
+      <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <a class="goTop" href="#">
+                ВЫХОДИТЕ В ТОП НА WILDBERRIES
+              </a>
+              <h1 class="topTitle mt-4">
+                ПОПРОБУЙТЕ БИДДЕР БЕСПЛАТНО
+              </h1>
+              <p class="topText my-3">
+                Регистрируйтесь на сайте, подключайте ваш аккаунт Wildberries и начинайте знакомство с функционалом биддера.
+              </p>
+              <ul class="topList">
+                <li>Смена ставок каждые 30 секунд</li>
+                <li>
+                  Безлимит на количество рекламных кампаний
+                </li>
+                <li>Безлимит на количество магазинов
+                </li>
+                <li>Массовое создание рекламных фраз типа Поиск
+                </li>
+                <li>Менеджер фраз для автоудаления фраз сливающих бюджет</li>
+                <li>Проверка ставок и управление РК поиск в 7-ми регионах
+                </li>
+                <li>Проверка позиций карточки по фразам прямо из кабинета
+                </li>
+              </ul>
+              <div class="mt-4 d-flex gap-4 align-items-center">
+                <a class="info-btn topBtn">Попробовать бесплатно</a>
+                <div class="topBtnText">
+                  <strong style="font-size: 16px;">ПОЛНЫЙ БЕСПЛАТНЫЙ ДОСТУП</strong> <br>
+                  в любое время
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <img class="img-fluid" src="assets/img/divider2.png" alt="dividerImg">
+            </div>
+          </div>
+          <div class="techContainer">
+            <div class="techText">
+              Техподдержка пользователей дежурит круглосуточно, чтобы ответить на любые возникшие воросы.
+            </div>
+          </div>
+      </div>
+  </div>
+
+
+    <div class="container section">
+        <h1 class="section-title">ВОПРОСЫ И ОТВЕТЫ</h1>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Что такое Marpla?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">MARPLA - это инновационный сервис для управления рекламой и оптимизации карточек товаров на маркетплейсе Wildberries. Он помогает предпринимателям и менеджерам рекламных кампаний достичь высоких результатов и увеличить продажи на Wildberries.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Какие возможности предоставляет Marpla? 
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Marpla предоставляет широкий спектр функций, включая автоматическое управление ставками, отслеживание позиций товаров, сбор семантического ядра, оптимизацию карточек товаров, аналитику продаж и многое другое. <br>
+                    Это мощный инструмент, позволяющий эффективно управлять рекламой на Wildberries и увеличивать прибыль.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Как Marpla помогает снизить расходы на рекламу? 
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Marpla позволяет оптимизировать ставки и удерживать лидирующие позиции в рекламе, что приводит к более эффективному использованию рекламного бюджета и снижению затрат на рекламу на Wildberries.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Безопасно ли работать с Marpla? 
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Работа с MARPLA осуществляется через официальное API Wildberries, обеспечивая 100% безопасность и защиту ваших данных и рекламных кампаний.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    Как Marpla помогает увеличить продажи? 
+                  </button>
+                </h2>
+                <div id="flush-collapseFiver" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Marpla предоставляет инструменты для оптимизации карточек товаров, повышения их видимости и конверсии, а также аналитику продаж, которые помогут вам увеличить продажи на Wildberries.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    Как начать использовать Marpla? 
+                  </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Чтобы начать использовать Marpla, вам необходимо зарегистрироваться на нашем сайте и подключить свой аккаунт Wildberries. После этого вы сможете получить доступ ко всем функциям и возможностям Marpla.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    Есть ли у вас техподдержка? 
+                  </button>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Да, мы предоставляем профессиональную техническую поддержку для всех пользователей Marpla 24/7. Если у вас возникли вопросы, мы с радостью поможем вам решить их.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingEight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                    Какая стоимость сервиса Marpla? 
+                  </button>
+                </h2>
+                <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Списание средств происходит ежедневно, в соответствии с тарифной сеткой – исходя из Вашего количества запросов. Вы можете ознакомиться с подробной информацией о тарифах на нашем сайте или связаться с нашей техподдержкой, чтобы получить индивидуальную консультацию.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <a href="navbar-brand" hreflang="index.html">
+                        <img class="logo" src="assets/img/footer-logo.svg">
+                    </a>
+                    <p class="footer-text">Инструменты аналитики и продвижения на Wildberries</p>
+                    <div>
+                        <img src="assets/img/mir.png" alt="MIR" style="width: 53px; margin-right: 10px;">
+                        <img src="assets/img/visa.png" alt="VISA" style="width: 53px; margin-right: 10px;">
+                        <img src="assets/img/mastercard-logo.png" alt="MasterCard" style="width: 53px;">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="footer-title">Telegram-роботы:</div>
+                    <p class="footer-link"><a href="#">Бот проверки позиций WB</a></p>
+                    <p class="footer-link"><a href="#">Бот рекламных ставок WB</a></p>
+                    <p class="footer-link"><a href="#">Бот тех. поддержки</a></p>
+                    <p class="footer-link"><a href="#">Бот автоответ на отзывы WB</a></p>
+                    <div class="mt-5 d-flex flex-column">
+                        <a href="biider.html" class="footer-title mt-3">Биддер Marpla</a>
+                        <a href="modul.html" class="footer-title">Модуль SEO</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-title">Школа продавцов WB</div>
+                    <p class="footer-link"><a href="#">Курс «Продавец PRO»</a></p>
+                    <p class="footer-link"><a href="#">Курс «Менеджер WB»</a></p>
+                    <p class="footer-link"><a href="#">Наставник Д. Толстоукаков</a></p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-right">
+                    <div class="footer-title">Электронная почта:</div>
+                    <p class="footer-link"><a href="mailto:sup-marpla@yandex.ru">sup-marpla@yandex.ru</a></p>
+                    <p class="footer-link mt-5 text-end">ИП Андреев Александр Вячеславович</p>
+                    <p class="footer-link">ИНН 210603154267</p>
+                    <p class="footer-link">ОГРНИП 321864700070411</p>
+                </div>
+            </div>
+            <div class="row footer-bottom mt-5">
+                <div class="col-lg-12 d-flex justify-content-between">
+                    <div class="d-flex gap-4">
+                        <a class="footer-under" href="#">Пользовательское соглашение</a>  
+                        <a class="footer-under" href="#">Политика оплаты и возврата</a>  
+                        <a class="footer-under" href="#">Политика конфиденциальности</a>
+                    </div>
+                    <p class="marpla">© MARPLA, 2024</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery.js/dist/js/lightgallery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lg-zoom.js/dist/lg-zoom.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        lightGallery(document.getElementById('lightgallery'), {
+            selector: '.imgItem',
+            zoom: true
+        });
+    });
+</script>
+
+</body>
+
+</html>
