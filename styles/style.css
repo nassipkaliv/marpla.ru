@@ -1253,6 +1253,17 @@ header {
   color: #ff8562 !important;
 }
 
+.leftContainer {
+  left: 0% !important;
+  z-index: 1;
+  height: 815px;
+}
+
+.rightContainer {
+  position: relative;
+  left: 50%;
+  z-index: 0;
+}
 
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
