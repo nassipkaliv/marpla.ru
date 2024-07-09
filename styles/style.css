@@ -1577,6 +1577,65 @@ header {
   justify-content: space-between;
 }
 
+.underBoard {
+  border-width: 1px;
+  border-radius: 37px;
+  background-color: #ffffff;
+  background-position: center center;
+  border-color: #e2e2e2;
+  border-style: solid;
+  padding: 40px 60px;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.underBoardText {
+  color: #333333;
+  font-size: 20px;
+  font-family: 'Cera Pro';
+  line-height: 1.17;
+  font-weight: 500;
+}
+
+.underBoardLine {
+  height: 1px;
+  width: 100%;
+  background: lightgray;
+}
+
+.abDivider {
+  background-image: linear-gradient(0.5turn, rgba(55, 65, 110, 1) 0%, rgba(34, 41, 65, 1) 100%);
+  border-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 390px;
+}
+
+.abDividerContainer {
+  border-width: 1px;
+  border-radius: 55px;
+  background-position: center center;
+  border-color: #ffffff;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 505px;
+}
+
+.abDividerContainerText {
+  color: #ffffff;
+  font-size: 25px;
+  font-family: 'Cera Pro';
+  line-height: 1.2;
+  font-weight: 500;
+  opacity: 1 !important;
+}
+
+
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
       max-width: 1200px;
