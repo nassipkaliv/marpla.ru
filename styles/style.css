@@ -2113,6 +2113,170 @@ header {
   padding-bottom: 90px;
 }
 
+.descContainer {
+  border-radius: 25px;
+  background-color: #d8def4;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.descContainerText {
+  padding: 30px 10px 30px 30px;
+}
+
+.descNomer {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/img/Ellipse_38.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 32px;
+  font-family: 'Cera Pro';
+  line-height: 1.2;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.descBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pinkBg {
+  opacity: 1;
+  background-color: #ec238d;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  position: relative;
+}
+
+.momentsRow {
+  display: flex;
+  margin-top: 60px;
+  padding-left: 145px;
+
+}
+
+.momentArrow {
+  position: absolute;
+  top: 52%;
+  left: 32%;
+  margin-right: 20px;
+}
+
+.momentImg {
+  width: 60%;
+  border-radius: 25px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-color: transparent;
+  border-style: solid;
+  box-shadow: 0px 0px 88px 0px rgba(0, 0, 0, 0.1);
+}
+
+.momentsText {
+  width: 40%;
+}
+
+.blueBg {
+  border-radius: 37px;
+  background-color: #2d3659;
+  padding: 60px;
+  position: relative;
+  z-index: -1;
+  top: -25px;
+}
+
+.blueBgLine {
+  width: 100%;
+  height: 1px;
+  background: gray;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.papkaBlock {
+  border-width: 1px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  background-position: center center;
+  border-color: #e2e2e2;
+  border-style: solid;
+  padding: 20px 20px;
+  height: 510px;
+}
+
+.tarifRow {
+  display: flex;
+}
+
+.tarifBlock {
+  width: 12.5%;
+  height: 200px;
+}
+
+.tarifWhiteBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  background-position: center center;
+  border-color: #e8e8e8;
+  border-style: solid;
+  height: 110px;
+}
+
+.tarifBlueBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  background: #2d3659;
+  border-color: #2d3659;
+  border-style: solid;
+  height: 90px;
+}
+
+.tarifArrow {
+  right: -65%;
+  top: 5%;
+}
+
+.freeTarifBlock {
+  border-radius: 10px;
+  background-color: #f0f2f7;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  padding: 45px;
+  height: 218px;
+}
+
+.saleDivider {
+  background: #2d3659;
+}
+
+.instructionBlock {
+  border-radius: 25px;
+  background-color: #f586c0;
+  padding: 25px 40px;
+}
+
+.byeBlock {
+  margin-top: 10px;
+  border-radius: 25px;
+  background-color: #cad4e7;
+  padding: 25px 40px;
+}
 
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
