@@ -1866,6 +1866,100 @@ header {
   height: 240px;
 }
 
+.seoContainer {
+  border-radius: 37px;
+  background-color: #2d3659;
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.seoTitle {
+  color: #ffffff;
+  font-size: 47px;
+  font-family: 'Cera Pro';
+  line-height: 1.17;
+  font-weight: 700;
+  text-align: center;
+}
+
+.seoTitle span {
+  font-weight: 500;
+}
+
+.seoImg {
+  border-radius: 25px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-color: transparent;
+  border-style: solid;
+  box-shadow: 0px 0px 88px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 50px;
+}
+
+.serviceBlockRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.serviceBlock {
+  border-width: 1px;
+  background-color: #ffffff;
+  background-position: center center;
+  border-color: #e2e2e2;
+  border-style: solid;
+  padding: 25px 35px;
+  width: 25%;
+}
+
+.serviceBlockNumber {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  border-radius: 3000px;
+  background-position: center center;
+  border-color: #8089a3;
+  border-style: solid;
+  color: #2d3659;
+  font-size: 17px;
+  font-family: 'Cera Pro';
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 3000px;
+  background-color: #8089a3;
+  position: absolute;
+}
+
+.leftServiceCircleTop {
+  top: -4px;
+  left: -4px;
+}
+
+.leftServiceCircleBottom {
+  bottom: -4px;
+  left: -4px;
+}
+
+.rightServiceCircleBottom {
+  bottom: -4px;
+  right: -4px;
+}
+
+.rightServiceCircleTop {
+  top: -4px;
+  right: -4px;
+}
+
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
       max-width: 1200px;
