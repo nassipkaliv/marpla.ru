@@ -1960,6 +1960,45 @@ header {
   right: -4px;
 }
 
+.pinkOptimizationBlock {
+  border-width: 1px;
+  border-radius: 25px;
+  background-image: linear-gradient(0.325turn, rgba(236, 35, 141, 1) 14%, rgba(125, 37, 111, 1) 100%);
+  border-color: #e2e2e2;
+  border-style: solid;
+  height: 670px;
+}
+
+.optimiztionBlock {
+  border-width: 1px;
+  border-radius: 25px;
+  background-position: center center;
+  border-color: #e2e2e2;
+  border-style: solid;
+  height: 330px;
+  display: flex;
+}
+
+.optimizationBlockText {
+  padding: 40px 10px 40px 35px;
+}
+
+.pinkOptimizationTextBlock {
+  padding: 40px 30px;
+}
+
+.pinkDivider {
+  opacity: 0.55;
+  background-color: #ec238d;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
       max-width: 1200px;
