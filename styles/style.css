@@ -2069,6 +2069,51 @@ header {
   padding: 25px;
 }
 
+.character {
+  border-radius: 37px;
+  background-color: #2d3659;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.characterBlock {
+  border-width: 1px;
+  opacity: 0.78;
+  background-position: center center;
+  border-color: #ffffff;
+  border-style: solid;
+  padding: 30px 20px;
+  height: 260px;
+}
+
+.charBlockPink {
+  padding: 40px 20px;
+  border-width: 1px;
+  opacity: 0.78;
+  background-position: center center;
+  border-color: #ec238d;
+  background: #a75882;;
+  border-style: solid;
+}
+
+.underCharacter {
+  background: #ec238d;
+  margin-top: -35px;
+  z-index: -1;
+  position: relative;
+}
+
+.underCharContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+
+
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
       max-width: 1200px;
