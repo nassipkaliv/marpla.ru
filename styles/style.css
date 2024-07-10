@@ -1999,6 +1999,76 @@ header {
   padding: 20px;
 }
 
+.etapNomer {
+  border-radius: 45670px;
+  background-color: #2d3659;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  width: 150px;
+  
+}
+
+.etapNomerText {
+  color: #ffffff;
+  font-size: 22px;
+  font-family: 'Cera Pro';
+  line-height: 1.17;
+  font-weight: 500;
+}
+
+.pinkArrow {
+  top: 50%;
+  left: 25%;
+}
+
+.bgKlava {
+  background: url("../assets/img/backKlava.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.bgKlavaLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/img/bgKlavaLeft.png");
+  height: 220px;
+  width: 625px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.bgKlavaLeftTitle {
+  color: #ffffff;
+  font-size: 40px;
+  font-family: 'Cera Pro';
+  line-height: 1.17;
+  font-weight: 600;
+  position: relative;
+  right: 30px;
+  top: 15px;
+}
+
+.bgKlavaRight {
+  border-radius: 25px;
+  opacity: 0.88;
+  background-color: #2d3659;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.2);
+  width: 540px;
+  height: 300px;
+  position: relative;
+  top: 17%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
       max-width: 1200px;
