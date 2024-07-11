@@ -939,6 +939,16 @@ header {
 
 .imgItem {
   max-height: 520px;
+  cursor: zoom-in;
+}
+
+#imgHeader {
+  position: relative;
+  z-index: 999;
+}
+
+#modalImage {
+  cursor: zoom-in;
 }
 
 .carousel-control-prev-icon,
