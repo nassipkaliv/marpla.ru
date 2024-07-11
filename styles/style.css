@@ -2355,7 +2355,7 @@ header {
 @media (max-width: 465px) {
   
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    max-width: 375px;
+    max-width: 390px;
   }
 }
 
@@ -2363,9 +2363,10 @@ header {
 @media (max-width: 768px) {
   
   .section-title {
-    font-size: 21px;
+    font-size: 21px !important;
     padding-top: 10px;
     text-align: center;
+    letter-spacing: 1px;
   }
 
   .info-title {
@@ -2562,6 +2563,47 @@ header {
   .accordion-body {
     padding-left: 0;
     font-size: 16px;
+  }
+
+  .divider.tariff {
+    height: auto;
+  }
+
+  .tarif-text {
+    font-size: 14px;
+  }
+  
+  .t-block {
+    width: 33.3%;
+  }
+
+  .tariff-text {
+    font-size: 14px;
+  }
+
+  .collapseTitle {
+    font-size: 18px;
+    text-decoration: dashed !important;
+    width:fit-content;
+    border-bottom: none;
+    margin-bottom: 20px;
+  }
+
+  .collapseText {
+    font-size: 14px !important;
+  }
+
+  .statya-title {
+    font-size: 28px;
+    margin-bottom: 45px;
+  }
+
+  .statya-cardTitle {
+    font-size: 20px;
+  }
+
+  .statya-text {
+    font-size: 12px;
   }
 
 }
