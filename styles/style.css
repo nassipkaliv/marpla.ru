@@ -2346,6 +2346,14 @@ header {
   display: none;
 }
 
+.p-small {
+  color: #333333;
+  font-size: 18px;
+  font-family: 'Cera Pro';
+  line-height: 1.2;
+  font-weight: 500;
+}
+
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
       max-width: 1200px;
@@ -2355,7 +2363,7 @@ header {
 @media (max-width: 465px) {
   
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    max-width: 390px;
+    max-width: 380px;
   }
 }
 
@@ -2398,7 +2406,7 @@ header {
   }
 
   .only-mobile {
-    display: flex !important;
+    display: flex ;
   }
 
   .reklama {
@@ -2414,6 +2422,7 @@ header {
 
   .title-h1 {
     font-size: 35px;
+    color: #333333;
   }
 
   .text-p {
@@ -2636,6 +2645,145 @@ header {
 
   .rightContainer {
     position: static;
+  }
+
+  .off-icon {
+    margin-top: 8px;
+    width: 52px;
+    height: 19px;
+    font-size: 14px;
+  }
+
+  .p-small {
+    font-size: 16px;
+  }
+
+  .info {
+    height: auto;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+  }
+
+  .info-arrow {
+    display: none;
+  }
+
+  #imageCarousel {
+    margin-top: 30px;
+  }
+
+  .underImage {
+    height: auto;
+    padding: 7px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .steps {
+    width: 52px;
+    height: 52px;
+    font-size: 26px;
+  }
+
+  .step-title {
+    font-size: 22px;
+  }
+
+  .step-text {
+    font-size: 16px;
+    padding-top: 12px;
+  }
+
+  .orderTwo {
+    order: 2;
+  }
+
+  .orderOne {
+    order: 1;
+  }
+
+  .bidder-p {
+    font-size: 16px;
+  }
+
+  .adv-title {
+    font-size: 21px;
+    letter-spacing: -0.25px;
+    margin-left: 12px;
+  }
+
+  .adv-img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .goTop {
+    width: 100%;
+    font-size: 17px;
+  }
+
+  .topTitle {
+    font-size: 32px;
+  }
+
+  .topText {
+    font-size: 16px;
+  }
+
+  .topList {
+    font-size: 15px;
+  }
+
+  .info-btn {
+    width: 100% !important;
+  }
+
+  .columnFlex {
+    flex-direction: column !important;
+  }
+
+  .topBtnText {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .blue-inside {
+    font-size: 13px;
+  }
+
+  .block-step {
+    font-size: 20px;
+    width: auto;
+    height: auto;
+  }
+
+  .block-text {
+    font-size: 16px;
+  }
+
+  .stepRow {
+    padding-bottom: 60px;
+  }
+
+  .divider-small {
+    flex-direction: column;
+  }
+
+  .divider-small {
+    height: 370px;
+    justify-content: start !important;
+    padding: 25px 40px;
+  }
+
+  .dSmal {
+    height: auto !important;
+  }
+
+  .topBottom {
+    width: 100%;
+    margin-top: 20px;
   }
 
 }
