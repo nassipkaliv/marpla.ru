@@ -2528,4 +2528,40 @@ header {
     font-size: 16px;
     text-align: center;
   }
+
+  .opp-block {
+    margin-bottom: 20px;
+  }
+
+  .opp-title {
+    font-size: 20px;
+  }
+
+  .video-container {
+    flex-direction: column;
+  }
+
+  .video-player {
+    width: 100%;
+  }
+
+  .video-controller {
+    width: 100%;
+    overflow-y: scroll;
+    height: 200px;
+  }
+
+  .video-tab {
+    font-size: 12px;
+  }
+
+  .accordion-button {
+    font-size: 20px;
+  }
+
+  .accordion-body {
+    padding-left: 0;
+    font-size: 16px;
+  }
+
 }
