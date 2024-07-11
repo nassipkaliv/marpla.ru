@@ -1241,7 +1241,7 @@ header {
 .pTitle {
   font-size: 24px;
   line-height: 1.35;
-  font-family: 'Cera Pro',;
+  font-family: 'Cera Pro';
   font-weight: 600;
   color: #000000;
 }
@@ -2604,6 +2604,38 @@ header {
 
   .statya-text {
     font-size: 12px;
+  }
+
+  .tsena-container {
+    position: static;
+    margin-top: 20px;
+    padding: 50px 25px;
+    height: auto;
+  }
+
+  .tsena-title {
+    font-size: 30px;
+  }
+
+  .tsena-text {
+    font-size: 16px;
+  }
+
+  .tsena-button {
+    width: 182px;
+    margin-top: 25px;
+  }
+
+  .pad-bot {
+    padding-bottom: 0 !important;
+  }
+
+  .pTitle {
+    font-size: 20px;
+  }
+
+  .rightContainer {
+    position: static;
   }
 
 }
