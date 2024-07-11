@@ -2937,4 +2937,29 @@ header {
     font-size: 16px;
   }
 
+  .t-redactor__callout {
+    padding: 30px 20px 28px 30px;
+    font-size: 16px;
+  }
+
+  .moreStatyaImg {
+    width: 60px;
+    height: 75px;
+   
+  }
+
+  .moreStatyaTitle, .moreStatyaText {
+    font-size: 12px;
+  }
+
+  .moreStatya {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+  .statyaRow {
+    margin-bottom: 20px;
+  }
+
+
 }
