@@ -2421,7 +2421,8 @@ header {
   }
 
   .title-h1 {
-    font-size: 35px;
+    font-size: 35px !important;
+    line-height: normal;
   }
 
   .text-p {
@@ -2959,6 +2960,90 @@ header {
 
   .statyaRow {
     margin-bottom: 20px;
+  }
+
+  .botContainer {
+    background: none;
+    height: auto;
+  }
+
+  .leftBotContainer {
+    width: 100vw;
+    background: url("../assets/img/botLeft.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .leftBotContainer {
+    width: 100%;
+    padding: 40px;
+    height: 615px;
+  }
+
+  .botList {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .tsena-button {
+    width: 100%;
+  }
+
+  .rightBotContainer {
+
+    background-color: #2d3659;
+    margin-top: -100px;
+    z-index: -1;
+    height: 565px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 0;
+
+  }
+
+  .botRatingText {
+    font-size: 13px;
+  }
+
+  .mobileBlock {
+    border-radius: 25px;
+    background-color: #2d3659;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .two-block-block {
+    position: static;
+  }
+
+  .card-text {
+    font-size: 17px;
+  }
+
+  .wtfBlock {
+    background: url("../assets/img/wtfblock.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 430px;
+  }
+
+  .telephone {
+    bottom: -10%;
+  }
+
+  .bgBlueBlock {
+    border-radius: 25px;
+    background-color: #d8def4;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding-bottom: 40px;
+  }
+
+  .negative-block > .blue-inside {
+    font-size: 22px;
   }
 
 
