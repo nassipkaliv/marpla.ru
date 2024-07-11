@@ -3046,5 +3046,165 @@ header {
     font-size: 22px;
   }
 
+  .seoTitle {
+    font-size: 31px;
+  }
 
+  .seoImg > img {
+    border-radius: 25px;
+  }
+
+  .serviceBlockRow {
+    flex-direction: column;
+  }
+
+  .serviceBlock {
+    width: 100%;
+  }
+
+  .optimiztionBlock {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 20px !important;
+  }
+
+  .pinkOptimizationBlock {
+    margin-bottom: 20px !important;
+  }
+
+  .pinkDivider > .wb-title {
+    text-align: center;
+  }
+
+  .etapBlock {
+    margin-bottom: 40px;
+  }
+
+  .pinkArrow {
+    display: none;
+  }
+
+  .bgKlava {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background: none;
+  }
+
+  .bgKlavaLeft {
+    width: 100%;
+  }
+
+  .bgKlavaLeftTitle {
+    position: static;
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+
+  .bgKlavaRight {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .statyaText {
+    font-size: 17px;
+  }
+
+  .klava  {
+    position: absolute;
+    z-index: -1;
+    top: 105px;
+  }
+
+  .characterBlock {
+    margin-bottom: 16px;
+    opacity: 0.95;
+  }
+
+  .charBlockPink {
+    opacity: 0.95;
+  }
+
+  .underCharContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cent {
+    text-align: center;
+  }
+
+  .underBottom {
+    margin-top: 20px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .bot {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .tit {
+    text-align: start !important;
+  }
+
+  .momentsRow {
+    flex-direction: column;
+    padding-left: 0px;
+  }
+
+  .momentsText {
+    width: 100%;
+  }
+
+  .momentArrow {
+    position: relative;
+  }
+
+  .momentImg {
+    width: 100%;
+    position: relative;
+    bottom: 0%;
+  }
+
+  .blueBg {
+    padding: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .papkaBlock {
+    margin-bottom: 20px;
+  }
+
+  .tarifRow {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tarifBlock {
+    width: 100%;
+    display: flex;
+    height: 45px;
+  }
+
+  .tarifWhiteBlock {
+    width: 50%;
+    height: auto;
+  }
+
+  .tarifBlueBlock {
+    width: 50%;
+    height: auto;
+  }
+
+  .tarifArrow {
+    visibility: hidden;
+  }
 }
