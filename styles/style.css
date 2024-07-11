@@ -2878,6 +2878,51 @@ header {
 
   .chooseBlockPink {
     padding: 40px 30px;
-}
+  }
+
+  .techText {
+    font-size: 17px;
+  }
+
+  .aimNumber {
+    margin-right: 20px;
+  }
+
+  .aimDivider {
+    height: auto;
+    padding: 40px 0px;
+  }
+
+  .aimDividerContainer {
+    flex-direction: column;
+  }
+
+  .aimButton {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .aimImg {
+    top: auto;
+    bottom: -4px;
+  }
+
+  .aim {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .line-vertical {
+    top: 14%;
+    position: absolute;
+    left: 7%;
+    width: 1px;
+    height: 605px;
+  }
+
+  .pinkBlock {
+    margin-bottom: 40px;
+  }
+  
 
 }
