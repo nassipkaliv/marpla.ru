@@ -3207,4 +3207,8 @@ header {
   .tarifArrow {
     visibility: hidden;
   }
+
+  .freeTarifBlock {
+    height: auto;
+  }
 }
