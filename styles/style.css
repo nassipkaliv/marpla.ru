@@ -355,8 +355,9 @@ header {
 }
 
 .wbicon {
-  width: 132px;
-  height: 125px;
+  width: 110px;
+  height: 100px;
+  margin-right: 40px;
 }
 
 .divider-r {
@@ -421,24 +422,28 @@ header {
   background: url('../assets/img/inst1.png');
   background-size: cover;
   background-repeat: no-repeat;
+  height: 386px;
 }
 
 .instrument-img-2 {
   background: url('../assets/img/inst2.png');
   background-size: cover;
   background-repeat: no-repeat;
+  height: 386px;
 }
 
 .instrument-img-3 {
   background: url('../assets/img/inst3.png');
   background-size: cover;
   background-repeat: no-repeat;
+  height: 386px;
 }
 
 .instrument-img-4 {
   background: url('../assets/img/inst4.png');
   background-size: cover;
   background-repeat: no-repeat;
+  height: 386px;
 }
 
 .nav-link {
@@ -2347,10 +2352,20 @@ header {
   }
 }
 
+@media (max-width: 465px) {
+  
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 375px;
+  }
+}
+
+
 @media (max-width: 768px) {
+  
   .section-title {
-    font-size: 22px;
+    font-size: 21px;
     padding-top: 10px;
+    text-align: center;
   }
 
   .info-title {
@@ -2367,11 +2382,6 @@ header {
     align-items: start;
     gap: 20px;
   } 
-
-  .navbar {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   
   .navbar-brand img {
     max-height: 25px;
@@ -2411,5 +2421,111 @@ header {
 
   .custom-card {
     margin-bottom: 105px;
+  }
+
+  .wb-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .wb-p, .notif-text {
+    font-size: 16px;
+  }
+
+  .notif-text {
+    white-space: nowrap;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .wb {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .wb-notif {
+    border-radius: 25px;
+    height: 31px;
+    width: 204px;
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    top: -35px;
+    left: -60px;
+  }
+
+  .notificon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .wbicon {
+    width: 100px;
+    height: 90px;
+    margin-right: 18px;
+  }
+
+  .divider-wb {
+    height: 370px;
+  }
+
+  .divider-r {
+    position: relative;
+    height: 290px;
+  }
+
+  .divider-r-img {
+    position: absolute;
+    right: 40%;
+  }
+  
+  .divider-r-text {
+    line-height: 25px;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .instrument-card {
+    padding: 0;
+  }
+
+  .tab-content {
+    padding: 20px;
+  }
+
+  .dropdown-toggle {
+    color: #000;
+    border-color: #eeeeee;
+    background-color: #eeeeee;
+    padding: 16px 20px;
+    border: 1px solid;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Cera Pro';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .title-h2 {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .moremore {
+    width: 203px !important;
+  }
+
+  .divider {
+    height: 450px;
+  }
+
+  .divider-text {
+    font-size: 16px;
+    text-align: center;
   }
 }

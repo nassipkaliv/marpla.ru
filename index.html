@@ -269,7 +269,7 @@
 
     </div>
 
-    <div class="divider-wb">
+    <div class="divider-wb only-pc">
         <div class="container wb">
             <div class="wb-notif">
                 <img class="notificon img-fluid" src="assets/img/notification.png" alt="notif">
@@ -289,9 +289,31 @@
         </div>
     </div>
 
+    <div class="divider-wb only-mobile">
+        <div class="container wb">
+            <div class="wb-notif">
+                <img class="notificon img-fluid" src="assets/img/notification.png" alt="notif">
+                <p class="text-center notif-text">Новое уведомление</p>
+            </div>
+            <div class="d-flex">
+                <div>
+                    <img class="wbicon" src="assets/img/wbicon.png" alt="wbicon">
+                </div>
+                <div class="wb-text">
+                    <div class="wb-title">Marpla входит в список авторизованных сервисов на WB</div>
+                </div>
+            </div>
+            <div class="wb-p">
+                Это значит, что <span style="font-weight: 600;">Marpla</span>
+                работает с&nbsp;Wildberries по&nbsp;API и&nbsp;
+                <span style="font-weight: 600;">удовлетворяет требованиям <br> информационной безопасности</span>
+            </div>
+        </div>
+    </div>
+
     <div class="divider-r">
         <div class="container h-100 d-flex align-items-center">
-            <img class="img-fluid" src="assets/img/logo-r.svg" alt="logo-r">
+            <img class="img-fluid divider-r-img" src="assets/img/logo-r.svg" alt="logo-r">
             <div class="divider-r-text">
                 MARPLA — это уникальный набор инструментов для проверки позиций карточек, <br> подбора ключевых фраз, внутреннего анализа ваших продаж, управления ставками <br> и автоматического удержания позиций в рекламных кампаниях WB.
             </div>
@@ -300,7 +322,7 @@
 
     <div class="container section">
         <h1 class="section-title">инструменты marpla</h1>
-        <div class="row">
+        <div class="row only-pc">
             <div class="col-lg-3 col-md-12 m-0 instrument-card">
                 <div class="instrument-card-title">M.BIDDER</div>
                 <div class="instrument-card-text">
@@ -330,84 +352,140 @@
                 </div>
             </div>
         </div>
+        <div class="row only-mobile">
+            <div class="col-lg-3 col-md-12 m-0 instrument-card">
+                <div class="instrument-card-title">M.BIDDER</div>
+                <div class="instrument-card-text">
+                    — автоматическое <br> управление ставками и удержание позиций в рекламе на Wildberries. Значительное сокращение расходов на рекламу. 100% безопасная работа по официальному API.
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 m-0 instrument-img-1"></div>
+            <div class="col-lg-3 col-md-12 m-0 instrument-card">
+                <div class="instrument-card-title">MARPLA.SEO</div>
+                <div class="instrument-card-text">
+                    — отслеживание позиций, <br> парсинг ключевых фраз и анализ карточек WB. Обнаружение и марки-ровка фраз, выпавших из поиска. Сбор самой полной семантики за 1 минуту!
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 m-0 instrument-img-2"></div>
+            <div class="col-lg-3 col-md-12 m-0 instrument-card">
+                <div class="instrument-card-title">MARPLA.SALE</div>
+                <div class="instrument-card-text">
+                    — внутренняя аналитика собственных продаж на Wildberries. 100% бесплатный модуль для всех тарифов. Увеличьте свои продажи за счёт оптимизации цены.
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 m-0 instrument-img-3"></div>
+            <div class="col-lg-3 col-md-12 m-0 instrument-card">
+                <div class="instrument-card-title">MARPLA.PRO</div>
+                <div class="instrument-card-text">
+                    Школа продавцов и менеджеров Wildberries Дмитрия Толстокулакова. Станьте ТОПовым продавцом или менеджером WB, следуя проверенной системе
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 m-0 instrument-img-4"></div>
+        </div>
     </div>
 
     <div class="container section">
         <h1 class="section-title">ВОЗМОЖНОСТИ MARPLA</h1>
 
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="mbidder-tab" data-bs-toggle="tab" data-bs-target="#mbidder" type="button" role="tab" aria-controls="mbidder" aria-selected="true">M.BIDDER</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="marpla-seo-tab" data-bs-toggle="tab" data-bs-target="#marpla-seo" type="button" role="tab" aria-controls="marpla-seo" aria-selected="false">MARPLA.SEO</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="ab-test-tab" data-bs-toggle="tab" data-bs-target="#ab-test" type="button" role="tab" aria-controls="ab-test" aria-selected="false">A/B TEST</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="marpla-sale-tab" data-bs-toggle="tab" data-bs-target="#marpla-sale" type="button" role="tab" aria-controls="marpla-sale" aria-selected="false">MARPLA.SALE</button>
-            </li>
+            <!-- Tabs for larger screens -->
+    <ul class="nav nav-tabs only-pc" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="mbidder-tab" data-bs-toggle="tab" data-bs-target="#mbidder" type="button" role="tab" aria-controls="mbidder" aria-selected="true">M.BIDDER</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="marpla-seo-tab" data-bs-toggle="tab" data-bs-target="#marpla-seo" type="button" role="tab" aria-controls="marpla-seo" aria-selected="false">MARPLA.SEO</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="ab-test-tab" data-bs-toggle="tab" data-bs-target="#ab-test" type="button" role="tab" aria-controls="ab-test" aria-selected="false">A/B TEST</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="marpla-sale-tab" data-bs-toggle="tab" data-bs-target="#marpla-sale" type="button" role="tab" aria-controls="marpla-sale" aria-selected="false">MARPLA.SALE</button>
+        </li>
+      </ul>
+  
+      <!-- Dropdown for mobile screens -->
+      <div class="dropdown only-mobile mb-3">
+        <button class="w-100 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          M.BIDDER
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li>
+            <a class="dropdown-item active" id="mbidder-tab-sm" data-bs-toggle="tab" data-bs-target="#mbidder" href="#">M.BIDDER</a>
+          </li>
+          <li>
+            <a class="dropdown-item" id="marpla-seo-tab-sm" data-bs-toggle="tab" data-bs-target="#marpla-seo" href="#">MARPLA.SEO</a>
+          </li>
+          <li>
+            <a class="dropdown-item" id="ab-test-tab-sm" data-bs-toggle="tab" data-bs-target="#ab-test" href="#">A/B TEST</a>
+          </li>
+          <li>
+            <a class="dropdown-item" id="marpla-sale-tab-sm" data-bs-toggle="tab" data-bs-target="#marpla-sale" href="#">MARPLA.SALE</a>
+          </li>
         </ul>
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="mbidder" role="tabpanel" aria-labelledby="mbidder-tab">
-                <div class="row mt-4">
-                    <div class="col-md-6">
-                        <img src="assets/img/bidder.png" class="img-fluid" alt="M.BIDDER">
-                    </div>
-                    <div class="col-md-6">
-                        <h2 class="title-h2">M.BIDDER — это инновационный модуль от Marpla, предназначен для автоматического управления ставками и позициями рекламы на платформе Wildberries.</h2>
-                        <p class="tab-text mt-4">С помощью M. BIDDER вы сможете эффективно оптимизировать свои ставки и обеспечить максимальную видимость и конкурентоспособность вашей рекламы. Этот инструмент позволяет значительно сократить расходы на рекламу и достичь максимального результата.</p>
-                        <p class="tab-text mt-3">Мы гарантируем 100% безопасную работу с Wildberries через официальное API. Наш сервис полностью соответствует требованиям безопасности и политикам Wildberries, чтобы обеспечить надежную и безопасную интеграцию и обмен данными между вашим рекламным кабинетом и нашим сервисом.</p>
-                        <button class="more-btn moremore btn mt-4" >Узнать подробнее</button>
-                    </div>
-                </div>
+      </div>
+  
+      <!-- Tab content -->
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="mbidder" role="tabpanel" aria-labelledby="mbidder-tab">
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <img src="assets/img/bidder.png" class="img-fluid" alt="M.BIDDER">
             </div>
-            <div class="tab-pane fade" id="marpla-seo" role="tabpanel" aria-labelledby="marpla-seo-tab">
-                <div class="row mt-4">
-                    <div class="col-md-6">
-                        <img src="assets/img/seo.png" class="img-fluid" alt="M.BIDDER">
-                    </div>
-                    <div class="col-md-6">
-                        <h2 class="title-h2">MARPLA.SEO — это мощный модуль от Marpla, специально разработанный для SEO-оптимизации карточек товаров на платформе Wildberries.</h2>
-                        <p class="tab-text mt-4">С помощью MARPLA. SEO вы сможете получать информацию о позициях ваших товаров в поисковой выдаче Wildberries, а также проводить парсинг ключевых фраз и анализировать карточки товаров для более эффективной оптимизации.</p>
-                        <p class="tab-text mt-3">MARPLA.SEO позволяет обнаружить и маркировать ключевые фразы, которые выпали из поиска на Wildberries. Это позволяет вам получить информацию о том, какие ключевые слова или фразы больше не привлекают трафик или потеряли свою актуальность, чтобы вы могли скорректировать свои стратегии и адаптировать контент под актуальные запросы пользователей.</p>
-                        <p class="tab-text mt-3">MARPLA.SEO обеспечивает быстрый сбор самой полной семантики для вашего сайта на Wildberries. Вы сможете получить полный список ключевых слов и фраз, связанных с вашими товарами или услугами, за всего лишь 1 минуту. Это поможет вам определить наиболее релевантные ключевые запросы и использовать их для оптимизации контента и улучшения видимости ваших товаров на Wildberries.</p>
-                        <button class="more-btn moremore btn mt-4" >Узнать подробнее</button>
-                    </div>
-                </div>
+            <div class="col-md-6">
+              <h2 class="title-h2">M.BIDDER — это инновационный модуль от Marpla, предназначен для автоматического управления ставками и позициями рекламы на платформе Wildberries.</h2>
+              <p class="tab-text mt-4">С помощью M. BIDDER вы сможете эффективно оптимизировать свои ставки и обеспечить максимальную видимость и конкурентоспособность вашей рекламы. Этот инструмент позволяет значительно сократить расходы на рекламу и достичь максимального результата.</p>
+              <p class="tab-text mt-3">Мы гарантируем 100% безопасную работу с Wildberries через официальное API. Наш сервис полностью соответствует требованиям безопасности и политикам Wildberries, чтобы обеспечить надежную и безопасную интеграцию и обмен данными между вашим рекламным кабинетом и нашим сервисом.</p>
+              <button class="more-btn moremore btn mt-4">Узнать подробнее</button>
             </div>
-            <div class="tab-pane fade" id="ab-test" role="tabpanel" aria-labelledby="ab-test-tab">
-                <div class="row mt-4">
-                    <div class="col-md-6">
-                        <img src="assets/img/test.png" class="img-fluid" alt="M.BIDDER">
-                    </div>
-                    <div class="col-md-6">
-                        <h2 class="title-h2">Получай больше прибыли при тех же затратах за счёт лучшей фотографии</h2>
-                        <p class="tab-text mt-4">Сервис для А/Б сплит тестирование фотографий на маркетплейсе Вайлдберриз.</p>
-                        <button class="more-btn moremore btn mt-4" >Узнать подробнее</button>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="marpla-sale" role="tabpanel" aria-labelledby="marpla-sale-tab">
-                <div class="row mt-4">
-                    <div class="col-md-6">
-                        <img src="assets/img/sale.png" class="img-fluid" alt="M.BIDDER">
-                    </div>
-                    <div class="col-md-6">
-                        <h2 class="title-h2">M.BIDDER — это инновационный модуль от Marpla, предназначен для автоматического управления ставками и позициями рекламы на платформе Wildberries.</h2>
-                        <p class="tab-text mt-4">MARPLA.SALE доступен как 100% бесплатный модуль для всех пользователей сервиса Marpla, независимо от выбранного тарифного плана.Это позволяет вам получить полный доступ к внутренней аналитике продаж на Wildberries без дополнительных затрат.</p>
-                        <p class="tab-text mt-3">MARPLA.SALE поможет вам увеличить свои продажи путем оптимизации цены. Вы сможете анализировать данные о продажах, изучать рыночную конкуренцию и определить оптимальные цены для ваших товаров на Wildberries. Это позволит вам привлечь больше покупателей, увеличить конверсию и общий объем продаж.</p>                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="tab-pane fade" id="marpla-seo" role="tabpanel" aria-labelledby="marpla-seo-tab">
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <img src="assets/img/seo.png" class="img-fluid" alt="M.BIDDER">
+            </div>
+            <div class="col-md-6">
+              <h2 class="title-h2">MARPLA.SEO — это мощный модуль от Marpla, специально разработанный для SEO-оптимизации карточек товаров на платформе Wildberries.</h2>
+              <p class="tab-text mt-4">С помощью MARPLA. SEO вы сможете получать информацию о позициях ваших товаров в поисковой выдаче Wildberries, а также проводить парсинг ключевых фраз и анализировать карточки товаров для более эффективной оптимизации.</p>
+              <p class="tab-text mt-3">MARPLA.SEO позволяет обнаружить и маркировать ключевые фразы, которые выпали из поиска на Wildberries. Это позволяет вам получить информацию о том, какие ключевые слова или фразы больше не привлекают трафик или потеряли свою актуальность, чтобы вы могли скорректировать свои стратегии и адаптировать контент под актуальные запросы пользователей.</p>
+              <p class="tab-text mt-3">MARPLA.SEO обеспечивает быстрый сбор самой полной семантики для вашего сайта на Wildberries. Вы сможете получить полный список ключевых слов и фраз, связанных с вашими товарами или услугами, за всего лишь 1 минуту. Это поможет вам определить наиболее релевантные ключевые запросы и использовать их для оптимизации контента и улучшения видимости ваших товаров на Wildberries.</p>
+              <button class="more-btn moremore btn mt-4">Узнать подробнее</button>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="ab-test" role="tabpanel" aria-labelledby="ab-test-tab">
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <img src="assets/img/test.png" class="img-fluid" alt="M.BIDDER">
+            </div>
+            <div class="col-md-6">
+              <h2 class="title-h2">Получай больше прибыли при тех же затратах за счёт лучшей фотографии</h2>
+              <p class="tab-text mt-4">Сервис для А/Б сплит тестирование фотографий на маркетплейсе Вайлдберриз.</p>
+              <button class="more-btn moremore btn mt-4">Узнать подробнее</button>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="marpla-sale" role="tabpanel" aria-labelledby="marpla-sale-tab">
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <img src="assets/img/sale.png" class="img-fluid" alt="M.BIDDER">
+            </div>
+            <div class="col-md-6">
+              <h2 class="title-h2">M.BIDDER — это инновационный модуль от Marpla, предназначен для автоматического управления ставками и позициями рекламы на платформе Wildberries.</h2>
+              <p class="tab-text mt-4">MARPLA.SALE доступен как 100% бесплатный модуль для всех пользователей сервиса Marpla, независимо от выбранного тарифного плана. Это позволяет вам получить полный доступ к внутренней аналитике продаж на Wildberries без дополнительных затрат.</p>
+              <p class="tab-text mt-3">MARPLA.SALE поможет вам увеличить свои продажи путем оптимизации цены. Вы сможете анализировать данные о продажах, изучать рыночную конкуренцию и определить оптимальные цены для ваших товаров на Wildberries. Это позволит вам привлечь больше покупателей, увеличить конверсию и общий объем продаж.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        
     </div>
 
     <div class="divider">
         <div class="container">
             <h1 class="section-title" style="color: #fff;">
                 Управляйте рекламой на WB с 
-            <br>помощью ИНСТРУМЕНТОВ Marpla
+            <br class="only-pc">помощью ИНСТРУМЕНТОВ Marpla
             </h1>
             <p class="divider-text">
                 Мощный инструмент для оптимизации и эффективного управления рекламой <br>на Wildberries. Начните достигать лучших результатов уже сейчас.
@@ -1064,7 +1142,25 @@
     </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+    document.querySelectorAll('.only-mobile .dropdown-item').forEach(item => {
+      item.addEventListener('click', function() {
+        const targetTab = document.querySelector(this.getAttribute('data-bs-target'));
+        const targetTabButton = document.querySelector(`button[data-bs-target="${this.getAttribute('data-bs-target')}"]`);
 
+        // Show the target tab
+        new bootstrap.Tab(targetTabButton).show();
+
+        // Update dropdown button text
+        const dropdownToggle = document.getElementById('dropdownMenuButton1');
+        dropdownToggle.innerText = this.innerText;
+
+        // Set active state for the selected dropdown item
+        document.querySelectorAll('.only-mobile .dropdown-item').forEach(el => el.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
 
 </body>
 
