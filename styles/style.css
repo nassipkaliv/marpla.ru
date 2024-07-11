@@ -2406,7 +2406,7 @@ header {
   }
 
   .only-mobile {
-    display: flex ;
+    display: block;
   }
 
   .reklama {
@@ -2422,7 +2422,6 @@ header {
 
   .title-h1 {
     font-size: 35px;
-    color: #333333;
   }
 
   .text-p {
@@ -2785,5 +2784,100 @@ header {
     width: 100%;
     margin-top: 20px;
   }
+
+  .abContainerNumber {
+    width: auto;
+  }
+
+  .abText {
+    font-size: 15px;
+    letter-spacing: -0.5px;
+  }
+
+  .abNumber {
+    font-size: 20px;
+  }
+
+  .abTitle {
+    font-size: 35px;
+  }
+
+  .abContainer {
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .abContainerImg {
+    position: static;
+    height: 329px;
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+
+  .featRow {
+    flex-direction: column !important;
+    align-items: start !important;
+    gap: 15px;
+  }
+
+  .featText {
+    font-size: 17px;
+  }
+
+  .service-block {
+    height: 580px;
+    margin-bottom: 16px;
+  }
+
+  .underBoardText {
+    font-size: 17px !important;
+    line-height: normal;
+  }
+
+  .boardImg {
+    position: relative;
+    width: 105vw;
+    left: -11%;
+    margin-bottom: 30px;
+  }
+
+  .underBoardFormula {
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Cera Pro';
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .underBoard {
+    padding: 20px 30px;
+  }
+
+  .abDivider {
+    height: auto;
+    padding: 40px 0px;
+  }
+
+  .abDividerContainer {
+    width: auto;
+    height: 40px;
+  }
+
+  .abDividerContainerText {
+    font-size: 16px;
+  }
+
+  .chooseRow {
+    margin-bottom: 16px !important;
+  }
+
+  .chooseBlock {
+    padding: 20px 30px;
+  }
+
+  .chooseBlockPink {
+    padding: 40px 30px;
+}
 
 }
