@@ -12,140 +12,142 @@
 </head>
 <body>
 
-    <header class="sticky-top">
-        <nav class="container navbar navbar-expand-lg">
-            <div class="container px-0">
+  <header class="sticky-top">
+    <nav class="container navbar navbar-expand-lg">
+        <div class="container px-0">
+            <div class="d-flex align-items-center">
                 <a class="navbar-brand" href="index.html">
                     <img src="assets/img/Logo_New_2.svg" alt="Logo">
                 </a>
                 <div class="navbar-text d-none d-lg-block">
                     — инструменты аналитики и <br> продвижения на Wildberries
                 </div>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav gap-3">
-                        <li class="nav-item">
-                            <a class="login" href="#">
-                                <img src="assets/img/login.svg" alt="login">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="register" href="#">
-                                <img src="assets/img/register.svg" alt="register">
-                            </a>
-                        </li>
-                        <a class="ms-3" href="#" id="navbar-toggler-header" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
-                            <img src="assets/img/menu.svg" alt="Меню">
-                        </a>
-                    </ul>
-                </div>
             </div>
-        </nav>
-    </header>
-
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
-        <div class="offcanvas-header">
-            <a class="off-close" data-bs-dismiss="offcanvas" aria-label="Close">Х</a>
-            <div class="d-flex align-items-center gap-3">
-                <img class="logo" src="assets/img/footer-logo.svg">
-                <div class="head-text">— инструменты аналитики и продвижения на Wildberries</div>
+            <div class=" justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item only-pc">
+                        <a class="login" href="#">
+                            <img src="assets/img/login.svg" alt="login">
+                        </a>
+                    </li>
+                    <li class="nav-item only-pc">
+                        <a class="register" href="#">
+                            <img src="assets/img/register.svg" alt="register">
+                        </a>
+                    </li>
+                    <a class="ms-3"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                        <img src="assets/img/menu.svg" alt="Меню">
+                    </a>
+                </ul>
             </div>
         </div>
-        <div class="offcanvas-body">
-            <div class="mt-3 d-flex align-items-center justify-content-between">
-                <div class="d-flex gap-3 align-items-center">
-                    <a class="off-icon" href="https://seo.marpla.ru/signup" >
-                        <img class="img-fluid" src="assets/img/regis.png" alt="regis">
-                    </a>
-                    <a href="https://seo.marpla.ru/signup" class="off-link">РЕГИСТРАЦИЯ</a>
-                </div>
-                <div class="d-flex gap-3 align-items-center">
-                    <a class="off-icon" href="https://seo.marpla.ru/signup" >
-                        <img class="img-fluid" src="assets/img/vhod.png" alt="regis">
-                    </a>
-                    <a href="https://seo.marpla.ru/signup" class="off-link">ВХОД</a>
-                </div>
-            </div>
-            <div class="off-line"></div>
-            <div class="off-head">Продукты:</div>
-            <div class="off-products d-flex flex-column gap-2 mt-3">
-                <div class="d-flex gap-3 align-items-center">
-                    <a class="off-icon" href="#" >
-                        <img class="img-fluid" src="assets/img/sch.png" alt="regis">
-                    </a>
-                    <a href="#" class="off-link">ШКОЛА СЕЛЛЕРОВ WB</a>
-                </div>
-            </div>
-            <div class="off-products d-flex flex-column gap-2 mt-3">
-                <div class="d-flex gap-3 align-items-center">
-                    <a class="off-icon" href="#" >
-                        <img class="img-fluid" src="assets/img/seo2.png" alt="regis">
-                    </a>
-                    <a href="#" class="off-link">МОДУЛЬ SEO</a>
-                </div>
-            </div>
-            <div class="off-products d-flex flex-column gap-2 mt-3">
-                <div class="d-flex gap-3 align-items-center">
-                    <a class="off-icon" href="#" >
-                        <img class="img-fluid" src="assets/img/ads25.png" alt="regis">
-                    </a>
-                    <a href="#" class="off-link">МОДУЛЬ MARPLA</a>
-                </div>
-            </div>
-            <div class="off-products d-flex flex-column gap-2 mt-3">
-                <div class="d-flex gap-3 align-items-center">
-                    <a class="off-icon" href="#" >
-                        <img class="img-fluid" src="assets/img/ab_test_wildberries.png" alt="regis">
-                    </a>
-                    <a href="#" class="off-link">A/B тест фото</a>
-                </div>
-            </div>
-            <div class="off-products d-flex flex-column gap-2 mt-3">
-                <div class="d-flex gap-3 align-items-center">
-                    <a class="off-icon" href="#" >
-                        <img class="img-fluid" src="assets/img/mes225.png" alt="regis">
-                    </a>
-                    <a href="#" class="off-link">БОТ АВТООТВЕТЫ <br> НА ОТЗЫВЫ WB</a>
-                </div>
-            </div>
-            <div class="off-products d-flex flex-column gap-2 mt-3">
-                <div class="d-flex gap-3 align-items-center">
-                    <a class="off-icon" href="#" >
-                        <img class="img-fluid" src="assets/img/position.png" alt="regis">
-                    </a>
-                    <a href="#" class="off-link">БОТ ПОЗИЦИЙ WB</a>
-                </div>
-            </div>
-            <div class="off-products d-flex flex-column gap-2 mt-3">
-                <div class="d-flex gap-3 align-items-center">
-                    <a class="off-icon" href="#" >
-                        <img class="img-fluid" src="assets/img/steps.png" alt="regis">
-                    </a>
-                    <a href="#" class="off-link">БОТ РЕКЛАМНЫХ СТАВОК WB</a>
-                </div>
-            </div>
-            <div class="off-products d-flex flex-column gap-2 mt-3">
-                <div class="d-flex gap-3 align-items-center">
-                    <a class="off-icon" href="#" >
-                        <img class="img-fluid" src="assets/img/how.png" alt="regis">
-                    </a>
-                    <a href="#" class="off-link">КАК ПОПАСТЬ В КАТЕГОРИИ</a>
-                </div>
-            </div>
-            <div class="off-head mt-5 mb-3">Соц.сети:</div>
-            <div class="d-flex gap-2 align-items-center">
-                <img class="img-fluid" src="assets/img/photo.svg">
-                <img class="img-fluid" src="assets/img/photo (1).svg">
-                <img class="img-fluid" src="assets/img/photo (2).svg">
-                <img class="img-fluid" src="assets/img/photo (3).svg">
-                <img class="img-fluid" src="assets/img/photo (4).svg">
-                <img class="img-fluid" src="assets/img/photo (5).svg">
-            </div>
+    </nav>
+  </header>
 
-            <a class="tech-btn mt-4">
-                Техническая поддержка
-            </a>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas-header">
+        <a class="off-close" data-bs-dismiss="offcanvas" aria-label="Close">Х</a>
+        <div class="d-flex align-items-center gap-3 off-header">
+            <img class="logo" src="assets/img/footer-logo.svg">
+            <div class="head-text">— инструменты аналитики и <br class="only-mobile"> продвижения на Wildberries</div>
         </div>
     </div>
+    <div class="offcanvas-body">
+        <div class="mt-3 d-flex align-items-center justify-content-between off-header">
+            <div class="d-flex gap-3 align-items-center">
+                <a class="off-icon" href="https://seo.marpla.ru/signup" >
+                    <img class="img-fluid" src="assets/img/regis.png" alt="regis">
+                </a>
+                <a href="https://seo.marpla.ru/signup" class="off-link">РЕГИСТРАЦИЯ</a>
+            </div>
+            <div class="d-flex gap-3 align-items-center">
+                <a class="off-icon" href="https://seo.marpla.ru/signup" >
+                    <img class="img-fluid" src="assets/img/vhod.png" alt="regis">
+                </a>
+                <a href="https://seo.marpla.ru/signup" class="off-link">ВХОД</a>
+            </div>
+        </div>
+        <div class="off-line"></div>
+        <div class="off-head">Продукты:</div>
+        <div class="off-products d-flex flex-column gap-2 mt-3">
+            <div class="d-flex gap-3 align-items-center">
+                <a class="off-icon" href="#" >
+                    <img class="img-fluid" src="assets/img/sch.png" alt="regis">
+                </a>
+                <a href="#" class="off-link">ШКОЛА СЕЛЛЕРОВ WB</a>
+            </div>
+        </div>
+        <div class="off-products d-flex flex-column gap-2 mt-3">
+            <div class="d-flex gap-3 align-items-center">
+                <a class="off-icon" href="#" >
+                    <img class="img-fluid" src="assets/img/seo2.png" alt="regis">
+                </a>
+                <a href="#" class="off-link">МОДУЛЬ SEO</a>
+            </div>
+        </div>
+        <div class="off-products d-flex flex-column gap-2 mt-3">
+            <div class="d-flex gap-3 align-items-center">
+                <a class="off-icon" href="#" >
+                    <img class="img-fluid" src="assets/img/ads25.png" alt="regis">
+                </a>
+                <a href="#" class="off-link">МОДУЛЬ MARPLA</a>
+            </div>
+        </div>
+        <div class="off-products d-flex flex-column gap-2 mt-3">
+            <div class="d-flex gap-3 align-items-center">
+                <a class="off-icon" href="#" >
+                    <img class="img-fluid" src="assets/img/ab_test_wildberries.png" alt="regis">
+                </a>
+                <a href="#" class="off-link">A/B тест фото</a>
+            </div>
+        </div>
+        <div class="off-products d-flex flex-column gap-2 mt-3">
+            <div class="d-flex gap-3 align-items-center">
+                <a class="off-icon" href="#" >
+                    <img class="img-fluid" src="assets/img/mes225.png" alt="regis">
+                </a>
+                <a href="#" class="off-link">БОТ АВТООТВЕТЫ <br> НА ОТЗЫВЫ WB</a>
+            </div>
+        </div>
+        <div class="off-products d-flex flex-column gap-2 mt-3">
+            <div class="d-flex gap-3 align-items-center">
+                <a class="off-icon" href="#" >
+                    <img class="img-fluid" src="assets/img/position.png" alt="regis">
+                </a>
+                <a href="#" class="off-link">БОТ ПОЗИЦИЙ WB</a>
+            </div>
+        </div>
+        <div class="off-products d-flex flex-column gap-2 mt-3">
+            <div class="d-flex gap-3 align-items-center">
+                <a class="off-icon" href="#" >
+                    <img class="img-fluid" src="assets/img/steps.png" alt="regis">
+                </a>
+                <a href="#" class="off-link">БОТ РЕКЛАМНЫХ СТАВОК WB</a>
+            </div>
+        </div>
+        <div class="off-products d-flex flex-column gap-2 mt-3">
+            <div class="d-flex gap-3 align-items-center">
+                <a class="off-icon" href="#" >
+                    <img class="img-fluid" src="assets/img/how.png" alt="regis">
+                </a>
+                <a href="#" class="off-link">КАК ПОПАСТЬ В КАТЕГОРИИ</a>
+            </div>
+        </div>
+        <div class="off-head mt-5 mb-3">Соц.сети:</div>
+        <div class="d-flex gap-2 align-items-center">
+            <img class="img-fluid" src="assets/img/photo.svg">
+            <img class="img-fluid" src="assets/img/photo (1).svg">
+            <img class="img-fluid" src="assets/img/photo (2).svg">
+            <img class="img-fluid" src="assets/img/photo (3).svg">
+            <img class="img-fluid" src="assets/img/photo (4).svg">
+            <img class="img-fluid" src="assets/img/photo (5).svg">
+        </div>
+
+        <a class="tech-btn mt-4">
+            Техническая поддержка
+        </a>
+    </div>
+  </div>
 
     <a class="reklama" href="https://t.me/DmitriyWB_bot?start=link_Rfk2fyXU6Y" target="_blank" rel="noopener">
         <img class="tn-atom__img t-img loaded"  alt="reklama" src="assets/img/reklama.png">

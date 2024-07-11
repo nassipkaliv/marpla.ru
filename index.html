@@ -14,20 +14,22 @@
     <header class="sticky-top">
         <nav class="container navbar navbar-expand-lg">
             <div class="container px-0">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/Logo_New_2.svg" alt="Logo">
-                </a>
-                <div class="navbar-text d-none d-lg-block">
-                    — инструменты аналитики и <br> продвижения на Wildberries
+                <div class="d-flex align-items-center">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/Logo_New_2.svg" alt="Logo">
+                    </a>
+                    <div class="navbar-text d-none d-lg-block">
+                        — инструменты аналитики и <br> продвижения на Wildberries
+                    </div>
                 </div>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class=" justify-content-end" id="navbarNav">
                     <ul class="navbar-nav gap-3">
-                        <li class="nav-item">
+                        <li class="nav-item only-pc">
                             <a class="login" href="#">
                                 <img src="assets/img/login.svg" alt="login">
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item only-pc">
                             <a class="register" href="#">
                                 <img src="assets/img/register.svg" alt="register">
                             </a>
@@ -44,13 +46,13 @@
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
         <div class="offcanvas-header">
             <a class="off-close" data-bs-dismiss="offcanvas" aria-label="Close">Х</a>
-            <div class="d-flex align-items-center gap-3">
+            <div class="d-flex align-items-center gap-3 off-header">
                 <img class="logo" src="assets/img/footer-logo.svg">
-                <div class="head-text">— инструменты аналитики и продвижения на Wildberries</div>
+                <div class="head-text">— инструменты аналитики и <br class="only-mobile"> продвижения на Wildberries</div>
             </div>
         </div>
         <div class="offcanvas-body">
-            <div class="mt-3 d-flex align-items-center justify-content-between">
+            <div class="mt-3 d-flex align-items-center justify-content-between off-header">
                 <div class="d-flex gap-3 align-items-center">
                     <a class="off-icon" href="https://seo.marpla.ru/signup" >
                         <img class="img-fluid" src="assets/img/regis.png" alt="regis">

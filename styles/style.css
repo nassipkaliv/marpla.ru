@@ -119,7 +119,7 @@ header {
 }
 
 .off-link {
-  color: #ffffff;
+  color: #ffffff !important;
   font-size: 19px;
   font-family: 'Cera Pro';
   line-height: 25px;
@@ -3210,5 +3210,20 @@ header {
 
   .freeTarifBlock {
     height: auto;
+  }
+
+  .off-header {
+    flex-direction: column;
+    align-items: start !important;
+  }
+
+  .off-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .off-link {
+    font-size: 17px;
+    color: #fff;
   }
 }
