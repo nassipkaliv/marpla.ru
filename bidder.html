@@ -1045,7 +1045,22 @@
   </script>
   
   
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var header = document.querySelector('header');
+        var stickyHeader = header.cloneNode(true); // Clone the header to use as sticky
+        stickyHeader.classList.add('sticky');
+        document.body.appendChild(stickyHeader);
 
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) { // Adjust the scroll value as needed
+                stickyHeader.classList.add('scrolled');
+            } else {
+                stickyHeader.classList.remove('scrolled');
+            }
+        });
+    });
+</script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
