@@ -2437,6 +2437,19 @@ header {
   cursor: zoom-out; /* Zoom out cursor */
 }
 
+.nav-small-link {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  clear: both;
+  font-family: 'Cera Pro';
+  font-size: 16px;
+  display: block;
+  margin: 0;
+  color: #000000;
+  text-decoration: none;
+  padding-left: 30px;
+}
+
 
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
