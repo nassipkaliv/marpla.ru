@@ -174,21 +174,34 @@
       </div>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-fullscreen">
-          <div class="modal-content">
-              <div class="modal-header justify-content-end" id="imgHeader">
-                  <div class="d-flex gap-3 align-items-center">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-              </div>
-              <div class="modal-body">
-                  <img id="modalImage" class="d-block w-100" src="assets/img/kartina.jpg" alt="Fullscreen Image">
-              </div>
-          </div>
+      <!-- Modal -->
+      <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header justify-content-end" id="imgHeader">
+                    <div class="d-flex gap-3 align-items-center">
+                      <button type="button" class="bg-transparent border-0" id="zoomButton">
+                        <svg class="icon-increase" width="20" height="20" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.832 22L17.8592 17.0273" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.58591 3.7511C0.917768 7.41924 0.917768 13.367 4.58591 17.0352C8.25405 20.7033 14.2019 20.7033 17.87 17.0352C21.5381 13.367 21.5381 7.41924 17.87 3.7511C14.2019 0.0829653 8.25405 0.0829653 4.58591 3.7511Z" stroke="#000000" stroke-width="2"></path>
+                            <path d="M6.25781 10.3931H16.2035" stroke="#000000" stroke-width="2"></path>
+                            <path d="M11.2305 15.3662V5.42053" stroke="#000000" stroke-width="2"></path>
+                        </svg>
+                        <svg class="icon-decrease d-none" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.9961 22L17.0233 17.0273" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.74997 3.7511C0.0818308 7.41924 0.0818308 13.367 3.74997 17.0352C7.41811 20.7033 13.3659 20.7033 17.0341 17.0352C20.7022 13.367 20.7022 7.41924 17.0341 3.7511C13.3659 0.0829653 7.41811 0.0829653 3.74997 3.7511Z" stroke="#000000" stroke-width="2"></path>
+                            <path d="M5.41797 10.3931H15.3637" stroke="#000000" stroke-width="2"></path>
+                        </svg>
+                    </button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="modal-body d-flex">
+                    <img id="modalImage" class="d-block w-100 h-100 zoomable" src="assets/img/kartina.jpg" alt="Fullscreen Image">
+                </div>
+            </div>
+        </div>
       </div>
-  </div>
 
 
     <div class="divider-wb only-pc" style="margin-top: 120px;">
@@ -707,36 +720,36 @@
     </div>
 
 
-         <!-- Modal -->
-    <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-fullscreen">
-          <div class="modal-content">
-              <div class="modal-header justify-content-end" id="imgHeader2">
-                  <div class="d-flex gap-3 align-items-center">
-                      <button type="button" class="bg-transparent border-0" id="zoomButton">
-                          <svg class="icon-decrease" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M21.9961 22L17.0233 17.0273" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.74997 3.7511C0.0818308 7.41924 0.0818308 13.367 3.74997 17.0352C7.41811 20.7033 13.3659 20.7033 17.0341 17.0352C20.7022 13.367 20.7022 7.41924 17.0341 3.7511C13.3659 0.0829653 7.41811 0.0829653 3.74997 3.7511Z" stroke="#000000" stroke-width="2"></path>
-                              <path d="M5.41797 10.3931H15.3637" stroke="#000000" stroke-width="2"></path>
-                          </svg>
-                      </button>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-              </div>
-              <div class="modal-body">
-                  <img id="modalImage2" class="d-block w-100" src="assets/img/ssss.png" alt="Fullscreen Image">
-              </div>
-              <button class="carousel-control-prev" type="button" id="modalPrev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" id="modalNext">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-              </button>
-          </div>
-      </div>
-  </div>
+         
+          <!-- Modal -->
+      <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header justify-content-end" id="imgHeader2">
+                    <div class="d-flex gap-3 align-items-center">
+                      <button type="button" class="bg-transparent border-0" id="zoomButton2">
+                        <svg class="icon-increase" width="20" height="20" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.832 22L17.8592 17.0273" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.58591 3.7511C0.917768 7.41924 0.917768 13.367 4.58591 17.0352C8.25405 20.7033 14.2019 20.7033 17.87 17.0352C21.5381 13.367 21.5381 7.41924 17.87 3.7511C14.2019 0.0829653 8.25405 0.0829653 4.58591 3.7511Z" stroke="#000000" stroke-width="2"></path>
+                            <path d="M6.25781 10.3931H16.2035" stroke="#000000" stroke-width="2"></path>
+                            <path d="M11.2305 15.3662V5.42053" stroke="#000000" stroke-width="2"></path>
+                        </svg>
+                        <svg class="icon-decrease d-none" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.9961 22L17.0233 17.0273" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.74997 3.7511C0.0818308 7.41924 0.0818308 13.367 3.74997 17.0352C7.41811 20.7033 13.3659 20.7033 17.0341 17.0352C20.7022 13.367 20.7022 7.41924 17.0341 3.7511C13.3659 0.0829653 7.41811 0.0829653 3.74997 3.7511Z" stroke="#000000" stroke-width="2"></path>
+                            <path d="M5.41797 10.3931H15.3637" stroke="#000000" stroke-width="2"></path>
+                        </svg>
+                    </button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="modal-body d-flex">
+                    <img id="modalImage2" class="d-block w-100 h-100 zoomable" src="assets/img/kartina.jpg" alt="Fullscreen Image">
+                </div>
+            </div>
+        </div>
+      </div> 
+
 
     <div class="pinkBg only-mobile position-relative">
       <div class="section container">
@@ -1173,17 +1186,54 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-      var modalImage = document.getElementById('modalImage2');
-      var momentImg = document.querySelector('.momentImg');
+  document.addEventListener("DOMContentLoaded", function () {
+      const imgItems = document.querySelectorAll('.imgItem img');
+      const modalImage = document.getElementById('modalImage');
+      const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+      const zoomButton = document.getElementById('zoomButton');
+      const iconIncrease = zoomButton.querySelector('.icon-increase');
+      const iconDecrease = zoomButton.querySelector('.icon-decrease');
+      let currentIndex = 0;
+  
+      function openModal(src) {
+          modalImage.src = src;
+          modal.show();
+      }
+  
+      modalImage.addEventListener('click', toggleZoom);
+      zoomButton.addEventListener('click', toggleZoom);
+  
+      function toggleZoom() {
+          modalImage.classList.toggle('zoomed');
+          iconIncrease.classList.toggle('d-none');
+          iconDecrease.classList.toggle('d-none');
+      }
+  });
+  </script>
 
-      momentImg.addEventListener('click', function() {
-          var originalSrc = this.getAttribute('data-original');
-          modalImage.src = originalSrc;
-      });
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const modalImage2 = document.getElementById('modalImage2');
+      const zoomButton2 = document.getElementById('zoomButton2');
+      const iconIncrease2 = zoomButton2.querySelector('.icon-increase');
+      const iconDecrease2 = zoomButton2.querySelector('.icon-decrease');
+      const modal2 = new bootstrap.Modal(document.getElementById('imageModal2'));
+  
+      function openModal2(src) {
+          modalImage2.src = src;
+          modal2.show();
+      }
+  
+      modalImage2.addEventListener('click', toggleZoom2);
+      zoomButton2.addEventListener('click', toggleZoom2);
+  
+      function toggleZoom2() {
+          modalImage2.classList.toggle('zoomed');
+          iconIncrease2.classList.toggle('d-none');
+          iconDecrease2.classList.toggle('d-none');
+      }
   });
 </script>
-
 </body>
 
 </html>

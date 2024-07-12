@@ -2414,6 +2414,17 @@ header {
   font-weight: 500;
 }
 
+.zoomable {
+  transition: transform 0.25s ease; /* Animation */
+  cursor: zoom-in; /* Zoom in cursor */
+}
+
+  .zoomed {
+  transform: scale(2); /* Scale up the image */
+  cursor: zoom-out; /* Zoom out cursor */
+}
+
+
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
       max-width: 1200px;
@@ -2423,13 +2434,23 @@ header {
 @media (max-width: 465px) {
   
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    max-width: 380px;
+    max-width: 365px;
   }
 }
 
 
 @media (max-width: 768px) {
   
+  .card-img {
+    max-width: 100% !important;
+    height: auto;
+    max-width: 290px !important;
+    left: 7%;
+    top: 81%;
+    border-radius: 22px;
+    height: 180px;
+  }
+
   .section-title {
     font-size: 21px !important;
     padding-top: 10px;
@@ -3285,5 +3306,13 @@ header {
   .off-link {
     font-size: 17px;
     color: #fff;
+  }
+
+  #modalImage {
+    height: auto !important;
+    width: auto !important;
+    display: flex !important;
+    align-self: center;
+    justify-self: center;
   }
 }
