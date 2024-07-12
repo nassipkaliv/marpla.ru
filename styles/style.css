@@ -913,7 +913,8 @@ header {
 }
 
 .info-btn {
-  color: #ffffff;
+  cursor: pointer;
+  color: #ffffff !important;
   font-size: 18px;
   font-family: 'Cera Pro';
   line-height: 1.55;
