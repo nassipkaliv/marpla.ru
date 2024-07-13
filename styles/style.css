@@ -56,7 +56,7 @@ header {
 }
 
 body {
-  background-color: #fff;
+  background-color: #fafafa;
   overflow-x: hidden;
 }
 
@@ -255,6 +255,7 @@ header {
   background-position: center center;
   border-color: transparent;
   border-style: solid;
+  max-width: 215px;
 }
 
 .title-h1 {
