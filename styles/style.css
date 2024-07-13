@@ -2478,6 +2478,19 @@ header {
 
 @media (max-width: 768px) {
   
+  .saleDivider > .underCharContainer {
+    padding-top: 60px;
+  }
+
+  .blueBgLine {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .divider-wb  {
+    padding-top: 50px;
+  }
+
   .card-img {
     max-width: 100% !important;
     height: auto;
