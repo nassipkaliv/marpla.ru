@@ -48,6 +48,13 @@ header {
   top: 0; /* Show the header when scrolled */
 }
 
+.sticky-category {
+  position: fixed;
+  width: 100%;
+  z-index: 1030;
+  background: #fff;
+}
+
 body {
   background-color: #fff;
   overflow-x: hidden;
@@ -59,12 +66,14 @@ header {
 }
 
 .sidebar {
-  position: absolute;
+  position: fixed;
   z-index: 9999;
-  height: 100vh;
+  height: 100%;
   width: 50px;
   background-color: #ffffff;
 }
+
+
 
 .categories {
   margin-top: 20px;
@@ -2445,10 +2454,12 @@ header {
   font-size: 16px;
   display: block;
   margin: 0;
-  color: #000000;
+  color: #000000 !important;
   text-decoration: none;
   padding-left: 30px;
 }
+
+
 
 
 @media (min-width: 1400px) {
@@ -3034,6 +3045,11 @@ header {
   
   .samovikup-title {
     font-size: 30px;
+    margin-top: 0;
+  }
+
+  .samovikup {
+    padding-top: 20px;
   }
 
   .samovikup-text {
@@ -3340,5 +3356,9 @@ header {
     display: flex !important;
     align-self: center;
     justify-self: center;
+  }
+
+  .categoryText {
+    margin-bottom: 10px;
   }
 }
