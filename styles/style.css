@@ -2690,12 +2690,76 @@ header {
   font-size: 41px !important;
 }
 
+.razdelitel-card {
+  z-index: 90;
+  color: #222941;
+  font-size: 22px;
+  font-family: 'Cera Pro';
+  line-height: 1.17;
+  font-weight: 400;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  width: 35px;
+  height: 35px;
+  border-width: 5px;
+  border-radius: 3000px;
+  background-color: #fcdaec;
+  background-position: center center;
+  border-color: #ffffff;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 42%;
+  right: -8%;
+}
+
+.lens {
+  position: absolute;
+  z-index: 99;
+  top: 95%;
+  left: 45%;
+  width: 35px;
+  height: 25px;
+}
+
+.only-tablet {
+  display: none;
+}
+
+.wb-text {
+  margin-left: 20px;
+}
+
+
+@media (min-width: 640px) {
+  .navbar-text {
+    display: block !important;
+  }
+}
+
+
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
       max-width: 1200px;
   }
 }
 
+@media (min-width: 1200px) {
+  .col-lg-4 {
+      flex: 0 0 33.33333333%;
+      max-width: 33.33333333%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .col-md-12 {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+}
 @media (max-width: 465px) {
   
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -2703,9 +2767,106 @@ header {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1199.98px) {
 
-@media (max-width: 768px) {
+  .only-pc {
+    display: none;
+  }
+
+  .navbar-nav > li {
+    display: none;
+  }
+
+
+  .only-tablet {
+    display: flex !important;
+  }
+
+  .instrument-pc {
+    display: none;
+  }
+
+  .divider.tariff {
+    height: auto;
+  }
+
+  .razdelitel-card {
+    top: 98%;
+    right: 48%;
+  }
+
+  .lens {
+    top: 50%;
+    left: 75%;
+
+  }
+
+  .card-img { 
+      position: static;
+      width: 350px !important;
+      height: 200px !important;
+  }
+
+  .custom-card {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 20px;
+  }
+
   
+  .wb-text {
+    margin-left: 20px;
+    max-width: 60%;
+  }
+
+  .wb-notif {
+    width: 100%;
+    height: 41px;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .divider-wb {
+    height: 300px;
+  }
+
+  .video-container {
+    flex-direction: column;
+  }
+
+  .video-player {
+    width: 100%;
+    height: 340px;
+  }
+
+  .video-controller {
+    overflow-y: scroll;
+    height: 340px;
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+
+  .lens {
+    width: 32px;
+    height: 28px;
+    top: 101%;
+  }
+
+  .razdelitel-card {
+    top: 125%;
+    right: 45%;
+  }
+
   .saleDivider > .underCharContainer {
     padding-top: 60px;
   }
@@ -2788,7 +2949,7 @@ header {
   }
 
   .custom-card {
-    margin-bottom: 150px;
+    margin-bottom: 140px;
   }
 
   .wb-title {
