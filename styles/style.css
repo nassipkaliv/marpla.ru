@@ -2878,7 +2878,12 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+}
 
+.statya-card-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 @media (min-width: 640px) {
@@ -2945,13 +2950,13 @@ header {
 
   .lens {
     top: 46%;
-    left: 76%;
+    left: 77%;
     width: 31px;
   }
 
   .card-img { 
       position: static;
-      width: 238px !important;
+      width: 100% !important;
       height: 271px !important;
       border-radius: 22px;
   }
@@ -2968,7 +2973,7 @@ header {
     gap: 80px;
   }
 
-  .instrument-img-2  {
+  .instrument-img-2, .instrument-img-1, .instrument-img-3, .instrument-img-4  {
     height: 470px;
   }
 
@@ -4666,4 +4671,10 @@ header {
     flex-direction: column;
   }
   
+  .statya-card-row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
 }
