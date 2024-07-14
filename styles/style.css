@@ -2076,6 +2076,7 @@ header {
   border-color: #e2e2e2;
   border-style: solid;
   height: 670px;
+  display: block !important;
 }
 
 .optimiztionBlock {
@@ -2447,7 +2448,7 @@ header {
 }
 
 .only-mobile {
-  display: none;
+  display: none !important;
 }
 
 .pcblock {
@@ -2770,6 +2771,18 @@ header {
   height: auto;
   left: 103%;
   top: -50%; 
+}
+
+.wbCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wbCont > .wb-title {
+  text-align: center;
+  max-width: 75%;
 }
 
 @media (min-width: 640px) {
@@ -3175,7 +3188,7 @@ header {
   }
 
   .seoImg {
-    padding: 0 120px;
+    padding: 0 50px;
     display: flex; 
     width: 100%;
     align-items: center;
@@ -3203,7 +3216,21 @@ header {
   .footer-text {
     max-width: 60%;
   }
+
+  .serviceBlockRow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    align-items: center;
+    justify-content: center;
+  }
+
+  .serviceBlock {
+    width: 100%;
+    height: 170px;
+  }
 }
+
+
 
 
 @media (max-width: 767px) {
@@ -3297,7 +3324,7 @@ header {
   }
 
   .only-mobile {
-    display: block;
+    display: block !important;
   }
 
   .reklama {
