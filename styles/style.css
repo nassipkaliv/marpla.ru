@@ -2965,6 +2965,11 @@ header {
     text-align: center;
   }
 
+  .title-b {
+    display: block !important;
+  }
+
+
 }
 
 
