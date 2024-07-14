@@ -1455,7 +1455,7 @@ header {
 .one-block {
   border-radius: 25px;
   background-color: #d8def4;
-  padding: 30px 35px;
+  padding: 45px 60px;
   margin: 10px 15px 0 50px;
 }
 
@@ -2841,6 +2841,10 @@ header {
   font-size: 45px;
 }
 
+.dblo {
+  display: block !important;
+}
+
 @media (min-width: 640px) {
   .navbar-text {
     display: block !important;
@@ -3463,6 +3467,105 @@ header {
 
   .cent {
     text-align: center !important;
+  }
+
+  .rightContainer img {
+    height: 410px ;
+  }
+
+  .bot_stavok {
+    height: 410px;
+  }
+
+  .mt200 {
+    margin-top: 200px;
+  }
+
+  .botContainer {
+    background: url("../assets/img/marplaBotBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .leftBotContainer {
+    width: 50%;
+    padding: 30px 0 30px 40px;
+  }
+
+  .botRating {
+    right: 39%;
+    bottom: -1%;
+  }
+
+  .rightBotContainer {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rbcImg {
+    position: relative;
+    left: 35px;
+    width: 328px;
+    height: 410px;
+  }
+  
+  .tsena-button {
+    margin-top: 30px;
+  }
+
+  .someBg {
+    background: url("../assets/img/some.png");
+    background-size: cover;
+    height: 1000px;
+    position: relative;
+  }
+
+  .two-block-block {
+    position: static;
+    padding: 60px;
+    max-width: 60%;
+    padding-bottom: 150px;
+  }
+
+  .telCon {
+    padding-top: 110px;
+    
+  }
+
+  .telephone {
+    max-width: 130%;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+  }
+
+  .goluboy {
+    border-radius: 25px;
+    background-color: #d8def4;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    padding: 50px 40px;
+  }
+
+  .block-card {
+    height: auto;
+    width: 45% !important;
+  }
+
+  .card-img-bg {
+    padding: 10px;
+  }
+
+  .block-card-content {
+    padding: 10px;
+  }
+
+  .step-title {
+    font-size: 22px;
   }
 
 }
