@@ -2845,6 +2845,25 @@ header {
   display: block !important;
 }
 
+.negativeRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Adjust gap between items as needed */
+}
+
+.dividerRRow {
+  display: flex;
+  align-items: center;
+}
+
+.dividerRowBlock {
+  width: 60%;
+}
+
+.dividerRowBlock.sec{
+  width: 40%;
+}
+
 @media (min-width: 640px) {
   .navbar-text {
     display: block !important;
@@ -3566,6 +3585,36 @@ header {
 
   .step-title {
     font-size: 22px;
+  }
+  
+  .blockblock {
+    display: block !important;
+  }
+
+  .adv-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .adv-left {
+    width: 50%;
+  }
+
+  .adv-right {
+    width: 50%;
+    justify-self: flex-end;
+  }
+
+  .negativeRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Adjust gap between items as needed */
+  }
+
+  .jstStart {
+    justify-content: start !important;
   }
 
 }
@@ -4524,4 +4573,20 @@ header {
   .aimDividerContainer > .statyaSmallTitle {
     max-width: 100%;
   }
+
+  .dividerRRow {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dividerRowBlock {
+    width: 100%;
+  }
+
+  .negativeRow {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust gap between items as needed */
+  }
+  
 }
