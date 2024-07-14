@@ -2796,23 +2796,28 @@ header {
   }
 
   .lens {
-    top: 50%;
+    top: 45%;
     left: 75%;
-
+    width: 31px;
   }
 
   .card-img { 
       position: static;
-      width: 350px !important;
-      height: 200px !important;
+      width: 238px !important;
+      height: 271px !important;
+      border-radius: 22px;
+  }
+
+  .custom-card-text {
+    width: 55%;
   }
 
   .custom-card {
     height: auto;
     display: flex;
     flex-direction: row;
-    gap: 40px;
     margin-bottom: 20px;
+    gap: 40px;
   }
 
   
@@ -2851,19 +2856,51 @@ header {
     width: 100%;
   }
 
+  .dropdown-toggle {
+    color: #000;
+    border-color: #eeeeee;
+    background-color: #eeeeee;
+    padding: 16px 20px;
+    border: 1px solid;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Cera Pro';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+  .dropImg, .dropContent {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  .cent-tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .section-title {
+    letter-spacing: normal;
+  }
+
 }
 
 
 @media (max-width: 767px) {
 
   .lens {
-    width: 32px;
-    height: 28px;
-    top: 101%;
+    width: 31px;
+    height: 26px;
+    top: 91%;
   }
 
   .razdelitel-card {
-    top: 125%;
+    top: 109%;
     right: 45%;
   }
 
@@ -2881,12 +2918,10 @@ header {
   }
 
   .card-img {
-    height: auto;
-    max-width: 85% !important;
-    left: 7%;
-    top: 81%;
-    border-radius: 22px;
-    height: 45%;
+    position: static;
+    margin-top: 30px;
+    max-width: 305px;
+    min-width: 295px;
   }
 
   .section-title {
@@ -2949,7 +2984,7 @@ header {
   }
 
   .custom-card {
-    margin-bottom: 140px;
+    margin-bottom: 65px;
   }
 
   .wb-title {
@@ -3761,5 +3796,9 @@ header {
 
   .categoryText {
     margin-bottom: 10px;
+  }
+
+  .cardLast {
+    margin-bottom: 35px;
   }
 }

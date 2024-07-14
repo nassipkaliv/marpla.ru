@@ -173,7 +173,7 @@
         <div class="row card-row mt-5">
             <div class="col-lg-4 col-md-12">
                 <div class="custom-card">
-                    <div>
+                    <div class="custom-card-text">
                         <div class="card-title">M.BIDDER</div>
                     <div class="card-text">
                         —&nbsp;автоматическое управление ставками и&nbsp;удержание позиций  в рекламе на&nbsp;Wildberries
@@ -199,7 +199,7 @@
             </div>
             <div class="col-lg-4 col-md-12">
                 <div class="custom-card">
-                    <div>
+                    <div class="custom-card-text">
                         <div class="card-title">MARPLA.SEO</div>
                     <div class="card-text">
                         — отслеживание позиций,  парсинг ключевых фраз  и анализ карточек WB
@@ -224,8 +224,8 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-12">
-                <div class="custom-card">
-                    <div>
+                <div class="custom-card cardLast">
+                    <div class="custom-card-text">
                         <div class="card-title">A/B TEST</div>
                     <div class="card-text">
                         — сервис для А/Б сплит  тестирование фотографий  на маркетплейсе Вайлдберриз
@@ -330,7 +330,7 @@
         </div>
     </div>
 
-    <div class="divider-wb only-mobile">
+    <div class="divider-wb only-mobile mt-0">
         <div class="container wb">
             <div class="wb-notif">
                 <img class="notificon img-fluid" src="assets/img/notification.png" alt="notif">
@@ -459,7 +459,7 @@
         <h1 class="section-title">ВОЗМОЖНОСТИ MARPLA</h1>
 
             <!-- Tabs for larger screens -->
-    <ul class="nav nav-tabs only-pc" id="myTab" role="tablist">
+        <ul class="nav nav-tabs only-pc" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="mbidder-tab" data-bs-toggle="tab" data-bs-target="#mbidder" type="button" role="tab" aria-controls="mbidder" aria-selected="true">M.BIDDER</button>
         </li>
@@ -472,10 +472,10 @@
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="marpla-sale-tab" data-bs-toggle="tab" data-bs-target="#marpla-sale" type="button" role="tab" aria-controls="marpla-sale" aria-selected="false">MARPLA.SALE</button>
         </li>
-      </ul>
-  
-      <!-- Dropdown for mobile screens -->
-      <div class="dropdown only-mobile mb-3">
+        </ul>
+      
+        <!-- Dropdown for mobile screens -->
+        <div class="dropdown only-mobile mb-3 only-tablet">
         <button class="w-100 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
           M.BIDDER
         </button>
@@ -493,22 +493,23 @@
             <a class="dropdown-item" id="marpla-sale-tab-sm" data-bs-toggle="tab" data-bs-target="#marpla-sale" href="#">MARPLA.SALE</a>
           </li>
         </ul>
-      </div>
+        </div>
   
       <!-- Tab content -->
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="mbidder" role="tabpanel" aria-labelledby="mbidder-tab">
           <div class="row mt-4">
-            <div class="col-md-6">
+            <div class="col-md-6 dropImg">
               <img src="assets/img/bidder.png" class="img-fluid" alt="M.BIDDER">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 dropContent">
               <h2 class="title-h2">M.BIDDER — это инновационный модуль от Marpla, предназначен для автоматического управления ставками и позициями рекламы на платформе Wildberries.</h2>
               <p class="tab-text mt-4">С помощью M. BIDDER вы сможете эффективно оптимизировать свои ставки и обеспечить максимальную видимость и конкурентоспособность вашей рекламы. Этот инструмент позволяет значительно сократить расходы на рекламу и достичь максимального результата.</p>
               <p class="tab-text mt-3">Мы гарантируем 100% безопасную работу с Wildberries через официальное API. Наш сервис полностью соответствует требованиям безопасности и политикам Wildberries, чтобы обеспечить надежную и безопасную интеграцию и обмен данными между вашим рекламным кабинетом и нашим сервисом.</p>
               <button class="more-btn moremore btn mt-4">Узнать подробнее</button>
             </div>
           </div>
+          
         </div>
         <div class="tab-pane fade" id="marpla-seo" role="tabpanel" aria-labelledby="marpla-seo-tab">
           <div class="row mt-4">
@@ -685,7 +686,7 @@
     </div>
 
     <div class="divider">
-        <div class="container">
+        <div class="container cent-tablet">
             <h1 class="section-title white">
                 Хотите увеличить продажи на Wildberries?
             </h1>
@@ -1282,6 +1283,9 @@
     </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
 <script>
     document.querySelectorAll('.only-mobile .dropdown-item').forEach(item => {
       item.addEventListener('click', function() {
