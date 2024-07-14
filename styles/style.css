@@ -2944,8 +2944,8 @@ header {
   }
 
   .lens {
-    top: 45%;
-    left: 75%;
+    top: 46%;
+    left: 76%;
     width: 31px;
   }
 
@@ -2965,7 +2965,11 @@ header {
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
-    gap: 40px;
+    gap: 80px;
+  }
+
+  .instrument-img-2  {
+    height: 470px;
   }
 
   
