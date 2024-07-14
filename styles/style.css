@@ -2735,7 +2735,7 @@ header {
 }
 
 .only-tablet {
-  display: none;
+  display: none !important;
 }
 
 .wb-text {
@@ -2761,6 +2761,14 @@ header {
 
 .aimDividerContainer > .statyaSmallTitle {
   max-width: 60%;
+}
+
+.pinkSvg {
+  position: relative;
+  max-width: 8px;
+  height: auto;
+  left: 103%;
+  top: -50%; 
 }
 
 @media (min-width: 640px) {
@@ -3110,10 +3118,40 @@ header {
     width: 1px;
     height: 435px;
   }
+
+  .abDivider {
+    height: 430px;
+  }
+
+  .pinkBlock {
+    height: auto;
+    padding: 50px 40px;
+    margin-bottom: 25px;
+  }
+
+  .pinkSvg {
+    transform: rotate(90deg);
+    position: relative;
+    max-width: 8px;
+    height: auto;
+    left: 48%;
+    top: -5%;
+    
+  }
 }
 
 
 @media (max-width: 767px) {
+
+  .pinkSvg {
+    transform: rotate(90deg);
+    position: relative;
+    max-width: 8px;
+    height: auto;
+    left: 48%;
+    top: -5%;
+    
+  }
 
   .bs-p2 {
     max-width: 100%;
@@ -3708,11 +3746,11 @@ header {
     position: absolute;
     left: 7%;
     width: 1px;
-    height: 605px;
+    height: 868px;
   }
 
   .pinkBlock {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
   }
   
   .samovikup-title {
@@ -4043,5 +4081,9 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .aimDividerContainer > .statyaSmallTitle {
+    max-width: 100%;
   }
 }
