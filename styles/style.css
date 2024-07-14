@@ -2805,6 +2805,7 @@ header {
   }
 }
 
+
 @media (min-width: 768px) and (max-width: 1199.98px) {
 
   .only-pc {
@@ -3158,6 +3159,49 @@ header {
 
   .samovikup-text {
     display: none;
+  }
+
+  .height360 {
+    height: 360px !important;
+  }
+
+  .seoContainer {
+    padding: 60px 40px;
+  }
+
+  .seoTitle {
+    text-align: center;
+    font-size: 38px;
+  }
+
+  .seoImg {
+    padding: 0 120px;
+    display: flex; 
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -70px;
+  }
+
+  .seoImg img {
+    border-radius: 25px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-color: transparent;
+    border-style: solid;
+    box-shadow: 0px 0px 88px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 32px;
+    opacity: 1;
+    background-color: #cad4e7;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 10px;
+  }
+
+  .footer-text {
+    max-width: 60%;
   }
 }
 
