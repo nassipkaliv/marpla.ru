@@ -2864,6 +2864,23 @@ header {
   width: 40%;
 }
 
+.tarRow {
+  display: flex;
+  gap: 20px;
+}
+
+
+.tarRowBlock {
+  width: 50%;
+}
+
+.freeTarifRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+}
+
 @media (min-width: 640px) {
   .navbar-text {
     display: block !important;
@@ -3621,13 +3638,60 @@ header {
     padding-bottom: 200px;
   }
 
+  .hidden {
+    visibility: hidden !important;
+  }
+
+  .tarRowBlock.frs {
+    width: 45% !important;
+  }
+
+  .tarRow {
+    display: none;
+  }
+
+  .tarRowTablet {
+    display: flex !important;
+    gap: 40px;
+  }
+
+  .tarRowBlock.frs {
+    width: 45%;
+  }
+
+  .tarRowBlockTablet {
+    width: 55%;
+  }
+
+  .price-title {
+    font-size: 18px;
+    white-space: nowrap; 
+  }
+
+  .price-text {
+    font-size: 13px;
+  }
+
+  .tariff-text {
+    font-size: 14px;
+  }
+  
 }
 
 
 
 
 @media (max-width: 767px) {
-  
+
+
+  .tarRow {
+    flex-direction: column !important;
+  }
+
+  .tarRowBlock {
+    width: 100%;
+  }
+
   .pinkSvg {
     transform: rotate(90deg);
     position: relative;
@@ -4591,6 +4655,11 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px; /* Adjust gap between items as needed */
+  }
+
+  .freeTarifRow {
+    display: flex;
+    flex-direction: column;
   }
   
 }

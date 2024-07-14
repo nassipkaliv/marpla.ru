@@ -788,8 +788,8 @@
 
     <div class="divider tariff">
         <div class="container section">
-            <div class="row">
-                <div class="col-lg-6 col-md-12">
+            <div class="tarRow">
+                <div class="tarRowBlock">
                     <h1 class="section-title pt-0 text-start mb-2 white">БАЗОВЫЕ ТАРИФЫ</h1>
                     <p class="tarif-text white size16">
                         Пользователям, оплатившим любой из тарифов доступно для отслеживания неограниченное количество фраз. Списания средств происходит согласно тарифам указанным в разделе Финансы.
@@ -798,72 +798,165 @@
                         Для того, чтобы вы всегда могли получить помощь, мы сделали техническую поддержку круглосуточной (сиреневая плашка справа снизу). Перед началом работы, рекомендуем вам посмотреть обучающие видео.
                     </p>
                 </div>
-                <div class="col-lg-6 col-md-12">
+                <div class="tarRowBlockTablet d-none">
                     <div class="row ps-lg-4">
-                        <div class="col-lg-3 col-md-4 mb-4 t-block">
+                        <div class="col-lg-3 col-md-4 mb-4 t-block hidden">
                             <div class="price-title">3 990₽</div>
-                            <div class="price-text">до 8 0 фраз</div>
+                            <div class="price-text">до 8 000 фраз</div>
                         </div>
                         <div class="col-lg-3 col-md-4 mb-4 t-block">
                             <div class="price-title">4 590₽</div>
-                            <div class="price-text">до 10 0 фраз</div>
+                            <div class="price-text">до 10 000 фраз</div>
                         </div>
                         <div class="col-lg-3 col-md-4 mb-4 t-block">
                             <div class="price-title">6 290₽</div>
-                            <div class="price-text">до 15 0 фраз</div>
+                            <div class="price-text">до 15 000 фраз</div>
                         </div>
                         <div class="col-lg-3 col-md-4 mb-4 t-block">
                             <div class="price-title">7 590₽</div>
-                            <div class="price-text">до 20 0 фраз</div>
+                            <div class="price-text">до 20 000 фраз</div>
                         </div>
                         <div class="col-lg-3 col-md-4 mb-4 t-block">
-                            <div class="price-title">10 590₽</div>
-                            <div class="price-text">до 30 0 фраз</div>
+                            <div class="price-title">3 990₽</div>
+                            <div class="price-text">до 8 000 фраз</div>
                         </div>
                         <div class="col-lg-3 col-md-4 mb-4 t-block">
                             <div class="price-title">15 990₽</div>
-                            <div class="price-text">до 50 0 фраз</div>
+                            <div class="price-text">до 50 000 фраз</div>
                         </div>
                         <div class="col-lg-3 col-md-4 mb-4 t-block">
                             <div class="price-title">27 990₽</div>
-                            <div class="price-text">до 100 0 фраз</div>
+                            <div class="price-text">до 100 000 фраз</div>
                         </div>
                         <div class="col-lg-3 col-md-4 mb-4 t-block">
                             <div class="price-title">47 990₽</div>
-                            <div class="price-text">до 200 0 фраз</div>
+                            <div class="price-text">до 200 000 фраз</div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 mb-4 t-block">
+                            <div class="price-title">10 990₽</div>
+                            <div class="price-text">до 30 000 фраз</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarRowBlock">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 mb-4 t-block">
+                            <div class="price-title">3 990₽</div>
+                            <div class="price-text">до 8 000 фраз</div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 mb-4 t-block">
+                            <div class="price-title">4 590₽</div>
+                            <div class="price-text">до 10 000 фраз</div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 mb-4 t-block">
+                            <div class="price-title">6 290₽</div>
+                            <div class="price-text">до 15 000 фраз</div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 mb-4 t-block">
+                            <div class="price-title">7 590₽</div>
+                            <div class="price-text">до 20 000 фраз</div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 mb-4 t-block">
+                            <div class="price-title">10 590₽</div>
+                            <div class="price-text">до 30 000 фраз</div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 mb-4 t-block">
+                            <div class="price-title">15 990₽</div>
+                            <div class="price-text">до 50 000 фраз</div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 mb-4 t-block">
+                            <div class="price-title">27 990₽</div>
+                            <div class="price-text">до 100 000 фраз</div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 mb-4 t-block">
+                            <div class="price-title">47 990₽</div>
+                            <div class="price-text">до 200 000 фраз</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tarRowTablet d-none">
+                <div class="tarRowBlock frs">
+                    <h1 class="section-title pt-0 text-start mb-2 white">БАЗОВЫЕ ТАРИФЫ</h1>
+                    <p class="tarif-text white size16">
+                        Пользователям, оплатившим любой из тарифов доступно для отслеживания неограниченное количество фраз. Списания средств происходит согласно тарифам указанным в разделе Финансы.
+                    </p>
+                    <p class="tarif-text text-start white size16">
+                        Для того, чтобы вы всегда могли получить помощь, мы сделали техническую поддержку круглосуточной (сиреневая плашка справа снизу). Перед началом работы, рекомендуем вам посмотреть обучающие видео.
+                    </p>
+                </div>
+                <div class="tarRowBlockTablet">
+                    <div class="row ps-lg-4">
+                        <div class="col-lg-3 col-md-3 mb-4 t-block hidden">
+                            <div class="price-title">3 990₽</div>
+                            <div class="price-text">до 8 000 фраз</div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-4 t-block">
+                            <div class="price-title">4 590₽</div>
+                            <div class="price-text">до 10 000 фраз</div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-4 t-block">
+                            <div class="price-title">6 290₽</div>
+                            <div class="price-text">до 15 000 фраз</div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-4 t-block">
+                            <div class="price-title">7 590₽</div>
+                            <div class="price-text">до 20 000 фраз</div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-4 t-block">
+                            <div class="price-title">3 990₽</div>
+                            <div class="price-text">до 8 000 фраз</div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-4 t-block">
+                            <div class="price-title">15 990₽</div>
+                            <div class="price-text">до 50 000 фраз</div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-4 t-block">
+                            <div class="price-title">27 990₽</div>
+                            <div class="price-text">до 100 000 фраз</div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-4 t-block">
+                            <div class="price-title">47 990₽</div>
+                            <div class="price-text">до 200 000 фраз</div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-4 t-block">
+                            <div class="price-title">10 990₽</div>
+                            <div class="price-text">до 30 000 фраз</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row pt-lg-5">
                 <h1 class="section-title text-start white">БЕСПЛАТНЫЕ ТАРИФЫ</h1>
-                <div class="row">
-                    <div class="col-lg-3 col-md-12">
+                <div class="freeTarifRow">
+                    <div class="freeTarif">
                         <div class="tariff-text">
                             <strong>«Бесплатный»</strong>
                             — всем новым пользователям доступно для отслеживания 50 уникальных фраз в рамках аккаунта (бесплатно, бессрочно).
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-12">
+                    <div class="freeTarif">
                         <div class="tariff-text">
                             <strong>«Новичок»</strong>
                             — всем новым пользователям, указавшим API ключи «Стандартный» и «Статистика», доступно отслеживание любого количество фраз (бесплатно, 7 дней со дня регистрации).
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-12">
+                    <div class="freeTarif">
                         <div class="tariff-text">
                             <strong>«В помощь»</strong>
                             — пользователям, выручка магазина которых за последние 30 дней не превышает 300 тыс. руб. доступно для отслеживания до 300 уникальных фраз в рамках одного аккаунта (бесплатно, бессрочно).
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-12">
+                    <div class="freeTarif">
                         <div class="tariff-text">
                             <strong>«По промокоду»</strong>
                             — пользователям, указавшим промокод в разделе Финансы, предоставляется безлимит на отслеживание фраз на кол-во добавленных дней. Промокод можно получить на обучении.
                         </div>
                     </div>
                 </div>
+                
             </div>
+            
         </div>
     </div>
 
