@@ -2739,7 +2739,7 @@ header {
 }
 
 .only-pc {
-  display: block;
+  display: flex;
 }
 
 
@@ -3483,7 +3483,7 @@ header {
   .boardImg {
     position: relative;
     width: 105vw;
-    left: -11%;
+    left: -13%;
     margin-bottom: 30px;
   }
 
