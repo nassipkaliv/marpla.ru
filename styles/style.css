@@ -1249,6 +1249,7 @@ header {
   font-family: 'Cera Pro';
   text-transform: uppercase;
   margin-bottom: 25px;
+  margin-top: 50px;
 }
 
 .samovikup-text {
@@ -3138,11 +3139,31 @@ header {
     top: -5%;
     
   }
+
+  .categories {
+    display: none !important;
+  }
+
+  .categories.s {
+    display: flex !important;
+  }
+
+  .categoryText {
+    margin-bottom: 10px;
+  }
+
+  .samovikup-title {
+    margin-top: 0px;
+  }
+
+  .samovikup-text {
+    display: none;
+  }
 }
 
 
 @media (max-width: 767px) {
-
+  
   .pinkSvg {
     transform: rotate(90deg);
     position: relative;
