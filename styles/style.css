@@ -2873,7 +2873,7 @@ header {
 
 .tarRow {
   display: flex;
-  gap: 20px;
+  gap: 60px;
 }
 
 
@@ -3711,6 +3711,7 @@ header {
 
   .tarRow {
     flex-direction: column !important;
+    gap: 20px;
   }
 
   .tarRowBlock {
