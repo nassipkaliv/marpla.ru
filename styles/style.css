@@ -4742,4 +4742,9 @@ header {
     gap: 20px;
   }
 
+  #offcanvasMenu {
+    width: 340px;
+    padding: 15px 20px 15px 20px;
+  }
+
 }
