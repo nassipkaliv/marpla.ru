@@ -860,6 +860,8 @@ header {
   background-color: rgb(33, 40, 66) !important;
   border-color: rgb(0, 0, 0);
   height: 450px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .controller-text {
@@ -878,12 +880,16 @@ header {
   font-weight: 400;
   background: transparent !important;
   border: none !important;
-  height: 53px;
+  height: 50px;
   opacity: 1 !important;
   font-weight: 400 !important;
   font-size: 15px;
-  border-top: 1px solid #000000 !important;
+  padding-right: 25px;
   border-bottom: 1px solid #000000 !important;
+}
+
+.video-first {
+  border-top: 1px solid #000000 !important;
 }
 
 .video-tab span {
@@ -2895,6 +2901,28 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: inherit;
+  border-color: transparent;
+  box-shadow: none;
+}
+.accordion-button:focus {
+  border-color: transparent !important;
+}
+
+.nav-tabs {
+  border-bottom: none !important;
+}
+
+.video-nav-item {
+  padding: 5px 0px;
+}
+
+.video-nav-item > button  {
+  padding-left: 12px;
 }
 
 @media (min-width: 640px) {
