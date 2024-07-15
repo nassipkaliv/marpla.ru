@@ -4283,8 +4283,26 @@ header {
   }
 
   .service-block {
-    height: 580px;
+    height: auto;
+    padding-bottom: 20px;
     margin-bottom: 16px;
+  }
+
+  .chooseBlockImg {
+    padding: 10px;
+  }
+
+  .chooseBlockPink {
+    padding-bottom: 10px !important;
+  }
+
+  .chooseBlockPink  .step-title {
+    margin-bottom: 0 !important;
+  }
+
+  .grayBlockContainer {
+    padding-left: 30px;
+    padding-top: 15px;
   }
 
   .underBoardText {
