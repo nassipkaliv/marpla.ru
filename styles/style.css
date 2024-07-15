@@ -290,9 +290,18 @@ header {
   background-image: linear-gradient(0.347turn, rgba(55, 65, 110, 1) 0%, rgba(34, 41, 65, 1) 100%);
   border-color: #ffffff;
   border-style: solid;
-  padding: 22px 35px;
+  padding: 22px 0;
   position: relative;
-  height: 460px;
+}
+
+.card-image {
+  position: relative;
+  max-width: 95%;
+  margin: 20px auto 0;
+}
+
+.custom-card-text {
+  padding: 0 35px;
 }
 
 .card-title {
@@ -350,6 +359,7 @@ header {
 }
 
 .card-img {
+  margin-bottom: -120px;
   border-width: 1px;
   border-radius: 15px;
   background-position: center center;
@@ -358,9 +368,6 @@ header {
   border-color: #cad4e7;
   border-style: solid;
   border-width: 4px;
-  position: absolute;
-  top: 75%;
-  left: 2%;
   max-width: 360px !important;
   cursor: pointer;
 }
@@ -2756,12 +2763,9 @@ header {
 
 .lens {
   position: absolute;
-  z-index: 99;
-  top: 95%;
-  left: 45%;
-  width: 35px;
   height: 25px;
-  cursor: zoom-in;
+  margin-top: 132px;
+  z-index: 99;
 }
 
 .only-tablet {
@@ -3004,20 +3008,25 @@ header {
   }
 
   .lens {
-    top: 46%;
-    left: 77%;
-    width: 31px;
+    margin: 0;
+  }
+
+  .card-image {
+    margin: 0;
+    padding: 0;
   }
 
   .card-img { 
       position: static;
       width: 100% !important;
       height: 271px !important;
+      margin: 0;
       border-radius: 22px;
   }
 
   .custom-card-text {
     width: 55%;
+    padding: 0;
   }
 
   .custom-card {
@@ -3025,6 +3034,7 @@ header {
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
+    padding: 22px 35px;
     gap: 80px;
   }
 
@@ -3746,8 +3756,6 @@ header {
 
 
 @media (max-width: 767px) {
-
-
   .tarRow {
     flex-direction: column !important;
     gap: 20px;
@@ -3778,22 +3786,11 @@ header {
   .infContainer {
     margin-top: 25px !important;
   }
-  
-  .lens {
-    width: 31px;
-    height: 26px;
-    top: 91%;
-  }
 
-  .razdelitel-card.first {
-    top: 32%;
-    right: 45%;
+  .razdelitel-card {
+    position: initial;
+    margin: 10px auto -8px;
   }
-
-  .razdelitel-card.second {
-    top: 67%;
-    right: 45%;
-   }
 
   .saleDivider > .underCharContainer {
     padding-top: 60px;
@@ -3808,11 +3805,14 @@ header {
     padding-top: 50px;
   }
 
+  .card-image {
+    padding: 0 22px;
+  }
+
   .card-img {
     position: static;
-    margin-top: 30px;
-    max-width: 305px;
-    min-width: 295px;
+    margin-top: 15px;
+    max-width: none !important;
   }
 
   .section-title {
@@ -3875,7 +3875,7 @@ header {
   }
 
   .custom-card {
-    margin-bottom: 65px;
+    margin-bottom: 80px;
   }
 
   .wb-title {
