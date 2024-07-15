@@ -3084,7 +3084,7 @@ header {
 
   .dropdown-toggle {
     color: #000;
-    border-color: #eeeeee;
+    border-color: transparent !important;
     background-color: #eeeeee;
     padding: 16px 20px;
     border: 1px solid;
@@ -3958,10 +3958,10 @@ header {
 
   .dropdown-toggle {
     color: #000;
-    border-color: #eeeeee;
+    border: none;
+    border-color: transparent;
     background-color: #eeeeee;
     padding: 16px 20px;
-    border: 1px solid;
     font-size: 16px;
     font-weight: 600;
     font-family: 'Cera Pro';
