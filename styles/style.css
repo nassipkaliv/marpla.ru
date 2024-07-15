@@ -656,7 +656,11 @@ header {
   color: #000000;
   padding-left: 0;
   padding-bottom: 30px;
+  background-color: transparent !important;
+  border-bottom: 1px solid lightgray;
 }
+
+
 
 .accordion-body {
   margin-bottom: 20px;
@@ -664,6 +668,12 @@ header {
   font-family: 'Cera Pro';
   font-weight: 300;
   color: #000000;
+  background-color: transparent !important;
+}
+
+.accordion-item {
+  background-color: transparent;
+  border: none !important;
 }
 
 .divider.tariff {
