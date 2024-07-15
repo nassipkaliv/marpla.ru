@@ -4205,9 +4205,14 @@ header {
   }
 
   .block-step {
-    font-size: 20px;
+    font-size: 17px;
     width: auto;
     height: auto;
+    padding: 8px 3px;
+  }
+
+  .bs-p {
+    font-size: 22px;
   }
 
   .block-text {
@@ -4215,7 +4220,8 @@ header {
   }
 
   .stepRow {
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .divider-small {
@@ -4749,6 +4755,10 @@ header {
 
   .underImage {
     margin-bottom: 60px;
+  }
+
+  .bb > .blue-inside {
+    font-size: 16px;
   }
 
 }
