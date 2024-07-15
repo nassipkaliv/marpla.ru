@@ -2940,6 +2940,10 @@ header {
   padding-left: 12px;
 }
 
+.video-nav-item.active {
+  background-color: #354069;
+}
+
 @media (min-width: 640px) {
   .navbar-text {
     display: block !important;
