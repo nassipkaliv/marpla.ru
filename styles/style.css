@@ -2728,7 +2728,14 @@ header {
   justify-content: center;
   position: absolute;
   top: 42%;
-  right: -8%;
+}
+
+.razdelitel-card.first {
+  right: 65%;
+}
+
+.razdelitel-card.second {
+  right: 32%;
 }
 
 .lens {
@@ -2880,6 +2887,10 @@ header {
   gap: 20px;
 }
 
+.card-row {
+  position: relative;
+}
+
 .statya-card-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -2943,8 +2954,13 @@ header {
     height: auto;
   }
 
-  .razdelitel-card {
-    top: 98%;
+  .razdelitel-card.first {
+    top: 31%;
+    right: 48%;
+  }
+
+  .razdelitel-card.second {
+    top: 64%;
     right: 48%;
   }
 
@@ -3729,10 +3745,15 @@ header {
     top: 91%;
   }
 
-  .razdelitel-card {
-    top: 109%;
+  .razdelitel-card.first {
+    top: 32%;
     right: 45%;
   }
+
+  .razdelitel-card.second {
+    top: 67%;
+    right: 45%;
+   }
 
   .saleDivider > .underCharContainer {
     padding-top: 60px;
