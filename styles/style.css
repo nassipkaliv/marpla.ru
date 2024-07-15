@@ -2761,6 +2761,7 @@ header {
   left: 45%;
   width: 35px;
   height: 25px;
+  cursor: zoom-in;
 }
 
 .only-tablet {
