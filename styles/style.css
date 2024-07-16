@@ -36,7 +36,7 @@
 
 header {
   transition: top 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
-  background-color: white; /* Optional: Adjust the background color */
+  background-color: transparent; /* Optional: Adjust the background color */
   z-index: 1030; /* Ensure it stays above other elements */
   width: 100%;
   position: fixed; /* Start as fixed */
@@ -49,6 +49,7 @@ header.hidden {
 
 header.scrolled {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add some shadow for better visibility */
+  background-color: #fff;
 }
 
 
