@@ -35,18 +35,22 @@
 }
 
 header {
-  transition: top 0.3s ease-in-out; /* Smooth transition */
-}
-.sticky {
-  position: fixed;
-  top: -100px; /* Initially hide the header */
+  transition: top 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
+  background-color: white; /* Optional: Adjust the background color */
+  z-index: 1030; /* Ensure it stays above other elements */
   width: 100%;
-  z-index: 1030;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for better visibility */
+  position: fixed; /* Start as fixed */
+  top: 0; /* Initially visible */
 }
-.sticky.scrolled {
-  top: 0; /* Show the header when scrolled */
+
+header.hidden {
+  top: -100px; /* Hide the header initially */
 }
+
+header.scrolled {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add some shadow for better visibility */
+}
+
 
 .sticky-category {
   position: fixed;
@@ -60,10 +64,7 @@ body {
   overflow-x: hidden;
 }
 
-header {
-  background-color: white; /* Optional: Adjust the background color */
-  z-index: 1030; /* Ensure it stays above other elements */
-}
+
 
 .sidebar {
   position: fixed;
