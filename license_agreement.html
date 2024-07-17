@@ -397,20 +397,22 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var header = document.querySelector('header');
-        var stickyHeader = header.cloneNode(true); // Clone the header to use as sticky
-        stickyHeader.classList.add('sticky');
-        document.body.appendChild(stickyHeader);
-
+    
+        // Initially hide the header
+        header.classList.add('hidden');
+    
         window.addEventListener('scroll', function() {
             if (window.scrollY > 100) { // Adjust the scroll value as needed
-                stickyHeader.classList.add('scrolled');
+                header.classList.remove('hidden');
+                header.classList.add('scrolled');
             } else {
-                stickyHeader.classList.remove('scrolled');
+                header.classList.add('hidden');
+                header.classList.remove('scrolled');
             }
         });
     });
-</script>
-
+    
+    </script>
 </body>
 
 </html>
