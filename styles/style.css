@@ -52,6 +52,9 @@ header.scrolled {
   background-color: #fff;
 }
 
+.black-header.scrolled {
+  background-color: #000;
+}
 
 .sticky-category {
   position: fixed;
@@ -65,6 +68,187 @@ body {
   overflow-x: hidden;
 }
 
+.pluginBg {
+  background-color: #000000;
+}
+
+.black-header {
+  background-color: #000000;
+  color: #fff !important;
+}
+
+.black-navbar-text {
+  color: #fff;
+}
+
+.black-login {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: 'Cera Pro';
+  line-height: 1.55;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-width: 1px;
+  border-radius: 11px;
+  background-color: #000000;
+  background-position: center center;
+  border-color: #ffffff;
+  border-style: solid;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  width: 115px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.black-login:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.black-register {
+  color: #000000;
+  font-size: 16px;
+  font-family: 'Cera Pro';
+  line-height: 1.55;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-width: 1px;
+  border-radius: 11px;
+  background-color: #ffffff;
+  background-position: center center;
+  border-color: #ffffff;
+  border-style: solid;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 40px;
+  width: 180px;
+}
+
+.black-register:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+.pluginIntro {
+  background: url("../assets/img/pluginIntro.png");
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: -5px;
+  padding-top: 1px;
+}
+
+.downloadTopPlugin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plugIntroTop {
+  width: 920px;
+  height: 40px;
+}
+
+.plugTitle {
+  color: transparent;
+  background-image: linear-gradient(0.25turn, rgba(255, 255, 255, 1) 0%, rgba(255, 239, 248, 1) 38%, rgba(255, 192, 225, 1) 100%);
+  -webkit-background-clip: text;
+  will-change: transform;
+  font-size: 45px;
+  font-family: 'Cera Pro';
+  line-height: 1.17;
+  font-weight: 600;
+  line-height: 53px;
+  margin-top: 20px;
+}
+
+.plugUnderTitle {
+  color: #ffffff;
+  font-size: 22px;
+  font-family: 'Cera Pro';
+  line-height: 1.17;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.browserRow {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.browserImg {
+  width: 122px;
+  height: 122px;
+}
+
+.browserArrowText {
+  position: absolute;
+  right: 15%;
+  top: 45%;
+  color: #ffffff;
+  font-size: 13px;
+  font-family: 'Cera Pro';
+  line-height: 15px;
+  font-weight: 400;
+  opacity: 0.55;
+  max-width: 145px;
+}
+
+.browserButtonRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.browserButton {
+  color: #ffffff;
+  font-size: 17px;
+  font-family: 'Cera Pro';
+  line-height: 1.55;
+  font-weight: 500;
+  border-radius: 11px;
+  background-color: #ec238d;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  width: 200px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.browserImgCont {
+  border-width: 1px;
+  border-radius: 30px;
+  background-position: center center;
+  border-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 520px;
+}
+
+.pluginImg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 25px;
+  margin-top: 60px;
+}
 
 
 .sidebar {
