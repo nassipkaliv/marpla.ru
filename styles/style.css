@@ -384,6 +384,218 @@ body {
   left: -11%;
 }
 
+.needContainer {
+  border-radius: 55px;
+  background-color: #000000;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'Cera Pro';
+  line-height: 1.17;
+  font-weight: 400;
+  border-radius: 55px;
+  border-color: transparent;
+  border-style: solid;
+  box-shadow: 0px 0px 28px 0px rgba(90, 90, 90, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 190px;
+  margin-top: 110px;
+}
+
+.needBg {
+  position: absolute;
+  z-index: -1;
+}
+
+.needTitle {
+  margin-top: 30px;
+  color: #ffffff;
+  font-size: 25px;
+  font-family: 'Cera Pro';
+  line-height: 1.17;
+  font-weight: 600;
+}
+
+.needCard {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 770px;
+  height: 376px;
+  background: url("../assets/img/needCard.jpg");
+  border-radius: 30px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-color: transparent;
+  border-style: solid;
+  box-shadow: 0px 0px 125px 0px rgba(101,101,101,0.4);
+  margin-bottom: 60px;
+}
+
+.needCardBrowsers {
+  display: flex;
+  position: relative;
+}
+
+.needCardSmallBrowser {
+  width: 138px;
+  height: 138px;
+  z-index: 0;
+  position: relative;
+}
+
+.needCardBigBrowser {
+  width: 156px;
+  height: 156px;
+  z-index: 1;
+}
+
+.needChrome {
+  right: -15px;
+}
+
+.needOpera {
+  left: -15px;
+}
+
+.needCardSmallText {
+  text-align: center;
+  font-size: 13px;
+  font-family: 'Cera Pro';
+  line-height: 1.17;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.extensionRow {
+  margin-top: 60px;
+  display: flex;
+  gap: 40px;
+}
+
+.extensionCard {
+  position: relative;
+  border-width: 0px;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: transparent; /* Ensure no background color here */
+}
+
+.extensionCardBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.25;
+  border-radius: 25px;
+  z-index: 0; /* Ensure it stays behind the content */
+}
+
+.extensionCardContent {
+  position: relative;
+  z-index: 1; /* Ensure content stays above the background */
+  padding: 10px; /* Adjust padding as needed */
+  border-radius: 25px; /* Ensure the content matches the border radius */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for content */
+}
+
+
+.extensionCardTitleContainer {
+  position: relative;
+  border-width: 0px;
+  border-radius: 25px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  padding: 10px 60px;
+}
+
+.extensionCardTitleContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0.11;
+  border-radius: 25px; 
+  z-index: 0; 
+}
+
+.extensionCardTitle {
+  color: #ffffff;
+  font-size: 25px;
+  font-family: 'Cera Pro';
+  line-height: 1.17;
+  font-weight: 600;
+  position: relative;
+  z-index: 1; 
+}
+
+.pinkShine {
+  position: absolute;
+  z-index: -1;
+}
+
+.exImg {
+  width: 100%;
+}
+
+.star img {
+  height: 13px;
+  width: 13px;
+}
+
+.starTitle {
+  color: #ffffff;
+  font-size: 22px;
+  font-family: 'Cera Pro';
+  line-height: 1.17;
+  font-weight: 600;
+}
+
+.starText {
+  color: #b8b8b8;
+  font-size: 18px;
+  font-family: 'Cera Pro';
+  line-height: 1.17;
+  font-weight: 500;
+}
+
+.extenstionCardRight {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pluginMainBg {
+  background: url("../assets/img/pluginmainbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.needContainerBig {
+  width: auto;
+  padding: 8px 24px;
+}
+
 .sidebar {
   position: fixed;
   z-index: 9999;
