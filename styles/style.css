@@ -47,6 +47,10 @@ header.hidden {
   top: -100px; /* Hide the header initially */
 }
 
+header.hiddenHead {
+  top: -100px;
+}
+
 header.scrolled {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add some shadow for better visibility */
   background-color: #fff;
@@ -542,7 +546,7 @@ body {
 
 .extensionCardTitle {
   color: #ffffff;
-  font-size: 25px;
+  font-size: 24px;
   font-family: 'Cera Pro';
   line-height: 1.17;
   font-weight: 600;
@@ -4406,6 +4410,108 @@ body {
 
   .tariff-text {
     font-size: 14px;
+  }
+
+  .plugTitle {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .plugUnderTitle {
+    font-size: 20px;
+  }
+
+  .browserRow {
+    gap: 100px;
+  }
+
+  .browserArrowText  {
+    right: 2%;
+  }
+
+  .browserButtonRow {
+    gap: 25px;
+  }
+
+  .pluugg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pluginTitleh2 {
+    font-size: 35px;
+    max-width: 100%;
+  }
+
+  .pluugg > .pluginTitleh2 {
+    text-align: center;
+  }
+
+  .pluginTitleP {
+    font-size: 17px;
+  }
+
+  .pluginCardRow {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 180px;
+  }
+
+  .second-card, .third-card, .fourth-card, .fifth-card {
+    margin-top: 0;
+  }
+
+  .pluginCardDivider {
+    left: 84%;
+    height: 2600px;
+  }
+
+  .plugCardFourthBg {
+    z-index: -1;
+    bottom: -33%;
+    left: 40%;
+  }
+
+  .pluginCardArrowLeft {
+    right: -8%;
+  }
+
+  .pluginCardArrowRight {
+    left: 26%;
+  }
+
+  .extensionCardContent {
+    height: 100%;
+  }
+
+  .starTitle {
+    font-size: 17px;
+  }
+
+  .starText {
+    font-size: 16px;
+  }
+
+  .extensionCard {
+    width: 180%;
+  }
+
+  .extensionCardTitleContainer {
+    margin-bottom: 40px;
+  }
+
+  .orOne {
+    order: 1 !important;
+  }
+
+  .orTwo {
+    order: 2 !important;
+  }
+
+  .underBlockMobImgTab {
+    max-width: 95%;
   }
   
 }

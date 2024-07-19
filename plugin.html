@@ -172,12 +172,12 @@
     <div class="pluginIntro">
         <div class="container section">
             <div class="downloadTopPlugin">
-                <img class="plugIntroTop only-pc" src="assets/img/plugIntroTop.png" alt="plug">
+                <img class="plugIntroTop only-pc only-tablet" src="assets/img/plugIntroTop.png" alt="plug">
                 <img class="plugIntroTop only-mobile" src="assets/img/pluginIntroTopMob.png" alt="plug">
             </div>
             <h1 class="plugTitle">Расширение по управлению рекламой Wildberries</h1>
             <div class="plugUnderTitle">Расширение доступно для работы в трёх браузерах:</div>
-            <div class="browserRow position-relative only-pc">
+            <div class="browserRow position-relative only-pc only-tablet">
                 <div class="browserArrowText">
                     Кликните чтобы скачать
                 </div>
@@ -191,7 +191,7 @@
                     <img class="img-fluid" src="assets/img/opera.png" alt="opera">
                 </div>
             </div>
-            <div class="browserButtonRow only-pc">
+            <div class="browserButtonRow only-pc only-tablet">
                 <button class="browserButton">
                     Установить в Chrome
                 </button>
@@ -226,7 +226,7 @@
         </div>
     </div>
 
-    <div class="container section">
+    <div class="container section pluugg">
         <h2 class="pluginTitleh2">
             Расширение в браузер от Marpla обладает множеством полезных функций для продавцов Wildberries.
         </h2>
@@ -334,7 +334,7 @@
                     <img class="needCardBigBrowser" src="assets/img/yandex.png">
                     <img class="needCardSmallBrowser needOpera" src="assets/img/opera.png">
                 </div>
-                <div class="browserButtonRow only-pc">
+                <div class="browserButtonRow only-pc only-tablet">
                     <button class="browserButton">
                         Установить в Chrome
                     </button>
@@ -439,7 +439,7 @@
             </div>  
         </div>
         <div class="extensionRow position-relative">
-            <div class="extenstionCardRight orderTwo">
+            <div class="extenstionCardRight orderTwo orOne">
                 <div class="exCardRightContainer">
                     <div class="d-flex align-items-center gap-3">
                         <div class="star">
@@ -494,7 +494,7 @@
                     </div>
                 </div>
             </div>  
-            <div class="extensionCard orderOne">
+            <div class="extensionCard orderOne orTwo">
                 <div class="extensionCardBg"></div>
                 <div class="extensionCardContent">
                   <div class="extensionCardTitleContainer">
@@ -529,7 +529,7 @@
                         <img class="needCardBigBrowser" src="assets/img/yandex.png">
                         <img class="needCardSmallBrowser needOpera" src="assets/img/opera.png">
                     </div>
-                    <div class="browserButtonRow only-pc">
+                    <div class="browserButtonRow only-pc only-tablet">
                         <button class="browserButton">
                             Установить в Chrome
                         </button>
@@ -582,12 +582,12 @@
                     </div>
                 </div>
             </div>
-            <div class="plugBlockTitle plugBottomTitle text-center only-pc">Скачав и установив программу в браузер, вы получите мощный инструмент для оптимизации и автоматизации рекламы на платформе Wildberries.</div>
+            <div class="plugBlockTitle plugBottomTitle text-center only-pc only-tablet">Скачав и установив программу в браузер, вы получите мощный инструмент для оптимизации и автоматизации рекламы на платформе Wildberries.</div>
         </div>
         <div class="plugUnderBlock">
             <div class="plugBlockTitle plugBottomTitle text-center only-mobile">Скачав и установив программу в браузер, вы получите мощный инструмент для оптимизации и автоматизации рекламы на платформе Wildberries.</div>
             <div class="d-flex align-items-center justify-content-center">
-                <img class="only-pc" src="assets/img/plugUnderBlockContainer.png">
+                <img class="only-pc only-tablet underBlockMobImgTab" src="assets/img/plugUnderBlockContainer.png">
                 <img class="underblockMob only-mobile" src="assets/img/underblockMob.png">
             </div>        
             <div class="needCardBrowsers plugBrowsers">
@@ -816,14 +816,14 @@
         var header = document.querySelector('header');
     
         // Initially hide the header
-        header.classList.add('hidden');
+        header.classList.add('hiddenHead');
     
         window.addEventListener('scroll', function() {
-            if (window.scrollY > 100) { // Adjust the scroll value as needed
-                header.classList.remove('hidden');
+            if (window.scrollY > 50) { // Adjust the scroll value as needed
+                header.classList.remove('hiddenHead');
                 header.classList.add('scrolled');
             } else {
-                header.classList.add('hidden');
+                header.classList.add('hiddenHead');
                 header.classList.remove('scrolled');
             }
         });
