@@ -480,6 +480,9 @@ body {
   margin-top: 60px;
   display: flex;
   gap: 40px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: linear-gradient(0.5turn, rgba(0, 0, 0, 1) 3%, rgba(255, 255, 255, 1) 12%, rgba(255, 255, 255, 1) 88%, rgba(0, 0, 0, 1) 97%);
 }
 
 .extensionCard {
@@ -550,7 +553,29 @@ body {
 .pinkShine {
   position: absolute;
   z-index: -1;
+  border-radius: 555px;
+  opacity: 0.45;
+  width: 596px;
+  height: 643px;
+  background: radial-gradient(circle, #ec238d 0%, transparent 80%);
+  border: none;
+  left: -8%;
+  top: -12%;
 }
+
+.blueShine {
+  position: absolute;
+  z-index: -1;
+  border-radius: 555px;
+  opacity: 0.45;
+  width: 596px;
+  height: 643px;
+  background: radial-gradient(circle, #1036cd 0%, transparent 80%);
+  border: none;
+  right: -8%;
+  top: -12%;
+}
+
 
 .exImg {
   width: 100%;
@@ -582,6 +607,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 16px;
 }
 
 .pluginMainBg {
@@ -5467,6 +5493,188 @@ body {
     display: block;
     height: 230px;
     margin-top: 30px;
+  }
+
+  .pluginTitleh2 {
+    max-width: 100%;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: -0.5px;
+  }
+
+  .pluginTitleP {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .pluginCardRow {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pluginCardDivider {
+    left: 95%;
+    height: 2700px;
+  }
+
+  .pluginCardArrowLeft {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    right: -5%;
+    border-width: 1px;
+    opacity: 0.35;
+    background-position: center center;
+    border-color: #ffffff;
+    border-style: dashed;
+    height: 2px;
+    width: 321px;
+  }
+
+  .pluginCardArrowRight {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 12%;
+    border-width: 1px;
+    opacity: 0.35;
+    background-position: center center;
+    border-color: #ffffff;
+    border-style: dashed;
+    height: 2px;
+    width: 321px;
+  }
+
+  .needContainer {
+    height: 28px;
+    width: 155px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .needTitle  {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .second-card, .third-card, .fourth-card, .fifth-card {
+    margin-top: 0;
+  }
+
+  .needCard {
+    width: 100%;
+    height: auto;
+    justify-content: start;
+    padding: 40px 0px;
+  }
+  
+  .needCardSmallBrowser {
+    width: 96px;
+    height: 96px;
+  }
+
+  .needCardBigBrowser {
+    height: 109px;
+    width: 109px;
+  }
+
+  .extensionRow {
+    flex-direction: column;
+  }
+
+  .extensionCardContent {
+    padding: 0;
+  }
+
+  .extensionCardTitleContainer {
+    padding: 20px;
+  }
+
+  .extensionCardTitle {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .starTitle {
+    font-size: 20px;
+  }
+
+  .starText {
+    font-size: 16px;
+  }
+
+  .needContainerBig {
+    width: 240px;
+    margin-top: 50px;
+  }
+
+  .plugBlockBg {
+    padding: 30px 25px;
+    height: auto;
+    background: url("../assets/img/plugbgMob.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .plugBlockContainer {
+    width: 100%;
+    font-size: 15px;
+    height: 30px;
+  }
+
+  .plugBlockRow {
+    flex-direction: column;
+  }
+
+  .plugBlockArrow {
+    display: none;
+  }
+
+  .plugBlockTitle {
+    max-width: 100%;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .plugBlockSmallTitle {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .plugBottomTitle {
+    position: static;
+  }
+
+  .plugUnderBlock {
+    padding: 40px 10px;
+    height: auto;
+  }
+
+  .underblockMob {
+    margin: 40px 0;
+    max-width: 90%;
+  }
+
+  .plugBrowsers {
+    margin-top: 0;
+  }
+
+  .plugUnderText {
+    text-align: center;
+  }
+
+  .footer {
+    border-top: none;
+  }
+
+  .pinkShine {
+    left: -35%;
+    top: -10%;
+  }
+
+  .blueShine {
+    right: -30%;
+    top: -10%;
   }
 
 }
