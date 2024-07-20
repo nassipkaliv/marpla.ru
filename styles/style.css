@@ -3435,7 +3435,7 @@ body {
 }
 
 .only-pc {
-  display: flex;
+  display: flex !important;
 }
 
 .featRow {
