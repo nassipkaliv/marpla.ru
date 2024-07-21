@@ -156,9 +156,93 @@ body {
 }
 
 .plugIntroTop {
-  width: 920px;
-  height: 40px;
+  position: relative;
+  display: flex;
+  border-radius: 55px;
+  height: 36px;
+  overflow: hidden;
+  padding: 3px;
+  padding-left: 16px;
 }
+
+.plugIntroTop::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.17); /* Adjust this to your desired background color with opacity */
+  border: 1px solid rgba(255, 255, 255, 0.17); /* Add border with the same color and opacity */
+  border-radius: 55px; /* Match the parent border-radius */
+  z-index: 0; /* Ensure it stays behind the content */
+  box-sizing: border-box; /* Ensure border is included in the element's dimensions */
+}
+
+.plugInsideContainer {
+  padding: 3px;
+  padding-right: 14px;
+}
+
+.plugIntroTopText,
+.plugInsideContainer {
+  position: relative;
+  z-index: 1;
+}
+
+/* Optional: Adjust text styles */
+.plugIntroTopText {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'Cera Pro';
+  line-height: 1.17;
+  font-weight: 600;
+}
+
+.plugInsideContainer {
+  display: flex;
+  align-items: center;
+  border-radius: 55px;
+  position: relative;
+  overflow: hidden; /* Ensure the pseudo-element does not overflow the parent */
+}
+
+.plugInsideContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.13); /* Adjust this to your desired background color with opacity */
+  border-radius: 55px; /* Match the parent border-radius */
+  z-index: 0; /* Ensure it stays behind the content */
+  box-sizing: border-box; /* Ensure border is included in the element's dimensions */
+}
+
+.plugInsideContainer img {
+  margin-right: 10px;
+  height: 26px;
+  max-width: max-content;
+  position: relative;
+  z-index: 1; /* Ensure the image stays above the pseudo-element */
+}
+
+.plugInsideText {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Cera Pro';
+  line-height: 1.17;
+  font-weight: 500;
+}
+
 
 .plugTitle {
   color: transparent;
@@ -186,7 +270,7 @@ body {
 
 .browserRow {
   display: flex;
-  gap: 40px;
+  gap: 100px;
   align-items: center;
   justify-content: center;
   margin-top: 40px;
@@ -199,7 +283,7 @@ body {
 
 .browserArrowText {
   position: absolute;
-  right: 15%;
+  right: 10%;
   top: 45%;
   color: #ffffff;
   font-size: 13px;
@@ -218,6 +302,27 @@ body {
   margin-top: 40px;
 }
 
+.browserButtonContainer {
+  position: relative;
+  border-radius: 17px;
+  overflow: hidden; /* Ensure the pseudo-element does not overflow the parent */
+  padding: 5px 4px;
+}
+
+.browserButtonContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.08); /* White background with opacity */
+  border: 1px solid rgba(255, 255, 255, 0.08); /* White border with opacity */
+  border-radius: 17px; /* Match the parent border-radius */
+  z-index: 0; /* Ensure it stays behind the content */
+  box-sizing: border-box; /* Ensure border is included in the element's dimensions */
+}
+
 .browserButton {
   color: #ffffff;
   font-size: 17px;
@@ -232,8 +337,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  position: relative;
+  z-index: 1; /* Ensure the button stays above the pseudo-element */
 }
+
+.browserButtonContainer button {
+  position: relative;
+  z-index: 1; /* Ensure the button stays above the pseudo-element */
+}
+
 
 .browserImgCont {
   border-width: 1px;
@@ -5540,9 +5652,24 @@ body {
   }
 
   .plugIntroTop {
-    height: 70px;
-    width: 100%;
+    flex-direction: column;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
   }
+
+  .plugIntroTopText, .plugInsideText {
+    font-size: 12px;
+    letter-spacing: -0.6px;
+    padding: 0;
+  }
+
+  .plugInsideContainer {
+    height: 30px;
+  }
+
+  
 
   .plugTitle {
     text-align: center;
@@ -5762,7 +5889,7 @@ body {
   }
 
   .plugBrowsers {
-    margin-top: 0;
+    margin-top: 25px 0px;
   }
 
   .plugUnderText {
