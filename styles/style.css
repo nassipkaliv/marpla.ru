@@ -691,13 +691,13 @@ body {
   position: absolute;
   z-index: -1;
   border-radius: 555px;
-  opacity: 0.35;
+  opacity: 0.65;
   width: 596px;
   height: 643px;
   background:  #2d3659;
   filter: blur(50px);
   border: none;
-  right: -8%;
+  right: -6%;
   top: -12%;
 }
 
