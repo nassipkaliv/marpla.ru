@@ -677,10 +677,11 @@ body {
   position: absolute;
   z-index: -1;
   border-radius: 555px;
-  opacity: 0.45;
+  opacity: 0.35;
   width: 596px;
   height: 643px;
-  background: radial-gradient(circle, #ec238d 0%, transparent 80%);
+  background:  #ec238d;
+  filter: blur(50px);
   border: none;
   left: -8%;
   top: -12%;
@@ -693,7 +694,8 @@ body {
   opacity: 0.45;
   width: 596px;
   height: 643px;
-  background: radial-gradient(circle, #1036cd 0%, transparent 80%);
+  background:  #2d3659;
+  filter: blur(50px);
   border: none;
   right: -8%;
   top: -12%;
