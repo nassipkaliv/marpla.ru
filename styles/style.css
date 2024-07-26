@@ -3012,20 +3012,24 @@ body {
   border-style: solid;
   padding: 30px 20px;
   height: 260px;
+  position: relative;
 }
 
 .charBlockPink {
   padding: 40px 20px;
   border-width: 1px;
-  opacity: 0.78;
-  background-position: center center;
-  border-color: #ec238d;
-  background: #a75882;;
+  border-color: rgb(236, 35, 141, 0.28);
+  background: rgb(236, 35, 141, 0.22);
   border-style: solid;
+  position: relative;
+}
+
+.charBlockPink > .circle {
+  background-color: #d5a6c4 !important; 
 }
 
 .underCharacter {
-  background: #ec238d;
+  background: rgb(236, 35, 141, 0.55);
   margin-top: -35px;
   z-index: -1;
   position: relative;
@@ -3078,7 +3082,7 @@ body {
 
 .pinkBg {
   opacity: 1;
-  background-color: #ec238d;
+  background: rgb(236, 35, 141, 0.55);
   background-position: center center;
   border-color: transparent;
   border-style: solid;
