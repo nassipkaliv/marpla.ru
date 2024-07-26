@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Cera Pro';
-  src: url('../assets/fonts/CeraPro-Bold.woff2') format('woff2'),
-      url('../assets/fonts/CeraPro-Bold.woff') format('woff');
+  src: url('../fonts/CeraPro-Bold.woff2') format('woff2'),
+      url('../fonts/CeraPro-Bold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: 'Cera Pro';
-  src: url('../assets/fonts/CeraPro-Medium.woff2') format('woff2'),
-      url('../assets/fonts/CeraPro-Medium.woff') format('woff');
+  src: url('../fonts/CeraPro-Medium.woff2') format('woff2'),
+      url('../fonts/CeraPro-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
   font-family: 'Cera Pro';
-  src: url('../assets/fonts/CeraPro-Regular.woff2') format('woff2'),
-      url('../assets/fonts/CeraPro-Regular.woff') format('woff');
+  src: url('../fonts/CeraPro-Regular.woff2') format('woff2'),
+      url('../fonts/CeraPro-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
   font-family: 'Cera Pro';
-  src: url('../assets/fonts/CeraPro-Light.woff2') format('woff2'),
-      url('../assets/fonts/CeraPro-Light.woff') format('woff');
+  src: url('../fonts/CeraPro-Light.woff2') format('woff2'),
+      url('../fonts/CeraPro-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -1636,6 +1636,10 @@ body {
   font-weight: 400;
   opacity: 0.7;
   text-decoration: underline;
+}
+
+.footer-under:hover {
+  color: #ffffff;
 }
 
 .marpla {
