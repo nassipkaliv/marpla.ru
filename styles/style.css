@@ -1063,6 +1063,30 @@ body {
   border-style: solid;
 }
 
+.statya-text-p {
+  color: #333333;
+  font-weight: 500;
+}
+
+.statyaline {
+  height: 1px;
+  background: currentColor;
+  opacity: 1;
+  width: 100%;
+}
+
+.statyablockquote {
+  background: #EBEBEB; color: #000000;
+}
+
+.redCol {
+  color: #ff0000
+}
+
+.redCol > svg {
+  enable-background:new 0 0 24 24
+}
+
 .custom-card {
   border-width: 1px;
   border-radius: 20px;
