@@ -1235,7 +1235,7 @@ body {
   height: 100px;
   margin-right: 40px;
   position: relative;
-  z-index: 1;
+  z-index: 1t;
 }
 
 .backwb {
@@ -2752,7 +2752,7 @@ body {
 
 .aimImg {
   position: relative;
-  top: -27px;
+  top: 0px;
 }
 
 .line-vertical {
@@ -2780,10 +2780,9 @@ body {
 }
 
 .pinkBlock {
-  border-width: 1px;
+  border-color: transparent;
   border-radius: 25px;
-  background-position: center center;
-  border-color: #ffffff;
+  background: rgb(255, 255, 255, 0.125);
   border-style: solid;
   padding: 40px 30px;
   height: 240px;
@@ -3270,9 +3269,7 @@ body {
   display: none !important;
 }
 
-.pcblock {
-  display: block !important;
-}
+
 
 .p-small {
   color: #333333;
@@ -3801,6 +3798,10 @@ body {
 
 }
 
+.pcblock {
+  display: block !important;
+}
+
 @media (min-width: 640px) {
   .navbar-text {
     display: block !important;
@@ -3907,6 +3908,7 @@ body {
   .wb-text {
     margin-left: 20px;
     max-width: 60%;
+    margin-bottom: 20px;
   }
 
   .wb-notif {
@@ -4181,7 +4183,7 @@ body {
     max-width: 8px;
     height: auto;
     left: 48%;
-    top: -5%;
+    top: -2%;
     
   }
 
