@@ -2091,16 +2091,18 @@ body {
   font-weight: 700;
 }
 
+
+
 .tsena-container {
   display: table-cell;
   padding: 60px;
   padding-right: 80px;
   background-color: rgb(239, 239, 239);
-  position: absolute;
+  position: relative;
   height: auto;
-  width: 672px;
-  right: 2%;
-  top: 12%;
+  width: 867px;
+  margin-top: 90px;
+  margin-left: -99px;
 }
 
 .tsena-title {
@@ -3525,7 +3527,7 @@ body {
 }
 
 .pb120 {
-  padding-bottom: 120px;
+  padding-bottom: 8rem;
 }
 
 .size41 {
@@ -3822,6 +3824,10 @@ body {
   top: 10%;
   left: 23%;
   z-index: -1;
+}
+
+.contaiRow {
+  display: flex;
 }
 
 @media (min-width: 640px) {
@@ -4469,10 +4475,6 @@ body {
     height: 410px ;
   }
 
-  .bot_stavok {
-    height: 410px;
-  }
-
   .mt200 {
     margin-top: 200px;
   }
@@ -4595,7 +4597,7 @@ body {
   }
 
   .pb120 {
-    padding-bottom: 200px;
+    padding-bottom: 13rem;
   }
 
   .hidden {
@@ -5053,6 +5055,8 @@ body {
     margin-top: 20px;
     padding: 50px 25px;
     height: auto;
+    width: auto;
+    margin: 0;
   }
 
   .tsena-title {

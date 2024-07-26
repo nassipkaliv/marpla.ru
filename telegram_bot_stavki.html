@@ -8,7 +8,34 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
     
-    <title>Телеграм бот - Внутренняя реклама на Вайлдберриз в поиске и в карточке товара, telegram bot - ставок, аукцион Wildberries, онлайн ВБ, управление Валберис, настройка WB</title>
+    <style>
+        @media (max-width: 960px) {
+            .contaiRow {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .bot_stavok {
+                height: auto;
+            }
+
+            .tsena-container {
+              position: static;
+              margin-top: 20px;
+              padding: 50px 45px;
+              height: auto;
+              width: auto;
+              margin: 0;
+            }
+            
+            .bot_stavok {
+                height: auto !important;
+                width: auto;
+            }
+        }
+    </style>
+
+    <title>Телеграм бот ставки</title>
 </head>
 <body>
 
@@ -106,7 +133,7 @@
                     <a class="off-icon" href="#" >
                         <img class="img-fluid" src="assets/img/mes225.png" alt="regis">
                     </a>
-                    <a href="#" class="off-link">БОТ АВТООТВЕТЫ  НА ОТЗЫВЫ WB</a>
+                    <a href="#" class="off-link">БОТ АВТООТВЕТЫ <br> НА ОТЗЫВЫ WB</a>
                 </div>
             </div>
             <div class="off-products d-flex flex-column gap-2 mt-3">
@@ -157,12 +184,12 @@
         <img src="assets/img/formBtn.svg" alt="formBtn">
     </div>
 
-    <div class="container section pad-bot pb120">
-      <div class="row  position-relative">
-        <div class="col-lg-6 col-md-12">
+    <div class="container section pad-bot">
+      <div class="contaiRow">
+        <div class="contaiBlock">
           <img class="img-fluid bot_stavok" src="assets/img/bot_stavok.png">
         </div>
-        <div class="col-lg-6 col-md-12 tsena-container">
+        <div class="tsena-container">
           <div class="tsena-title">
             ТЕЛЕГРАММ БОТ - УЗНАТЬ РЕКЛАМНЫЕ СТАВКИ В ПОИСКЕ И В КАРТОЧКЕ НА WILDBERRIES
           </div>
@@ -198,7 +225,7 @@
         </div>
     </div>
 
-    <div class="divider-wb only-tablet mt200">
+    <div class="divider-wb only-tablet">
         <div class="container wb flex-column">
             <div class="wb-notif">
                 <img class="notificon img-fluid" src="assets/img/notification.png" alt="notif">
@@ -241,7 +268,6 @@
             </div>
         </div>
     </div>
-
 
     <footer class="footer only-pc">
         <div class="container">
@@ -294,7 +320,7 @@
             </div>
         </div>
     </footer>
-
+    
     <footer class="footer only-tablet">
         <div class="container">
             <div class="row">
@@ -396,6 +422,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var header = document.querySelector('header');
@@ -415,6 +442,7 @@
     });
     
     </script>
+
 
 </body>
 
