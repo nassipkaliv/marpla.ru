@@ -183,12 +183,14 @@
     <div class="payWidgetLocation">
         <div class="payWidget" data-bs-toggle="modal" data-bs-target="#orderModal">
             <svg role="img" class="t706__carticon-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-                <path fill="none" stroke-width="2" stroke-miterlimit="10" d="M44 18h10v45H10V18h10z"></path><path fill="none" stroke-width="2" stroke-miterlimit="10" d="M22 24V11c0-5.523 4.477-10 10-10s10 4.477 10 10v13"></path>
+                <path fill="none" stroke-width="2" stroke-miterlimit="10" d="M44 18h10v45H10V18h10z"></path>
+                <path fill="none" stroke-width="2" stroke-miterlimit="10" d="M22 24V11c0-5.523 4.477-10 10-10s10 4.477 10 10v13"></path>
             </svg>
         </div>
-        <div class="payWidgetBadge">3</div>
-
+        <div class="payWidgetBadge" id="payWidgetBadge">1</div>
+        <div class="tooltip" id="tooltip">= 990 р</div>
     </div>
+    
 
     <div class="container section">
       <h1 class="section-title text-center">ПОПОЛНИТЬ БАЛАНС</h1>
@@ -210,52 +212,61 @@
 
 
     <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <button type="button" class="btn-close orderBtnClose" data-bs-dismiss="modal" aria-label="Close"></button>
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="opp-title" id="orderModalLabel">Ваш заказ:</h5>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3 d-flex align-items-center justify-content-between">
-                <div class="modalPayTitle">
-                  <span>до 1000 запросов</span>
+        <div class="modal-dialog modal-dialog-centered">
+            <button type="button" class="btn-close orderBtnClose" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="opp-title" id="orderModalLabel">Ваш заказ:</h5>
                 </div>
-                <div class="d-flex align-items-center gap-4">
-                  <div class="d-flex align-items-center">
-                    <img class="minusNum" width="16px" height="16px" src="assets/img/arrows_circle_minus.svg">
-                    <input class="customInput" placeholder="1">
-                    <img class="plusNum" width="16px" height="16px" src="assets/img/arrows_circle_plus.svg">
-                  </div>
-                  <div class="modalPayTitle" id="finalSum">990 р</div>
-                  <div>
-                    <img width="16px" height="16px" src="assets/img/arrows_circle_remove.svg">
-                  </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3 align-items-center justify-content-between rContainer">
+                            <div class="modalPayTitle">
+                                <span>до 1000 запросов</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-4">
+                                <div class="d-flex align-items-center">
+                                    <img id="minusNum" class="minusNum" width="16px" height="16px" src="assets/img/arrows_circle_minus.svg">
+                                    <input id="quantity" class="customInput" placeholder="1" value="1">
+                                    <img id="plusNum" class="plusNum" width="16px" height="16px" src="assets/img/arrows_circle_plus.svg">
+                                </div>
+                                <div class="modalPayTitle" id="finalSum">990 р</div>
+                                <div class="removePay">
+                                    <img width="16px" height="16px" src="assets/img/arrows_circle_remove.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="removeMessageContainer" class="removeMessageContainer" style="display: none;">
+                            <div class="timer-container">
+                                <svg class="timersvg" width="24" height="24">
+                                    <circle class="timer-ring" r="10" cx="12" cy="12"></circle>
+                                    <text id="timer" x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="13">4</text>
+                                </svg>
+                            </div>                                                 
+                            <span class="modalPayTitle">Вы удалили "до 1000 запросов"</span>
+                            <a href="#" id="undoLink" class="modalPayTitle text-decoration-none">Вернуть</a>
+                        </div>
+                        <p class="form-label text-end mt-4 op1" id="totalSum">Сумма: 990 р.</p>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Your Phone</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <p class="form-label text-end op1" id="totalSumBottom">Сумма: 990 р.</p>
+                        <button type="submit" class="btn submitBtn w-100">Checkout</button>
+                    </form>
                 </div>
-              </div>
-              <p class="form-label text-end mt-4 op1">Сумма: 20 790 р.</p>
-              <div class="mb-3">
-                <label for="name" class="form-label">Your Name</label>
-                <input type="text" class="form-control" id="name" required>
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Your Email</label>
-                <input type="email" class="form-control" id="email" required>
-              </div>
-              <div class="mb-3">
-                <label for="phone" class="form-label">Your Phone</label>
-                <input type="tel" class="form-control" id="phone" required>
-              </div>
-              <p class="form-label text-end op1">Сумма: 20 790 р.</p>
-              <button type="submit" class="btn submitBtn w-100">Checkout</button>
-            </form>
-          </div>
+            </div>
         </div>
-      </div>
     </div>
-
-
+    
     <footer class="footer only-pc">
         <div class="container">
             <div class="row">
@@ -420,24 +431,110 @@
 </script>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var header = document.querySelector('header');
-    
-        // Initially hide the header
-        header.classList.add('hidden');
-    
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 100) { // Adjust the scroll value as needed
-                header.classList.remove('hidden');
-                header.classList.add('scrolled');
-            } else {
-                header.classList.add('hidden');
-                header.classList.remove('scrolled');
+document.addEventListener('DOMContentLoaded', function () {
+    // DOM elements
+    const minusButton = document.getElementById('minusNum');
+    const plusButton = document.getElementById('plusNum');
+    const quantityInput = document.getElementById('quantity');
+    const finalSumElement = document.getElementById('finalSum');
+    const totalSumElement = document.getElementById('totalSum');
+    const totalSumBottomElement = document.getElementById('totalSumBottom');
+    const payWidgetBadge = document.querySelector('.payWidgetBadge');
+    const removePayButton = document.querySelector('.removePay');
+    const rContainer = document.querySelector('.rContainer');
+    const removeMessageContainer = document.getElementById('removeMessageContainer');
+    const undoLink = document.getElementById('undoLink');
+    const timerElement = document.getElementById('timer');
+    const tooltip = document.getElementById('tooltip');
+
+    // Constants
+    const UNIT_PRICE = 990;
+    const INITIAL_TOTAL = 990;
+    let timer;
+
+    // Update the amounts displayed based on the quantity
+    function updateAmounts() {
+        const quantity = parseInt(quantityInput.value, 10);
+        const newFinalSum = UNIT_PRICE * quantity;
+        const newTotalSum = INITIAL_TOTAL + (newFinalSum - UNIT_PRICE);
+
+        finalSumElement.textContent = `${newFinalSum} р`;
+        totalSumElement.textContent = `Сумма: ${newTotalSum} р`;
+        totalSumBottomElement.textContent = `Сумма: ${newTotalSum} р`;
+        payWidgetBadge.textContent = quantity;
+
+        // Update tooltip text
+        tooltip.textContent = `= ${newFinalSum} р`;
+
+        // Check if quantity is 0 and handle removal
+        if (quantity === 0) {
+            removePay();
+        }
+    }
+
+    // Function to handle removal
+    function removePay() {
+        rContainer.style.display = 'none';
+        removeMessageContainer.style.display = 'flex';
+
+        // Hide the totalSum and totalSumBottom elements
+        totalSumElement.style.display = 'none';
+        totalSumBottomElement.style.display = 'none';
+
+        let countdown = 4;
+        timerElement.textContent = countdown;
+
+        timer = setInterval(function () {
+            countdown--;
+            timerElement.textContent = countdown;
+
+            if (countdown === 0) {
+                clearInterval(timer);
+                removeMessageContainer.style.display = 'none';
             }
-        });
+        }, 1000);
+    }
+
+    // Decrease quantity
+    minusButton.addEventListener('click', function () {
+        let quantity = parseInt(quantityInput.value, 10);
+        if (quantity > 0) {
+            quantity--;
+            quantityInput.value = quantity;
+            updateAmounts();
+        }
     });
-    
-    </script>
+
+    // Increase quantity
+    plusButton.addEventListener('click', function () {
+        let quantity = parseInt(quantityInput.value, 10);
+        quantity++;
+        quantityInput.value = quantity;
+        updateAmounts();
+    });
+
+    // Remove pay and show countdown
+    removePayButton.addEventListener('click', function () {
+        removePay();
+    });
+
+    // Undo removal action
+    undoLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        clearInterval(timer);
+        rContainer.style.display = 'flex';
+        removeMessageContainer.style.display = 'none';
+
+        // Show the totalSum and totalSumBottom elements
+        totalSumElement.style.display = 'block';
+        totalSumBottomElement.style.display = 'block';
+    });
+});
+</script>
+
+
+     
+
 
 </body>
 

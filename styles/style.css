@@ -3883,6 +3883,47 @@ body {
   z-index: 0;
 }
 
+.tooltip {
+  position: absolute;
+  transform: translateX(0%) translateY(-50%);
+  top: 50%;
+  right: 130%;
+  white-space: nowrap;
+  background: #292929;
+  color: #fff;
+  font-size: 15px;
+  box-sizing: border-box;
+  padding: 9px 18px;
+  border-radius: 3px;
+  transition: opacity 0.3s linear;
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Initially hidden */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cera Pro';
+}
+
+.tooltip:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  border-width: 10px;
+  top: 50%;
+  right: -20px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-left-color: #292929;
+}
+
+.payWidgetLocation:hover .tooltip {
+  opacity: 1; /* Show on hover */
+  visibility: visible; /* Show on hover */
+}
+
+
 .t706__carticon-img {
   width: 80px;
   height: 80px;
@@ -3941,6 +3982,63 @@ body {
 .statyaRow {
   margin-bottom: 20px;
 }
+
+.rContainer {
+  display: flex;
+}
+
+.removeMessageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.removeMessageContainer span {
+  margin-right: 10px;
+}
+
+#undoLink {
+  cursor: pointer;
+}
+
+.timersvg {
+  position: relative;
+}
+
+.timer-ring {
+  fill: none;
+  stroke-width: 2; /* Adjust stroke width */
+  stroke: red;
+  stroke-dasharray: 62.8; /* Circumference of the circle (2 * π * r) */
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s linear;
+  transform: rotate(-90deg); /* Rotate only the circle */
+  transform-origin: center; /* Ensure the rotation is centered */
+}
+
+.timer-ring {
+  animation: countdown 4s linear forwards;
+}
+
+@keyframes countdown {
+  from {
+      stroke-dashoffset: 62.8; /* Full circumference */
+  }
+  to {
+      stroke-dashoffset: 0; /* No offset left, full circle animated */
+  }
+}
+
+text {
+  fill: red; /* Text color */
+  font-family: 'Cera Pro'; /* Font family */
+  font-size: 13px;
+  dominant-baseline: middle; /* Center the text vertically */
+  text-anchor: middle; /* Center the text horizontally */
+}
+
 
 @media (min-width: 640px) {
   .navbar-text {
