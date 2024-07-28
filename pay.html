@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
 
+
+
     <style>
 
 .modal-content {
@@ -29,6 +31,23 @@
   -webkit-backdrop-filter: blur(0px);
   backdrop-filter: blur(0px);
 }
+
+        .hidden {
+            display: none;
+        }
+        
+        
+        #payWidgetLocation {
+            display: none;
+        }
+
+        .removeMessageContainer {
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            margin: 10px 0;
+        }
     </style>
 
     <title>Оплата тарифа</title>
@@ -180,7 +199,7 @@
         <img src="assets/img/formBtn.svg" alt="formBtn">
     </div>
 
-    <div class="payWidgetLocation">
+    <div class="payWidgetLocation" id="payWidgetLocation">
         <div class="payWidget" data-bs-toggle="modal" data-bs-target="#orderModal">
             <svg role="img" class="t706__carticon-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
                 <path fill="none" stroke-width="2" stroke-miterlimit="10" d="M44 18h10v45H10V18h10z"></path>
@@ -236,13 +255,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="removeMessageContainer" class="removeMessageContainer" style="display: none;">
+                        <div id="removeMessageContainer" class="removeMessageContainer hidden">
                             <div class="timer-container">
                                 <svg class="timersvg" width="24" height="24">
                                     <circle class="timer-ring" r="10" cx="12" cy="12"></circle>
                                     <text id="timer" x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="13">4</text>
                                 </svg>
-                            </div>                                                 
+                            </div>
                             <span class="modalPayTitle">Вы удалили "до 1000 запросов"</span>
                             <a href="#" id="undoLink" class="modalPayTitle text-decoration-none">Вернуть</a>
                         </div>
@@ -431,110 +450,135 @@
 </script>
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-    // DOM elements
-    const minusButton = document.getElementById('minusNum');
-    const plusButton = document.getElementById('plusNum');
-    const quantityInput = document.getElementById('quantity');
-    const finalSumElement = document.getElementById('finalSum');
-    const totalSumElement = document.getElementById('totalSum');
-    const totalSumBottomElement = document.getElementById('totalSumBottom');
-    const payWidgetBadge = document.querySelector('.payWidgetBadge');
-    const removePayButton = document.querySelector('.removePay');
-    const rContainer = document.querySelector('.rContainer');
-    const removeMessageContainer = document.getElementById('removeMessageContainer');
-    const undoLink = document.getElementById('undoLink');
-    const timerElement = document.getElementById('timer');
-    const tooltip = document.getElementById('tooltip');
-
-    // Constants
-    const UNIT_PRICE = 990;
-    const INITIAL_TOTAL = 990;
-    let timer;
-
-    // Update the amounts displayed based on the quantity
-    function updateAmounts() {
-        const quantity = parseInt(quantityInput.value, 10);
-        const newFinalSum = UNIT_PRICE * quantity;
-        const newTotalSum = INITIAL_TOTAL + (newFinalSum - UNIT_PRICE);
-
-        finalSumElement.textContent = `${newFinalSum} р`;
-        totalSumElement.textContent = `Сумма: ${newTotalSum} р`;
-        totalSumBottomElement.textContent = `Сумма: ${newTotalSum} р`;
-        payWidgetBadge.textContent = quantity;
-
-        // Update tooltip text
-        tooltip.textContent = `= ${newFinalSum} р`;
-
-        // Check if quantity is 0 and handle removal
-        if (quantity === 0) {
-            removePay();
-        }
-    }
-
-    // Function to handle removal
-    function removePay() {
-        rContainer.style.display = 'none';
-        removeMessageContainer.style.display = 'flex';
-
-        // Hide the totalSum and totalSumBottom elements
-        totalSumElement.style.display = 'none';
-        totalSumBottomElement.style.display = 'none';
-
-        let countdown = 4;
-        timerElement.textContent = countdown;
-
-        timer = setInterval(function () {
-            countdown--;
-            timerElement.textContent = countdown;
-
-            if (countdown === 0) {
-                clearInterval(timer);
-                removeMessageContainer.style.display = 'none';
+    document.addEventListener('DOMContentLoaded', function () {
+        // DOM elements
+        const minusButton = document.getElementById('minusNum');
+        const plusButton = document.getElementById('plusNum');
+        const quantityInput = document.getElementById('quantity');
+        const finalSumElement = document.getElementById('finalSum');
+        const totalSumElement = document.getElementById('totalSum');
+        const totalSumBottomElement = document.getElementById('totalSumBottom');
+        const payWidgetBadge = document.getElementById('payWidgetBadge');
+        const removePayButton = document.querySelector('.removePay');
+        const rContainer = document.querySelector('.rContainer');
+        const removeMessageContainer = document.getElementById('removeMessageContainer');
+        const undoLink = document.getElementById('undoLink');
+        const timerElement = document.getElementById('timer');
+        const tooltip = document.getElementById('tooltip');
+        const orderModal = new bootstrap.Modal(document.getElementById('orderModal')); // Initialize the Bootstrap modal
+        const payWidgetLocation = document.getElementById('payWidgetLocation');
+        const orderBtn = document.querySelector('.orderBtn');
+    
+        // Constants
+        const UNIT_PRICE = 990;
+        const INITIAL_TOTAL = 990;
+        let timer;
+    
+        // Update the amounts displayed based on the quantity
+        function updateAmounts() {
+            const quantity = parseInt(quantityInput.value, 10);
+            const newFinalSum = UNIT_PRICE * quantity;
+            const newTotalSum = INITIAL_TOTAL + (newFinalSum - UNIT_PRICE);
+    
+            finalSumElement.textContent = `${newFinalSum} р`;
+            totalSumElement.textContent = `Сумма: ${newTotalSum} р`;
+            totalSumBottomElement.textContent = `Сумма: ${newTotalSum} р`;
+            payWidgetBadge.textContent = quantity;
+    
+            // Update tooltip text
+            tooltip.textContent = `= ${newFinalSum} р`;
+    
+            // Check if quantity is 0 and handle removal
+            if (quantity === 0) {
+                removePay();
             }
-        }, 1000);
-    }
-
-    // Decrease quantity
-    minusButton.addEventListener('click', function () {
-        let quantity = parseInt(quantityInput.value, 10);
-        if (quantity > 0) {
-            quantity--;
+    
+            // Toggle pay widget visibility
+            togglePayWidgetVisibility();
+        }
+    
+        // Function to handle removal
+        function removePay() {
+            rContainer.style.display = 'none';
+            removeMessageContainer.style.display = 'flex';
+    
+            // Hide the totalSum and totalSumBottom elements
+            totalSumElement.style.display = 'none';
+            totalSumBottomElement.style.display = 'none';
+    
+            let countdown = 4;
+            timerElement.textContent = countdown;
+    
+            timer = setInterval(function () {
+                countdown--;
+                timerElement.textContent = countdown;
+    
+                if (countdown === 0) {
+                    clearInterval(timer);
+                    removeMessageContainer.style.display = 'none';
+                    orderModal.hide(); // Close the modal
+                    payWidgetLocation.style.display = 'none'; // Hide the pay widget location
+                }
+            }, 1000);
+        }
+    
+        // Decrease quantity
+        minusButton.addEventListener('click', function () {
+            let quantity = parseInt(quantityInput.value, 10);
+            if (quantity > 0) {
+                quantity--;
+                quantityInput.value = quantity;
+                updateAmounts();
+            }
+        });
+    
+        // Increase quantity
+        plusButton.addEventListener('click', function () {
+            let quantity = parseInt(quantityInput.value, 10);
+            quantity++;
             quantityInput.value = quantity;
             updateAmounts();
+        });
+    
+        // Remove pay and show countdown
+        removePayButton.addEventListener('click', function () {
+            removePay();
+        });
+    
+        // Undo removal action
+        undoLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            clearInterval(timer);
+            rContainer.style.display = 'flex';
+            removeMessageContainer.style.display = 'none';
+    
+            // Show the totalSum and totalSumBottom elements
+            totalSumElement.style.display = 'block';
+            totalSumBottomElement.style.display = 'block';
+    
+            // Toggle pay widget visibility
+            togglePayWidgetVisibility();
+        });
+    
+        // Reset quantity to 1 when the modal is opened by clicking the "Оплатить" button
+        orderBtn.addEventListener('click', function () {
+            quantityInput.value = 1;
+            updateAmounts();
+            payWidgetLocation.style.display = 'block';
+            rContainer.style.display = 'flex';
+            removeMessageContainer.style.display = 'none';
+        });
+    
+        // Function to toggle pay widget visibility
+        function togglePayWidgetVisibility() {
+            if (parseInt(quantityInput.value, 10) > 0) {
+                payWidgetLocation.style.display = 'block';
+            } else {
+                payWidgetLocation.style.display = 'none';
+            }
         }
     });
-
-    // Increase quantity
-    plusButton.addEventListener('click', function () {
-        let quantity = parseInt(quantityInput.value, 10);
-        quantity++;
-        quantityInput.value = quantity;
-        updateAmounts();
-    });
-
-    // Remove pay and show countdown
-    removePayButton.addEventListener('click', function () {
-        removePay();
-    });
-
-    // Undo removal action
-    undoLink.addEventListener('click', function (e) {
-        e.preventDefault();
-        clearInterval(timer);
-        rContainer.style.display = 'flex';
-        removeMessageContainer.style.display = 'none';
-
-        // Show the totalSum and totalSumBottom elements
-        totalSumElement.style.display = 'block';
-        totalSumBottomElement.style.display = 'block';
-    });
-});
 </script>
-
-
-     
-
 
 </body>
 
