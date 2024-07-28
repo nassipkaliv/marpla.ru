@@ -474,6 +474,30 @@
         const INITIAL_TOTAL = 990;
         let timer;
     
+        // Functions to set and get cookies
+        function setCookie(name, value, days) {
+            const d = new Date();
+            d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+            const expires = "expires=" + d.toUTCString();
+            document.cookie = name + "=" + value + ";" + expires + ";path=/";
+        }
+    
+        function getCookie(name) {
+            const cname = name + "=";
+            const decodedCookie = decodeURIComponent(document.cookie);
+            const ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) === ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(cname) === 0) {
+                    return c.substring(cname.length, c.length);
+                }
+            }
+            return "";
+        }
+    
         // Update the amounts displayed based on the quantity
         function updateAmounts() {
             const quantity = parseInt(quantityInput.value, 10);
@@ -487,6 +511,9 @@
     
             // Update tooltip text
             tooltip.textContent = `= ${newFinalSum} р`;
+    
+            // Store quantity in cookie
+            setCookie('quantity', quantity, 7);
     
             // Check if quantity is 0 and handle removal
             if (quantity === 0) {
@@ -505,6 +532,10 @@
             // Hide the totalSum and totalSumBottom elements
             totalSumElement.style.display = 'none';
             totalSumBottomElement.style.display = 'none';
+    
+            // Set quantity to 0
+            quantityInput.value = 0;
+            setCookie('quantity', 0, 7);
     
             let countdown = 4;
             timerElement.textContent = countdown;
@@ -577,8 +608,19 @@
                 payWidgetLocation.style.display = 'none';
             }
         }
+    
+        // Initialize quantity from cookie on page load
+        const savedQuantity = getCookie('quantity');
+        if (savedQuantity !== "") {
+            quantityInput.value = savedQuantity;
+        } else {
+            quantityInput.value = 0;
+        }
+        updateAmounts();
     });
 </script>
+
+
 
 </body>
 
