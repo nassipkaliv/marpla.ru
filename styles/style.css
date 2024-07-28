@@ -4813,7 +4813,7 @@ text {
     padding-bottom: 13rem;
   }
 
-  .hidden {
+  .hidden2 {
     visibility: hidden !important;
   }
 
@@ -4951,6 +4951,10 @@ text {
 
   .underBlockMobImgTab {
     max-width: 95%;
+  }
+
+  header.hidden {
+    top: -100px !important; /* Hide the header initially */
   }
   
 }
