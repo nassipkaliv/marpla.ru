@@ -1878,11 +1878,11 @@ body {
 .info-btn {
   cursor: pointer;
   color: #ffffff !important;
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Cera Pro', sans-serif;
   line-height: 1.55;
   font-weight: 500;
-  border-radius: 10px;
+  border-radius: 14px;
   background-image: linear-gradient(0.5turn, rgba(55, 65, 110, 1) 0%, rgba(34, 41, 65, 1) 99%);
   border-color: transparent;
   border-style: solid;
@@ -2072,7 +2072,49 @@ body {
   padding-left: 1rem;
 }
 
+.seoContent {
+  position: relative;
+  z-index: 1;
+}
+
+.seoIntroShine {
+  position: absolute;
+  z-index: 0;
+  top: -11%;
+  left: -1%;
+}
+
+.seoIntroLeftDot {
+  border-radius: 3000px;
+  background-color: #8089a3;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 2%;
+  top: 20%
+}
+
+.seoIntroRightDot {
+  border-radius: 3000px;
+  background-color: #8089a3;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  right: 6%;
+  top: 70%
+}
+
 .topBtn {
+  position: relative;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 10px;
   background-image: linear-gradient(0.9722222222222222turn, rgba(125, 37, 111, 1) 0%, rgba(236, 35, 141, 1) 100%);
 }
 
@@ -2906,12 +2948,18 @@ body {
 }
 
 .seoTitle {
+  border-width: 1px;
+  border-radius: 55px;
+  background-position: center center;
+  border-color: rgb(255, 255, 255, 0.11);
   color: #ffffff;
   font-size: 47px;
   font-family: 'Cera Pro', sans-serif;
   line-height: 1.17;
   font-weight: 700;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .seoTitle span {
@@ -3251,7 +3299,7 @@ body {
   border-color: #e2e2e2;
   border-style: solid;
   padding: 20px 20px;
-  height: 510px;
+  min-height: 560px;
 }
 
 .tarifRow {
@@ -3278,7 +3326,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-width: 1px;
+  border-width: 2px;
   background: #2d3659;
   border-color: #2d3659;
   border-style: solid;
@@ -3301,7 +3349,18 @@ body {
 }
 
 .saleDivider {
-  background: #2d3659;
+  background-image: linear-gradient(0.5turn, rgba(55, 65, 110, 1) 0%, rgba(34, 41, 65, 1) 100%);
+}
+
+.saleDividerArrow {
+  position: relative;
+  bottom: -20px;
+}
+
+.saleDividerBtn {
+  font-size: 16px;
+  width: auto;
+  padding: 0 20px;
 }
 
 .instructionBlock {
@@ -4647,6 +4706,7 @@ text {
   }
 
   .papkaBlock {
+    min-height: auto;
     height: auto;
     padding: 30px;
     width: 400px;
@@ -5870,6 +5930,7 @@ text {
   }
   
   .papkaBlock {
+    min-height: auto;
     margin-bottom: 20px;
     height: auto;
     padding: 40px 20px;
