@@ -19,82 +19,81 @@
 </head>
 <body class="category-bg-color">
     
+
     <div class="sidebar only-pc" id="sidebar">
-        <a class="mt-4 px-2"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar">
-            <img src="assets/img/menu.png" width="30px" height="25px"  alt="Меню">
+        <a class="mt-4 px-2 sidebarMenu" type="button">
+            <button type="button" class="t830__burger" aria-label="Навигационное меню" aria-expanded="false"><span></span><span></span><span></span><span></span></button>
         </a>
-    </div>
-
-
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
-        <div class="offcanvas-header">
-            <h5 class="sidebar-title" id="offcanvasSidebarLabel">Оглавление:</h5>
-        </div>
-        <div class="offcanvas-body">
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#clothingLinks" aria-expanded="false" aria-controls="clothingLinks">Одежда</a>
-                    <ul class="nav flex-column collapse" id="clothingLinks">
-                        <li class="nav-item"><a class="nav-small-link" href="#clothMain">Основной раздел</a></li>
-                        <li class="nav-item"><a class="nav-small-link" href="#clothHome">Офис/большие размеры/одежда для дома</a></li>
-                        <li class="nav-item"><a class="nav-small-link" href="#clothMother">Будущие мамы</a></li>
-                        <li class="nav-item"><a class="nav-small-link" href="#clothReligion">Для высоких/невысоких и религиозная</a></li>
-                        <li class="nav-item"><a class="nav-small-link" href="#clothWoman">Женщины: бельё</a></li>
-                        <li class="nav-item"><a class="nav-small-link" href="#clothMan">Мужчины: бельё</a></li>
-                        <li class="nav-item"><a class="nav-small-link" href="#clothSpecial">Спецодежда и СИЗы</a></li>
-                        <li class="nav-item"><a class="nav-small-link" href="#clothBeach">Пляжная одежда</a></li>
-                        <li class="nav-item"><a class="nav-small-link" href="#clothWedding">Свадьба (для невест)</a></li>
-                        <li class="nav-item"><a class="nav-small-link" href="#clothGroom">Свадьба (для жениха)</a></li>
-                        <li class="nav-item"><a class="nav-small-link" href="#clothBride">Свадьба (для подружек невесты)</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#gift">Подарки</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#shoeLinks" aria-expanded="false" aria-controls="shoeLinks">Обувь</a>
-                    <ul class="nav flex-column collapse" id="shoeLinks">
-                        <li class="nav-item"><a class="nav-small-link" href="#shoe">Основной раздел</a></li>
-                        <li class="nav-item"><a class="nav-small-link" href="#shoeKids">Обувь для малышей</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#kids">Детям</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#homeLinks" aria-expanded="false" aria-controls="homeLinks">Дом</a>
-                    <ul class="nav flex-column collapse" id="homeLinks">
-                        <li class="nav-item"><a class="nav-small-link" href="#house">Основной раздел</a></li>
-                        <li class="nav-item"><a class="nav-small-link" href="#houseSpalnya">Спальня и детская</a></li>
-                        <li class="nav-item"><a class="nav-small-link" href="#houseHoliday">Отдых на природе и другие</a></li>
-                        <li class="nav-item"><a class="nav-small-link" href="#houseTvor">Досуг и творчество – творчество и рукоделие </a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#fashion">Красота</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#electronika">Электроника</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#toys">Игрушки</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#books">Книги</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#sport">Спорт</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#zoo">Зоотовары</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#jewelry">Ювелирные изделий</a>
-                </li>
-            </ul>
+        <div class="sidebar-content" id="sidebarContent">
+            <div class="sidebar-header">
+                <h5 class="sidebar-title" id="sidebarLabel">Оглавление:</h5>
+            </div>
+            <div class="sidebar-body">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#clothingLinks" aria-expanded="false" aria-controls="clothingLinks">Одежда</a>
+                        <ul class="nav flex-column collapse" id="clothingLinks">
+                            <li class="nav-item"><a class="nav-small-link" href="#clothMain">Основной раздел</a></li>
+                            <li class="nav-item"><a class="nav-small-link" href="#clothHome">Офис/большие размеры/одежда для дома</a></li>
+                            <li class="nav-item"><a class="nav-small-link" href="#clothMother">Будущие мамы</a></li>
+                            <li class="nav-item"><a class="nav-small-link" href="#clothReligion">Для высоких/невысоких и религиозная</a></li>
+                            <li class="nav-item"><a class="nav-small-link" href="#clothWoman">Женщины: бельё</a></li>
+                            <li class="nav-item"><a class="nav-small-link" href="#clothMan">Мужчины: бельё</a></li>
+                            <li class="nav-item"><a class="nav-small-link" href="#clothSpecial">Спецодежда и СИЗы</a></li>
+                            <li class="nav-item"><a class="nav-small-link" href="#clothBeach">Пляжная одежда</a></li>
+                            <li class="nav-item"><a class="nav-small-link" href="#clothWedding">Свадьба (для невест)</a></li>
+                            <li class="nav-item"><a class="nav-small-link" href="#clothGroom">Свадьба (для жениха)</a></li>
+                            <li class="nav-item"><a class="nav-small-link" href="#clothBride">Свадьба (для подружек невесты)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gift">Подарки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#shoeLinks" aria-expanded="false" aria-controls="shoeLinks">Обувь</a>
+                        <ul class="nav flex-column collapse" id="shoeLinks">
+                            <li class="nav-item"><a class="nav-small-link" href="#shoe">Основной раздел</a></li>
+                            <li class="nav-item"><a class="nav-small-link" href="#shoeKids">Обувь для малышей</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kids">Детям</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#homeLinks" aria-expanded="false" aria-controls="homeLinks">Дом</a>
+                        <ul class="nav flex-column collapse" id="homeLinks">
+                            <li class="nav-item"><a class="nav-small-link" href="#house">Основной раздел</a></li>
+                            <li class="nav-item"><a class="nav-small-link" href="#houseSpalnya">Спальня и детская</a></li>
+                            <li class="nav-item"><a class="nav-small-link" href="#houseHoliday">Отдых на природе и другие</a></li>
+                            <li class="nav-item"><a class="nav-small-link" href="#houseTvor">Досуг и творчество – творчество и рукоделие</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fashion">Красота</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#electronika">Электроника</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#toys">Игрушки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#books">Книги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sport">Спорт</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#zoo">Зоотовары</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#jewelry">Ювелирные изделий</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-    
+
 
     <header class="sticky-top d-flex flex-column">
         <nav class="container navbar navbar-expand-lg">
@@ -624,6 +623,16 @@
         });
     });
     
+    </script>
+
+    <script>
+        document.getElementById('sidebar').addEventListener('mouseenter', function() {
+        document.getElementById('offcanvasContent').classList.add('show');
+    });
+    
+    document.getElementById('sidebar').addEventListener('mouseleave', function() {
+        document.getElementById('offcanvasContent').classList.remove('show');
+    });
     </script>
 
 </body>
