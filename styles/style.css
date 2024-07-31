@@ -2679,7 +2679,7 @@ body {
   border-radius: 23px;
   background-color: #ffffff;
   padding: 8px;
-  height: 455px;
+  min-height: 455px;
 }
 
 .card-img-bg {
@@ -4490,7 +4490,7 @@ text {
 }
 
 
-@media (min-width: 769px) and (max-width: 1199.98px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
 
   .only-pc {
     display: none !important;
@@ -5152,9 +5152,9 @@ text {
 
   .two-block-block {
     position: static;
-    padding: 60px;
-    max-width: 60%;
-    padding-bottom: 150px;
+    padding: 40px 45px;
+    max-width: 67%;
+    padding-bottom: 60px;
   }
 
   .telCon {
@@ -5167,7 +5167,7 @@ text {
     height: 500px;
     position: absolute;
     left: 0;
-    bottom: 0%;
+    bottom: 1%;
   }
 
   .goluboy {
@@ -5428,7 +5428,7 @@ text {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .tarRow {
     flex-direction: column !important;
     gap: 20px;

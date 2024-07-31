@@ -13,6 +13,17 @@
 
     <style>
 
+      .topBtn {
+        border-radius: 18px;
+      }
+
+      @media (min-width: 1200px) and (max-width: 1200px) {
+        .container {
+          max-width: max-content !important;
+        }
+      }
+
+
     @media (min-width: 960px) and (max-width: 1200px) {
         .container, .container-lg, .container-md, .container-sm {
             max-width: 960px;
@@ -21,6 +32,10 @@
 
 
       @media (min-width: 960px) {
+
+        .up968 {
+          display: none;
+        }
 
         .botPositionMarpla {
           right: -15%;
@@ -38,6 +53,10 @@
       }
 
       @media (max-width: 480px) {
+
+        .dividerRowBlock.sec {
+          width: 100%;
+        }
 
         .mobBotContainer {
           margin-top: 10px;
@@ -106,10 +125,15 @@
           margin-top: 30px;
           padding-bottom: 30px;
         }
+
+        .adv-row {
+          margin-top: 35px;
+        }
       }
 
       @media (min-width: 480px) and (max-width: 959px) {
 
+        
         .botContainer {
         flex-direction: column;
         }
@@ -172,6 +196,14 @@
         .botRightContainer {
           margin-top: 30px;
           padding-bottom: 30px;
+        }
+
+        .to960px {
+          display: none !important;
+        }
+
+        .up968 {
+          display: none  !important;
         }
 
       }
@@ -432,6 +464,127 @@
       </div>
     </div>
 
+    <div class="only-mobile">
+      <div class="mobileBlock">
+        <div class="col-lg-6 col-md-12 two-block-block">
+          <h1 class="title-h1 white">
+            Автоматизируйте ответы на отзывы  с помощью телеграм бота GPT
+          </h1>
+          <div class="card-text">
+            GPT позволяет автоматически генерировать ответы на отзывы клиентов, используя различные алгоритмы обработки естественного языка. С помощью GPT можно создать систему, которая будет анализировать отзывы, определять их тональность и генерировать ответ в зависимости от контекста.
+          </div>
+        </div>
+      </div>
+      <div class="wtfBlock">
+        <img class="img-fluid telephone" src="assets/img/Mask_group-41-2.png">
+      </div>
+      <div class="bgBlueBlock">
+        <div class="container">
+          <h1 class="title-h1 black333">Такая система может включать  в себя несколько этапов:</h1>
+          <div class="mt-5">  
+          <div class="col-lg-4 col-md-12 block-card">
+            <div class="card-img-bg">
+              <img class="img-fluid" src="assets/img/card-img.png" alt="card-img">
+            </div>
+            <div class="step-title text-center mt-4">
+              1. Сбор отзывов
+            </div>
+            <div class="step-text text-center mt-4">
+              На этом этапе система собирает все отзывы, которые были оставлены клиентами на сайте или в социальных сетях
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 block-card my-3">
+            <div class="card-img-bg">
+              <img class="img-fluid" src="assets/img/card-img2.png" alt="card-img">
+            </div>
+            <div class="step-title text-center mt-4">
+              2. Обработка отзывов
+            </div>
+            <div class="step-text text-center mt-4">
+              На данном этапе GPT анализирует полученные отзывы и определяет их тональность
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 block-card">
+            <div class="card-img-bg">
+              <img class="img-fluid" src="assets/img/card-img3.png" alt="card-img">
+            </div>
+            <div class="step-title text-center mt-4">
+              3. Генерация ответа
+            </div>
+            <div class="step-text text-center mt-4">
+              На основе анализа отзыва
+и его тональности GPT генерирует ответ, который может быть как стандартным, так и персонализированным
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container section only-mobile">
+      <h1 class="title-h1 mb-lg-5">
+        Преимущества использования GPT <br class="only-pc"> для ответов на отзывы:
+      </h1>
+      
+      <div class="row adv-row mt-lg-5">
+        <div class="col-lg-6 col-md-12 d-flex gap-3 pt-3">
+          <div class="position-relative">
+            <img class="adv-img" width="73px" height="73px" src="assets/img/rate1.png" alt="rate1">
+            <img class="galka" src="assets/img/galka.svg" alt="galka">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 mt-3">
+          <div class="adv-title ms-0">Экономия времени</div>
+          <div class="step-text">
+            Вместо того, чтобы тратить время на написание ответов вручную, система GPT может генерировать их автоматически
+          </div>
+        </div>
+      </div>
+
+      <div class="row adv-row mt-lg-4">
+        <div class="col-lg-6 col-md-12 d-flex gap-3 pt-3">
+          <div class="position-relative">
+            <img class="adv-img" width="73px" height="73px"  src="assets/img/rate2.png" alt="rate1">
+            <img class="galka" src="assets/img/galka.svg" alt="galka">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 mt-3">
+          <div class="adv-title ms-0">Качество ответов</div>
+          <div class="step-text">
+            GPT способен генерировать качественные и содержательные ответы, которые могут улучшить имидж компании и првлечь новых клиентов
+          </div>
+        </div>
+      </div>
+
+      <div class="row adv-row mt-lg-4">
+        <div class="col-lg-6 col-md-12 d-flex gap-3 pt-3">
+          <div class="position-relative">
+            <img class="adv-img" width="73px" height="73px"  src="assets/img/rate3.png" alt="rate1">
+            <img class="galka" src="assets/img/galka.svg" alt="galka">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 mt-3">
+          <div class="adv-title ms-0">Персонализация</div>
+          <div class="step-text">
+            GPT может улучшить учитывать контекст отзыва и генерировать персонализированные ответы, что повышает уровень удовлетворенности клиентов
+          </div>
+        </div>
+      </div>
+
+      <div class="align-items-center gap-3 mt-4">
+        <div class="symbol-container mb-3">
+          <div class="symbol">
+            !
+          </div>
+        </div>
+        <span class="underBoardText">
+          Таким образом, использование GPT для ответов на отзывы клиентов может значительно улучшить взаимодействие с потребителями и повысить эффективность работы компании в целом.
+        </span>
+      </div>
+
+    </div>
+
+
     <div class="container section only-tablet blockblock">
       <div class="someBg">
         <div class="two-block-block">
@@ -447,49 +600,87 @@
         </div>
       </div>
       <div class="goluboy">
-        <h1 class="title-h1 black333">Такая система может включать <br> в себя несколько этапов:</h1>
-        <div class="d-flex mt-5 gap-2">
-          <div class="block-card">
-            <div class="card-img-bg">
-              <img class="img-fluid" src="assets/img/card-img.png" alt="card-img">
-            </div>
-            <div class="block-card-content">
-              <div class="step-title text-center mt-4">
-                1. Сбор отзывов
+        <h1 class="title-h1 black333 cent">Такая система может включать <br> в себя несколько этапов:</h1>
+        <div class="to960px">
+          <div class="d-flex mt-5 gap-2">
+            <div class="block-card">
+              <div class="card-img-bg">
+                <img class="img-fluid" src="assets/img/card-img.png" alt="card-img">
               </div>
-              <div class="step-text text-center mt-4">
-                На этом этапе система собирает все отзывы, которые были оставлены клиентами на сайте или в социальных сетях
+              <div class="block-card-content">
+                <div class="step-title text-center mt-4">
+                  1. Сбор отзывов
+                </div>
+                <div class="step-text text-center mt-4">
+                  На этом этапе система собирает все отзывы, которые были оставлены клиентами на сайте или в социальных сетях
+                </div>
+              </div>
+            </div>
+            <div class="block-card mx-2">
+              <div class="card-img-bg">
+                <img class="img-fluid" src="assets/img/card-img2.png" alt="card-img">
+              </div>
+              <div class="block-card-content">
+                <div class="step-title text-center mt-4">
+                  2. Обработка отзывов
+                </div>
+                <div class="step-text text-center mt-4">
+                  На данном этапе GPT анализирует полученные отзывы и определяет их тональность
+                </div>
               </div>
             </div>
           </div>
-          <div class="block-card mx-2">
+          <div class="block-card mt-3">
             <div class="card-img-bg">
-              <img class="img-fluid" src="assets/img/card-img2.png" alt="card-img">
+              <img class="img-fluid" src="assets/img/card-img3.png" alt="card-img">
             </div>
             <div class="block-card-content">
               <div class="step-title text-center mt-4">
-                2. Обработка отзывов
+                3. Генерация ответа
               </div>
               <div class="step-text text-center mt-4">
-                На данном этапе GPT анализирует полученные отзывы и определяет их тональность
+                На основе анализа отзыва
+                и его тональности GPT генерирует ответ, который может быть как стандартным, так и персонализированным
               </div>
             </div>
           </div>
         </div>
-        <div class="block-card mt-3">
-          <div class="card-img-bg">
-            <img class="img-fluid" src="assets/img/card-img3.png" alt="card-img">
+        <div class="up968 mt-5 flex-column align-items-center justify-content-center">  
+          <div class="col-lg-4 col-md-12 block-card">
+            <div class="card-img-bg">
+              <img class="img-fluid" src="assets/img/card-img.png" alt="card-img">
+            </div>
+            <div class="step-title text-center mt-4">
+              1. Сбор отзывов
+            </div>
+            <div class="step-text text-center mt-4">
+              На этом этапе система собирает все отзывы, которые были оставлены клиентами на сайте или в социальных сетях
+            </div>
           </div>
-          <div class="block-card-content">
+          <div class="col-lg-4 col-md-12 block-card my-3">
+            <div class="card-img-bg">
+              <img class="img-fluid" src="assets/img/card-img2.png" alt="card-img">
+            </div>
+            <div class="step-title text-center mt-4">
+              2. Обработка отзывов
+            </div>
+            <div class="step-text text-center mt-4">
+              На данном этапе GPT анализирует полученные отзывы и определяет их тональность
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 block-card">
+            <div class="card-img-bg">
+              <img class="img-fluid" src="assets/img/card-img3.png" alt="card-img">
+            </div>
             <div class="step-title text-center mt-4">
               3. Генерация ответа
             </div>
             <div class="step-text text-center mt-4">
               На основе анализа отзыва
-              и его тональности GPT генерирует ответ, который может быть как стандартным, так и персонализированным
+и его тональности GPT генерирует ответ, который может быть как стандартным, так и персонализированным
             </div>
           </div>
-        </div>
+          </div>
       </div>
     </div>
 
@@ -500,7 +691,7 @@
       </h1>
       
       <div class="adv-row mt-lg-5">
-        <div class="d-flex gap-lg-5 pt-3 align-items-center adv-left">
+        <div class="d-flex gap-4 pt-3 align-items-center adv-left">
           <div class="position-relative">
             <img class="adv-img" src="assets/img/rate1.png" alt="rate1">
             <img class="galka" src="assets/img/galka.svg" alt="galka">
@@ -515,7 +706,7 @@
       </div>
 
       <div class="adv-row mt-lg-5">
-        <div class="d-flex gap-lg-5 pt-3 align-items-center adv-left">
+        <div class="d-flex gap-3 pt-3 align-items-center adv-left">
           <div class="position-relative">
             <img class="adv-img" src="assets/img/rate2.png" alt="rate1">
             <img class="galka" src="assets/img/galka.svg" alt="galka">
@@ -530,7 +721,7 @@
       </div>
 
       <div class="adv-row mt-lg-5">
-        <div class="d-flex gap-lg-5 pt-3 align-items-center adv-left">
+        <div class="d-flex gap-3 pt-3 align-items-center adv-left">
           <div class="position-relative">
             <img class="adv-img" src="assets/img/rate3.png" alt="rate1">
             <img class="galka" src="assets/img/galka.svg" alt="galka">
@@ -719,7 +910,7 @@
                 </div>
               </div>
               <div class="techContainer only-mobile my-4">
-                <div class="techText">
+                <div class="techText cent">
                   Техподдержка пользователей дежурит круглосуточно, чтобы ответить на любые возникшие воросы.
                 </div>
               </div>
