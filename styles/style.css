@@ -2279,7 +2279,7 @@ body {
   position: relative;
   z-index: 1;
   font-size: 17px;
-  border-radius: 10px;
+  border-radius: 18px;
   background-image: linear-gradient(0.9722222222222222turn, rgba(125, 37, 111, 1) 0%, rgba(236, 35, 141, 1) 100%);
 }
 
@@ -2449,7 +2449,7 @@ body {
 
 .tsena-button {
   margin-top: 60px;
-  color: #ffffff;
+  color: #ffffff !important;
   background-color: #212842;
   border-radius: 5px;
   -moz-border-radius: 5px;
@@ -2735,7 +2735,7 @@ body {
   background: url("../assets/img/negative-block.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 400px;
+  min-height: 400px;
   padding: 30px 40px;
 }
 
@@ -5181,7 +5181,7 @@ text {
 
   .block-card {
     height: auto;
-    width: 45% !important;
+    width: 50% !important;
   }
 
   .card-img-bg {
@@ -5421,6 +5421,10 @@ text {
     z-index: 0;
     top: -18%;
     left: -19%;
+  }
+
+  .topBtn {
+    font-size: 15px;
   }
 
 }
