@@ -6180,7 +6180,7 @@ text {
     background: url("../assets/img/wtfblock.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 430px;
+    height: 550px;
   }
 
   .telephone {
@@ -6833,6 +6833,10 @@ text {
 
     .w-1200 {
       width: auto;
+    }
+
+    .block-card {
+      width: 95%;
     }
 
   

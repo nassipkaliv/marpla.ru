@@ -47,17 +47,25 @@
           bottom: 5%;
         }
         
+        
       }
       
-      @media (max-width: 640px) {
-        .mobBotContainer {
-          max-width: max-content;
-          width: 100% !important;
-          padding: 0 !important;
-        }
-      }
+
+
+
+
 
       @media (max-width: 480px) {
+
+        .telephone {
+          max-width: 100%;
+          padding-top: 0% !important;
+        }
+
+        .automatMobBlock {
+          display: block !important;
+        }
+        
 
         .dividerRowBlock.sec {
           width: 100%;
@@ -134,18 +142,64 @@
         .adv-row {
           margin-top: 35px;
         }
-      }
+
+        .wtfBlock {
+          background: url(../assets/img/wtfblock.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 430px;
+        } 
+      } 
 
       @media (min-width: 480px) and (max-width: 959px) {
-
         
+        .two-block-block {
+          position: static;
+          padding: 40px 45px;
+          max-width: 67%;
+          padding-bottom: 60px;
+        }
+
+        .title-h1 {
+          font-size: 35px;
+          width: 100%;
+        }
+
+        .telCon {
+          padding-top: 110px;
+        }
+
+        .someBg {
+          background: url(../assets/img/some.png);
+          background-size: cover;
+          height: 1000px;
+          position: relative;
+        }
+
+        .block-card {
+          height: auto;
+          width: 50% !important;
+        }
+
+        .goluboy {
+          border-radius: 25px;
+          background-color: #d8def4;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+          padding: 50px 40px;
+        }
+
+        .card-img-bg {
+          padding: 10px;
+        }
 
         .negativeRow {
           grid-template-columns: repeat(1, 1fr) !important;
         }
 
         .negative-block {
-          max-width: 65%;
+          max-width: 80%;
           border-radius: 25px;
         }
         
@@ -163,11 +217,11 @@
         }
 
         .dividerRowBlock {
-          width: 100%;
+          width: 100% !important;
         }
 
         .dividerRowBlock.sec {
-          width: 100%;
+          width: 100% !important;
         }
 
         
@@ -243,7 +297,54 @@
           display: flex  !important;
         }
 
+        .automatTabletBlock {
+          display: block !important;
+        }
+
       }
+
+      @media (max-width: 765px) {
+
+        .someBg {
+          height: 820px !important;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .mobBotContainer {
+          max-width: max-content;
+          width: 100% !important;
+          padding: 0 !important;
+        }
+
+        .someBg {
+          height: 820px !important;
+        }
+
+        .two-block-block {
+          max-width: 95% !important;
+        }
+
+        .telCon {
+          padding-top: 0 !important;
+        }
+
+        .telephone {
+          max-width: 100%;
+          padding-top: 27%;
+        }
+
+        .block-card {
+          width: 80% !important;
+        }
+      }
+
+      @media (min-width: 960px) and (max-width: 1199px) {
+        .automatTabletBlock {
+        display: block !important;
+        }
+      }
+
     </style>
 
 </head>
@@ -501,7 +602,7 @@
       </div>
     </div>
 
-    <div class="only-mobile">
+    <div class="automatMobBlock d-none">
       <div class="mobileBlock">
         <div class="col-lg-6 col-md-12 two-block-block">
           <h1 class="title-h1 white">
@@ -558,71 +659,8 @@
       </div>
     </div>
 
-    <div class="container section only-mobile">
-      <h1 class="title-h1 mb-lg-5">
-        Преимущества использования GPT <br class="only-pc"> для ответов на отзывы:
-      </h1>
-      
-      <div class="row adv-row mt-lg-5">
-        <div class="col-lg-6 col-md-12 d-flex gap-3 pt-3">
-          <div class="position-relative">
-            <img class="adv-img" width="73px" height="73px" src="assets/img/rate1.png" alt="rate1">
-            <img class="galka" src="assets/img/galka.svg" alt="galka">
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-12 mt-3">
-          <div class="adv-title ms-0">Экономия времени</div>
-          <div class="step-text">
-            Вместо того, чтобы тратить время на написание ответов вручную, система GPT может генерировать их автоматически
-          </div>
-        </div>
-      </div>
 
-      <div class="row adv-row mt-lg-4">
-        <div class="col-lg-6 col-md-12 d-flex gap-3 pt-3">
-          <div class="position-relative">
-            <img class="adv-img" width="73px" height="73px"  src="assets/img/rate2.png" alt="rate1">
-            <img class="galka" src="assets/img/galka.svg" alt="galka">
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-12 mt-3">
-          <div class="adv-title ms-0">Качество ответов</div>
-          <div class="step-text">
-            GPT способен генерировать качественные и содержательные ответы, которые могут улучшить имидж компании и првлечь новых клиентов
-          </div>
-        </div>
-      </div>
-
-      <div class="row adv-row mt-lg-4">
-        <div class="col-lg-6 col-md-12 d-flex gap-3 pt-3">
-          <div class="position-relative">
-            <img class="adv-img" width="73px" height="73px"  src="assets/img/rate3.png" alt="rate1">
-            <img class="galka" src="assets/img/galka.svg" alt="galka">
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-12 mt-3">
-          <div class="adv-title ms-0">Персонализация</div>
-          <div class="step-text">
-            GPT может улучшить учитывать контекст отзыва и генерировать персонализированные ответы, что повышает уровень удовлетворенности клиентов
-          </div>
-        </div>
-      </div>
-
-      <div class="align-items-center gap-3 mt-4">
-        <div class="symbol-container mb-3">
-          <div class="symbol">
-            !
-          </div>
-        </div>
-        <span class="underBoardText">
-          Таким образом, использование GPT для ответов на отзывы клиентов может значительно улучшить взаимодействие с потребителями и повысить эффективность работы компании в целом.
-        </span>
-      </div>
-
-    </div>
-
-
-    <div class="container section only-tablet blockblock">
+    <div class="container section d-none automatTabletBlock">
       <div class="someBg">
         <div class="two-block-block">
           <h1 class="title-h1 white">
@@ -722,7 +760,7 @@
     </div>
 
     
-    <div class="container section only-tablet blockblock">
+    <div class="container section ">
       <h1 class="title-h1 mb-lg-5">
         Преимущества использования GPT <br class="only-pc"> для ответов на отзывы:
       </h1>
@@ -840,6 +878,68 @@
       </div>
     </div>
 
+    <div class="container section only-mobile">
+      <h1 class="title-h1 mb-lg-5">
+        Преимущества использования GPT <br class="only-pc"> для ответов на отзывы:
+      </h1>
+      
+      <div class="row adv-row mt-lg-5">
+        <div class="col-lg-6 col-md-12 d-flex gap-3 pt-3">
+          <div class="position-relative">
+            <img class="adv-img" width="73px" height="73px" src="assets/img/rate1.png" alt="rate1">
+            <img class="galka" src="assets/img/galka.svg" alt="galka">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 mt-3">
+          <div class="adv-title ms-0">Экономия времени</div>
+          <div class="step-text">
+            Вместо того, чтобы тратить время на написание ответов вручную, система GPT может генерировать их автоматически
+          </div>
+        </div>
+      </div>
+
+      <div class="row adv-row mt-lg-4">
+        <div class="col-lg-6 col-md-12 d-flex gap-3 pt-3">
+          <div class="position-relative">
+            <img class="adv-img" width="73px" height="73px"  src="assets/img/rate2.png" alt="rate1">
+            <img class="galka" src="assets/img/galka.svg" alt="galka">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 mt-3">
+          <div class="adv-title ms-0">Качество ответов</div>
+          <div class="step-text">
+            GPT способен генерировать качественные и содержательные ответы, которые могут улучшить имидж компании и првлечь новых клиентов
+          </div>
+        </div>
+      </div>
+
+      <div class="row adv-row mt-lg-4">
+        <div class="col-lg-6 col-md-12 d-flex gap-3 pt-3">
+          <div class="position-relative">
+            <img class="adv-img" width="73px" height="73px"  src="assets/img/rate3.png" alt="rate1">
+            <img class="galka" src="assets/img/galka.svg" alt="galka">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 mt-3">
+          <div class="adv-title ms-0">Персонализация</div>
+          <div class="step-text">
+            GPT может улучшить учитывать контекст отзыва и генерировать персонализированные ответы, что повышает уровень удовлетворенности клиентов
+          </div>
+        </div>
+      </div>
+
+      <div class="align-items-center gap-3 mt-4">
+        <div class="symbol-container mb-3">
+          <div class="symbol">
+            !
+          </div>
+        </div>
+        <span class="underBoardText">
+          Таким образом, использование GPT для ответов на отзывы клиентов может значительно улучшить взаимодействие с потребителями и повысить эффективность работы компании в целом.
+        </span>
+      </div>
+
+    </div>
 
     <div class="container section only-pc dblo">
       <h1 class="title-h1 mb-lg-5">
