@@ -844,10 +844,14 @@ body {
   margin-top: 25px;
 }
 
+.sidebarMenu {
+  width: 50px;
+}
+
 .sidebar {
   position: fixed;
   z-index: 9999;
-  height: 100vh;
+  height: 100%;
   width: 50px;
   background-color: #ffffff;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, .4);
@@ -855,14 +859,9 @@ body {
   overflow: hidden;
 }
 
-.sidebar {
-  width: 50px; /* Initial width */
-  transition: width 0.3s ease;
-  overflow: hidden;
-}
-
 .sidebar:hover {
-  width: 250px; /* Expanded width on hover */
+  width: 290px; /* Expanded width on hover */
+  overflow-y: scroll;
 }
 
 .sidebar-content {
@@ -886,6 +885,21 @@ body {
 
 .sidebar-body {
   padding: 16px;
+  padding-left: 0;
+}
+
+
+.sidebar-link > .nav-link {
+  text-decoration: none  !important;
+  font-size: 13px;
+  color: #000000 !important;
+  font-weight: 700;
+  font-family: 'Cera Pro', sans-serif;
+  text-transform: uppercase !important;
+  -webkit-transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: .8;
+  white-space: nowrap;
 }
 
 .nav-link {
@@ -982,7 +996,7 @@ body {
   color: #fff !important;
 }
 
-#offcanvasSidebar {
+#sidebarContent {
   background-color: #fff;
   padding: 20px 50px;
 }
@@ -3656,7 +3670,6 @@ body {
 }
 
 .nav-small-link {
-  padding-top: 5px;
   padding-bottom: 5px;
   clear: both;
   font-family: 'Cera Pro', sans-serif;
@@ -3665,7 +3678,7 @@ body {
   margin: 0;
   color: #000000 !important;
   text-decoration: none;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 #offcanvasMenu {
