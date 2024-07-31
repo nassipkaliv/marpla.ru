@@ -1102,7 +1102,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 60px;
-  color: #ffffff;
+  color: #ffffff !important;
   font-size: 16px;
   font-family: 'Cera Pro', sans-serif;
   line-height: 1.55;
@@ -1984,7 +1984,9 @@ body {
 }
 
 .info-btn {
-  cursor: pointer;
+  position: relative;
+  z-index: 99;
+  cursor: pointer !important;
   color: #ffffff !important;
   font-size: 18px;
   font-family: 'Cera Pro', sans-serif;
@@ -2194,7 +2196,7 @@ body {
 }
 
 .seoIntroBtn {
-  color: #ffffff;
+  color: #ffffff !important;
   font-size: 18px;
   font-family: 'Cera Pro', sans-serif;
   line-height: 1.55;
@@ -2252,7 +2254,7 @@ body {
 }
 
 .topBtnText {
-  color: #ffffff;
+  color: #ffffff !important;
   font-size: 13px;
   font-family: 'Cera Pro', sans-serif;
   line-height: 16px;
@@ -2752,7 +2754,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: #ffffff !important;
   font-size: 18px;
   font-family: 'Cera Pro', sans-serif;
   line-height: 1.55;
@@ -3302,6 +3304,8 @@ body {
   background-position: center center;
   border-color: transparent;
   border-style: solid;
+  position: relative;
+  z-index: 2;
 }
 
 .characterBlock {
@@ -3331,7 +3335,7 @@ body {
 .underCharacter {
   background: rgb(236, 35, 141, 0.55);
   margin-top: -35px;
-  z-index: -1;
+  z-index: 1;
   position: relative;
 }
 
@@ -3389,7 +3393,7 @@ body {
 
 .blueBgContainer {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .blue_shine {
@@ -3406,7 +3410,7 @@ body {
   border-color: transparent;
   border-style: solid;
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 
 .momentsRow {
@@ -3618,7 +3622,7 @@ body {
 }
 
 .submitBtn {
-  color: #ffffff;
+  color: #ffffff !important;
   background-color: #000000;
   height: 60px;
   font-size: 16px;
