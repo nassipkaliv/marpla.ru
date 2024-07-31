@@ -582,28 +582,41 @@
         this.classList.add('active');
       });
     });
-
+  
     const sections = document.querySelectorAll('div[id]');
     const options = {
       root: null,
       rootMargin: '0px',
       threshold: 0.5
     };
-
+  
     const callback = (entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          document.querySelectorAll('.categoryText').forEach(el => el.classList.remove('active'));
-          document.querySelector(`.categoryText[href="#${entry.target.id}"]`).classList.add('active');
+          const id = entry.target.id;
+          document.querySelectorAll('.categoryText').forEach(el => {
+            el.classList.remove('active');
+          });
+          document.querySelector(`.categoryText[href="#${id}"]`).classList.add('active');
         }
       });
     };
-
+  
     const observer = new IntersectionObserver(callback, options);
     sections.forEach(section => {
       observer.observe(section);
     });
+  
+    // Ensure active categoryText on page load if section is in view
+    window.addEventListener('load', () => {
+      sections.forEach(section => {
+        if (section.getBoundingClientRect().top < window.innerHeight && section.getBoundingClientRect().bottom > 0) {
+          document.querySelector(`.categoryText[href="#${section.id}"]`).classList.add('active');
+        }
+      });
+    });
   </script>
+  
 
 
 <script>

@@ -926,16 +926,11 @@ body {
   padding: 0;
   background-color: transparent;
   border: none;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: transform .5s ease-in-out;
-  -o-transition: transform .5s ease-in-out;
   transition: transform .5s ease-in-out;
   cursor: pointer;
   z-index: 999;
 }
-
 
 .t830__burger span {
   display: block;
@@ -943,11 +938,7 @@ body {
   width: 100%;
   opacity: 1;
   left: 0;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
   height: 1px;
   background-color: #000000;
@@ -966,6 +957,28 @@ body {
   top: 16px;
 }
 
+/* New styles for the cross (X) transformation */
+.sidebar:hover .t830__burger {
+  transform: rotate(45deg);
+}
+
+.sidebar:hover .t830__burger span:nth-child(1) {
+  top: 8px;
+  transform: rotate(90deg);
+}
+
+.sidebar:hover .t830__burger span:nth-child(2) {
+  opacity: 0;
+}
+
+.sidebar:hover .t830__burger span:nth-child(3) {
+  opacity: 0;
+}
+
+.sidebar:hover .t830__burger span:nth-child(4) {
+  top: 8px;
+  transform: rotate(0deg);
+}
 
 
 .categories {
@@ -999,6 +1012,9 @@ body {
 #sidebarContent {
   background-color: #fff;
   padding: 20px 50px;
+  padding-left: 0;
+  margin-left: 50px;
+  border-left: 1px solid lightgray;
 }
 
 .sidebar-title {
