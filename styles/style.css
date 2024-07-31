@@ -2505,16 +2505,93 @@ body {
 }
 
 .botContainer {
-  background: url("../assets/img/botbg.png");
-  background-size: 100% 100%;
-  height: 560px;
+  display: flex;
+  min-height: 560px;
+  border-radius: 37px;
+  background-color: #2d3659;
+  background-position: center center;
+  border-color: transparent;
+  padding: 0;
+  border-style: solid;
 }
 
-.leftBotContainer {
-  width: 60%;
+.botLeft {
   position: relative;
-  z-index: 1;
-  padding: 60px 0 60px 110px;
+  z-index: 2;
+  width: 80%;
+  margin: -6px;
+}
+
+.botRight {
+  width: 50%;
+  position: relative;
+  z-index: 2;
+
+}
+
+.botLeftContainer {
+  position: relative;
+  z-index: 3;
+  height: 82%;
+  border-radius: 37px;
+  background-color: #e9f0ff;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  border-bottom-left-radius: 0;
+  padding: 40px;
+  
+}
+
+.botLeftBottomContainer {
+  margin-top: -3px;
+  margin-bottom: -3px;
+  width: 80%;
+  position: relative;
+  z-index: 0;
+  border-radius: 37px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  height: 18%;
+  background-color: #e9f0ff;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}
+
+
+.botRightBottom {
+  position: relative;
+  bottom: 17.5%;
+  left: -43%;
+  border-radius: 37px;
+  border-bottom: none;
+  background-color: #2d3659;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 156px;
+  height: 100px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.botRightContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botPositionMarpla {
+  right: -28%;
+  bottom: 8%;
+  width: 157px;
+  height: 100px;
 }
 
 .telegram {
@@ -4338,6 +4415,18 @@ text {
 }
 
 
+.botPositionMarpla {
+  right: -28%;
+  bottom: 8%;
+  width: 157px;
+  height: 79px;
+}
+
+.botMarplaImg {
+  width: 83%;
+}
+
+
 @media (min-width: 640px) {
   .navbar-text {
     display: block !important;
@@ -4401,7 +4490,7 @@ text {
 }
 
 
-@media (min-width: 768px) and (max-width: 1199.98px) {
+@media (min-width: 769px) and (max-width: 1199.98px) {
 
   .only-pc {
     display: none !important;
@@ -5025,11 +5114,6 @@ text {
     margin-top: 200px;
   }
 
-  .botContainer {
-    background: url("../assets/img/marplaBotBg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
 
   .leftBotContainer {
     width: 50%;
@@ -5344,7 +5428,7 @@ text {
 
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .tarRow {
     flex-direction: column !important;
     gap: 20px;
@@ -6030,10 +6114,7 @@ text {
     margin-bottom: 20px;
   }
 
-  .botContainer {
-    background: none;
-    height: auto;
-  }
+
 
   .leftBotContainer {
     width: 100vw;
@@ -6749,5 +6830,6 @@ text {
     .w-1200 {
       width: auto;
     }
+
   
 }
