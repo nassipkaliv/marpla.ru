@@ -11,7 +11,64 @@
     <title>SEO оптимизация карточек на Wildberries. Эффективный инструмент SEO от Marpla.ru. СЕО Вайлдберис, СЕО оптимизация карточки WB.</title>
 
     <style>
+
+      @media (min-width: 480px) and (max-width: 767px) {
+        .max480 {
+          display: none !important;
+        }
+
+        .min480 {
+          display: flex !important;
+        }
+
+        .momentsRow {
+          flex-direction: column !important;
+          padding-left: 0;
+        }
+
+        .momentsText {
+          width: 75%;
+        }
+
+        .momentArrow {
+          transform: rotate(33deg);
+          position: relative;
+          left: 60%;
+        }
+
+        .momentImg {
+          width: 100%;
+          margin-top: 65px;
+          border-radius: 32px;
+          opacity: 0.95;
+          background-color: #e7cae6;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+          border-width: 10px;
+        }
+      }
+
+      @media (min-width: 959px) {
+        .min960 {
+          display: flex !important;
+        }
+
+        .from960 {
+          display: flex !important;
+        }
+
+        .deskBlock960Container {
+          display: none !important;
+        }
+      }
+
       @media (min-width: 960px) and (max-width: 1199.98px) {
+
+        .papppa2 {
+          display: flex !important;
+        }
+
         .momentsRow {
           flex-direction: row !important;
         }
@@ -62,7 +119,24 @@
       
       }
 
-      @media (min-width: 760px) and (max-width: 960px) {
+      @media (min-width: 767px) and (max-width: 960px) {
+
+        .papppa {
+          display: flex !important;
+        }
+
+        .blue_shine {
+          display: none;
+        }
+
+        .max960 {
+          display: none !important;
+        }
+
+        .blueBgContainer {
+          display: block !important;
+        }
+
         .hidden2 {
           display: none !important;
         }
@@ -79,6 +153,123 @@
 
         .h-100 {
           height: auto !important;
+        }
+
+        .bgKlavaRight {
+          top: -20px;
+          right: -8%;
+        }
+
+        .bgKlavaLeftTitle {
+          position: static;
+          font-size: 40px;
+        }
+
+        .bgKlavaLeft {
+          padding: 30px;
+          margin: 0 30px;
+          max-width: 95%;
+          left: auto;
+        }
+
+        .charBlockRowTablet {
+          display: none !important;
+        }
+
+        .charBlockRow {
+          display: flex !important;
+          gap: 20px;
+        }
+
+        .etapNomerLine {
+          width: 300px;
+          position: absolute;
+          top: 12%;
+          left: 1%;
+          z-index: 0;
+          transform: rotate(90deg);
+        }
+
+        .max960 {
+          display: none !important;
+        }
+
+      }
+
+      @media (min-width: 960px) and (max-width: 991px) {
+
+        .max960 {
+          display: flex !important;
+        }
+
+        .serviceBlockRow {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+          align-items: center;
+          justify-content: center;
+        }
+
+        .serviceBlock {
+          min-height: 200px;
+          padding: 15px 25px;
+        }
+
+        .optimiztionBlock, .pinkOptimizationBlock {
+          margin-right: 0% !important;
+        }
+
+        .optimImg {
+          bottom: -45% !important;
+        }
+
+        .bgKlavaRight {
+          top: -20px;
+          right: -30%;
+        }
+
+        .bgKlavaLeft {
+        padding: 30px;
+        margin: 0 30px;
+        left: -12%;
+        max-width: 90%;
+        }
+
+        .bgKlavaLeftTitle {
+          position: static;
+          font-size: 40px;
+        }
+      }
+
+      @media (min-width: 640px) and (max-width: 960px) {
+        .serviceBlockRow {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          align-items: center;
+          justify-content: center;
+        }
+
+        .serviceBlock {
+          min-height: 200px;
+        }
+
+        .optimizationBlockText {
+          padding: 40px 10px 20px 35px;
+        }
+
+        .pinkOptimizationTextBlock {
+          width: 85% !important;
+        }
+
+        .optimiztionBlock, .pinkOptimizationBlock {
+          flex-direction: column;
+        }
+
+        .orderOne {
+          order: 1;
+        }
+
+        .orderTwo {
+          order: 2;
         }
       }
 
@@ -614,7 +805,7 @@
           Для того, чтобы карточка товара начала индексироваться, необходимо  указать слова из которых состоят релевантные фразы в карточку.
         </div>
         <img class="position-absolute pinkArrow pparrow" src="assets/img/Vector_30.svg"> 
-        <a href="#" class="info-btn mt-5">Попробовать SEO-сервис</a>
+        <a href="#" class="info-btn mt-5 d-none min960">Попробовать SEO-сервис</a>
       </div>
     </div>
 
@@ -871,34 +1062,34 @@
           <span class="fw-600">Для того, чтобы «победить» такие фразы нам необходимо:</span>
         </div>
       </div>
-      <div class="row mt-4 only-pc position-relative">
+      <div class="row mt-4 only-pc position-relative from960">
         <img class="etapNomerLine only-pc" src="assets/img/etapNomerLine.svg">
-        <div class="col-lg-4 d-flex justify-content-center">
+        <div class="col-lg-4 col-md-4 d-flex justify-content-center">
           <div class="descNomer">
             01
           </div>
         </div>
-        <div class="col-lg-4 d-flex justify-content-center">
+        <div class="col-lg-4 col-md-4 d-flex justify-content-center">
           <div class="descNomer">
             02
           </div>
         </div>
-        <div class="col-lg-4 d-flex justify-content-center">
+        <div class="col-lg-4 col-md-4 d-flex justify-content-center">
           <div class="descNomer">
             03
           </div>
         </div>
-        <div class="col-lg-4 col-md-12 descBlock">
+        <div class="col-lg-4 col-md-4 descBlock">
           <div class="wb-p text-center">
             Перейти из сервиса по данной фразе  в поисковую выдачу Wildberries
           </div>
         </div>
-        <div class="col-lg-4 col-md-12 descBlock">
+        <div class="col-lg-4 col-md-4 descBlock">
           <div class="wb-p text-center">
             Далее в категориях выбрать раздел, совпадающий с вашим товаром, выбрать фильтр по новизне и открыть несколько карточек конкурентов
           </div>
         </div>
-        <div class="col-lg-4 col-md-12 descBlock">
+        <div class="col-lg-4 col-md-4 descBlock">
           <div class="wb-p text-center">
             Выявить закономерность, а именно посмотреть в каких местах, возможно в какой последовательности прописаны слова из которых состоит фраза по которой наша карточка не в индексе
           </div>
@@ -938,43 +1129,41 @@
         </div>
       </div>
       <div class="mt-4 only-tablet dblock deskBlock960Container">
-        <div class="row mt-4 position-relative">
-          <img class="etapNomerLine" src="assets/img/etapNomerLine.svg">
-          <div class="col-md-4 d-flex justify-content-center">
+        <img class="etapNomerLine" src="assets/img/etapNomerLine.svg">
+        <div class="d-flex align-items-center flex-row descBlock gap-3 mb-4">
+          <div>
             <div class="descNomer">
               01
             </div>
           </div>
-          <div class="col-md-4 d-flex justify-content-center">
+          <div class="wb-p">
+            Перейти из сервиса по данной фразе в поисковую выдачу Wildberries
+          </div>
+        </div>
+        <div class="d-flex align-items-center flex-row descBlock gap-3 mb-4">
+          <div>
             <div class="descNomer">
               02
             </div>
           </div>
-          <div class="col-md-4 d-flex justify-content-center">
+          <div class="wb-p">
+            Далее в категориях выбрать раздел, совпадающий с вашим товаром, выбрать фильтр по новизне и открыть несколько карточек конкурентов
+          </div>
+        </div>
+        <div class="d-flex align-items-center flex-row descBlock gap-3 mb-4">
+          <div>
             <div class="descNomer">
               03
             </div>
           </div>
-          <div class="col-md-4 descBlock">
-            <div class="wb-p text-center">
-              Перейти из сервиса по данной фразе  в поисковую выдачу Wildberries
-            </div>
-          </div>
-          <div class="col-md-4 descBlock">
-            <div class="wb-p text-center">
-              Далее в категориях выбрать раздел, совпадающий с вашим товаром, выбрать фильтр по новизне и открыть несколько карточек конкурентов
-            </div>
-          </div>
-          <div class="col-md-4 descBlock">
-            <div class="wb-p text-center">
-              Выявить закономерность, а именно посмотреть в каких местах, возможно в какой последовательности прописаны слова из которых состоит фраза по которой наша карточка не в индексе
-            </div>
+          <div class="wb-p">
+            Выявить закономерность, а именно посмотреть в каких местах, возможно в какой последовательности прописаны слова из которых состоит фраза по которой наша карточка не в индексе
           </div>
         </div>
       </div>
     </div>
 
-    <div class="pinkBg only-tablet">
+    <div class="pinkBg only-tablet min480">
       <div class="container section">
         <div class="etapNomerText text-center">Мы разобрали базовые моменты seo-оптимизации <br> карточки. Есть много нюансов, которые влияют <br> на попадание карточки в индекс по ключевым фразам.</div>
         <div class="momentsRow">
@@ -1045,40 +1234,8 @@
         </div>
       </div>
     </div>
-
-
-         
-          <!-- Modal -->
-      <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header justify-content-end" id="imgHeader2">
-                    <div class="d-flex gap-3 align-items-center">
-                      <button type="button" class="bg-transparent border-0" id="zoomButton2">
-                        <svg class="icon-increase" width="20" height="20" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M22.832 22L17.8592 17.0273" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.58591 3.7511C0.917768 7.41924 0.917768 13.367 4.58591 17.0352C8.25405 20.7033 14.2019 20.7033 17.87 17.0352C21.5381 13.367 21.5381 7.41924 17.87 3.7511C14.2019 0.0829653 8.25405 0.0829653 4.58591 3.7511Z" stroke="#000000" stroke-width="2"></path>
-                            <path d="M6.25781 10.3931H16.2035" stroke="#000000" stroke-width="2"></path>
-                            <path d="M11.2305 15.3662V5.42053" stroke="#000000" stroke-width="2"></path>
-                        </svg>
-                        <svg class="icon-decrease d-none" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21.9961 22L17.0233 17.0273" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.74997 3.7511C0.0818308 7.41924 0.0818308 13.367 3.74997 17.0352C7.41811 20.7033 13.3659 20.7033 17.0341 17.0352C20.7022 13.367 20.7022 7.41924 17.0341 3.7511C13.3659 0.0829653 7.41811 0.0829653 3.74997 3.7511Z" stroke="#000000" stroke-width="2"></path>
-                            <path d="M5.41797 10.3931H15.3637" stroke="#000000" stroke-width="2"></path>
-                        </svg>
-                    </button>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                </div>
-                <div class="modal-body d-flex">
-                    <img id="modalImage2" class="d-block w-100 h-100 zoomable" src="assets/img/kartina.jpg" alt="Fullscreen Image">
-                </div>
-            </div>
-        </div>
-      </div> 
-
-
-    <div class="pinkBg only-mobile position-relative">
+     
+    <div class="pinkBg only-mobile position-relative max480">
       <div class="section container">
         <div class="etapNomerText text-center">Мы разобрали базовые моменты seo-оптимизации карточки. Есть много нюансов,  которые влияют на попадание карточки в индекс по ключевым фразам.</div>
         <div class="momentsRow">
@@ -1110,7 +1267,38 @@
       </div>
     </div>
 
+
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-end" id="imgHeader2">
+                        <div class="d-flex gap-3 align-items-center">
+                          <button type="button" class="bg-transparent border-0" id="zoomButton2">
+                            <svg class="icon-increase" width="20" height="20" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.832 22L17.8592 17.0273" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.58591 3.7511C0.917768 7.41924 0.917768 13.367 4.58591 17.0352C8.25405 20.7033 14.2019 20.7033 17.87 17.0352C21.5381 13.367 21.5381 7.41924 17.87 3.7511C14.2019 0.0829653 8.25405 0.0829653 4.58591 3.7511Z" stroke="#000000" stroke-width="2"></path>
+                                <path d="M6.25781 10.3931H16.2035" stroke="#000000" stroke-width="2"></path>
+                                <path d="M11.2305 15.3662V5.42053" stroke="#000000" stroke-width="2"></path>
+                            </svg>
+                            <svg class="icon-decrease d-none" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.9961 22L17.0233 17.0273" stroke="#000000" stroke-width="2" stroke-linecap="square"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.74997 3.7511C0.0818308 7.41924 0.0818308 13.367 3.74997 17.0352C7.41811 20.7033 13.3659 20.7033 17.0341 17.0352C20.7022 13.367 20.7022 7.41924 17.0341 3.7511C13.3659 0.0829653 7.41811 0.0829653 3.74997 3.7511Z" stroke="#000000" stroke-width="2"></path>
+                                <path d="M5.41797 10.3931H15.3637" stroke="#000000" stroke-width="2"></path>
+                            </svg>
+                        </button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <div class="modal-body d-flex">
+                        <img id="modalImage2" class="d-block w-100 h-100 zoomable" src="assets/img/kartina.jpg" alt="Fullscreen Image">
+                    </div>
+                </div>
+            </div>
+    </div> 
+
     <div class="blueBg position-relative">
+      <hr class="blueBgLine full-width  m-0 p-0">
       <div class="container blueBgContainer">
         <h1 class="title-h1 white">Краткое описание модуля SEO Марпла</h1>
         <div class="d-flex gap-3 mt-4">
@@ -1176,7 +1364,7 @@
           </div>
         </div>
       </div>
-      <div class="container blueBgContainer only-tablet dblock">
+      <div class="container blueBgContainer only-tablet dblock max960">
         <h1 class="title-h1 white">Краткое описание модуля SEO Марпла</h1>
         <div class="d-flex gap-3 mt-4">
           <div>
@@ -1245,7 +1433,7 @@
     </div>
 
     <div class="container section">
-      <div class="row only-pc only-mobile">
+      <div class="row only-pc only-mobile papppa">
         <div class="col-lg-4 col-md-12 colCent">
           <div class="papkaBlock">
             <img class="img-fluid" src="assets/img/papka1.jpg">
@@ -1280,7 +1468,7 @@
           </div>
         </div>
       </div>
-      <div class="row only-tablet">
+      <div class="row d-none papppa2">
         <div class="col-md-6 colCent">
           <div class="papkaBlock">
             <img class="img-fluid" src="assets/img/papka1.jpg">
@@ -1326,6 +1514,7 @@
           </div>
         </div>
       </div>
+      
     </div>
 
     <div class="container section">
