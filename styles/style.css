@@ -2947,7 +2947,7 @@ body {
   border-width: 1px;
   border-radius: 55px;
   background-position: center center;
-  border-color: #ffffff;
+  border-color: rgb(255,255, 255, 0.11);
   border-style: solid;
   display: flex;
   align-items: center;
@@ -2965,6 +2965,30 @@ body {
   opacity: 1 !important;
 }
 
+
+.opiaty_krug {
+  position: absolute;
+  right: -15%;
+  max-width: 86%;
+  max-height: 96%;
+  opacity: 0.25;
+}
+
+.opiaty_krug2 {
+  position: absolute;
+  right: -18%;
+  max-width: 45%;
+  max-height: 100%;
+  opacity: 0.35;
+}
+
+.aim > .opiaty_krug {
+  position: absolute;
+  right: -8%;
+  max-width: 48%;
+  max-height: 58%;
+  opacity: 0.35;
+}
 
 .statyaTitle  {
   margin: 0;
@@ -3144,7 +3168,7 @@ body {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: #ffffff;
+  color: #ffffff !important;
   font-size: 18px;
   font-family: 'Cera Pro', sans-serif;
   line-height: 1.55;
@@ -4739,11 +4763,11 @@ text {
 
   .featRow {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 40px;
     align-items: center;
     justify-content: center;
-    margin-top: 10rem;
+    margin-top: 2rem;
 }
 
   .service-block {

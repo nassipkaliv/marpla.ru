@@ -9,6 +9,157 @@
     <link rel="stylesheet" href="styles/style.css">
     
     <title>АБ сплит тестирование фотографий на маркетплейсе Вайлдберриз, сервис для A/B теста фото Marpla</title>
+
+  <style>
+    @media (min-width: 768px) and (max-width: 960px) {
+      .boardImgTablet {
+        display: block !important;
+      }
+    }
+
+    @media (min-width: 960px) and (max-width: 1200px) {
+        .container, .container-lg, .container-md, .container-sm {
+            max-width: 920px;
+        }
+    }
+
+    @media (min-width: 960px) and (max-width: 1200px) {
+      
+      .abContainer {
+        display: none;
+      }
+
+      .boradImgPc {
+        display: block !important;
+      }
+
+      .boardImgTablet {
+        display: none !important;
+      }
+
+      .underBoardFormula {
+        display: none;
+      }
+
+      .chooseRow  {
+        flex-direction: row;
+      }
+
+      .chooseBlockImg {
+        padding: 0;
+      }
+
+      .orderTwo {
+        order: 1 !important;
+      }
+
+      .orderOne {
+        order: 2 !important;
+      }
+
+      .chooseRow, .chooseRowPink {
+        flex-direction: row;
+      }
+
+      .grayBlockContainer, .grayBlockImg  {
+        max-width: 50% !important;
+      }
+
+      .tabletcolumn {
+        display: none !important;
+      }
+
+      .pcColumn {
+        display: block !important;
+      }
+
+      .aimCol {
+        max-width: 33.3%;
+      }
+
+      .aimIconLine {
+        display: block !important;
+      }
+
+      .vector2 {
+        right: 48%;
+      }
+
+      .line-vertical {
+        top: 18%;
+        left: 3%;
+      }
+
+      .pinkRow {
+        display: none !important;
+      }
+
+      .pinkBlock {
+        margin-bottom: 0;
+        min-height: 260px;
+      }
+
+      .pinkGrid {
+        position: relative;
+        max-width: 90%;
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+      }
+
+      .pinkSvg1{
+        transform: rotate(0deg);
+        position: relative;
+        max-width: 8px;
+        height: auto;
+        left: 103%;
+        top: -48%;
+      }
+
+      .pinkSvg2{
+        transform: rotate(0deg);
+        position: relative;
+        max-width: 8px;
+        height: auto;
+        left: 103%;
+        top: -48%;
+      }
+
+      .opiaty_krug2 {
+        bottom: 0;
+      }
+      
+      .featRow {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      }
+
+      .abContainer960 {
+        display: flex !important;
+        height: auto;
+        min-height: 40rem;
+        align-items: center;
+      }
+
+      .abRow {
+        padding: 40px 0;
+      }
+
+      .abContainerImg {
+        position: relative;
+        right: -40%;
+        max-width: 120%;
+        min-height: 125%;
+        height: auto;
+        top: -12%;
+      }
+
+      .leftabRow {
+        
+      }
+    }
+
+  </style>
+
 </head>
 <body>
 
@@ -143,7 +294,7 @@
             <img class="img-fluid" src="assets/img/photo (5).svg">
         </div>
 
-        <a class="tech-btn mt-4">
+        <a href="#" class="tech-btn mt-4">
             Техническая поддержка
         </a>
     </div>
@@ -175,9 +326,36 @@
             <div class="abText">
               АБ сплит тестирование фотографий на маркетплейсе Вайлдберриз
             </div>
-            <a class="abBtn" href="https://bm.marpla.ru/auth/signup">Сделать АБ тест фото бесплатно</a>
+            <a hreflang="#" class="abBtn" href="https://bm.marpla.ru/auth/signup">Сделать АБ тест фото бесплатно</a>
           </div>
           <div class="col-lg-6 col-md-12 position-relative abImgContainer">
+            <img class="abContainerImg" src="assets/img/CTR___Wildberries.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="abContainer d-none abContainer960">
+      <div class="container">
+        <div class="row abRow">
+          <div class="col-md-6 leftabRow">
+            <div class="abContainerNumber">
+              <div class="abNumber">
+                #1
+              </div>
+              <div class="abText">
+                Cервис для A/B теста фото Marpla
+              </div>
+            </div>
+            <h1 class="abTitle my-4">
+              <strong>Получай больше прибыли </strong>при тех же затратах <br class="only-pc">за счёт лучшей фотографии
+            </h1>
+            <div class="abText">
+              АБ сплит тестирование фотографий на маркетплейсе Вайлдберриз
+            </div>
+            <a hreflang="#" class="abBtn" href="https://bm.marpla.ru/auth/signup">Сделать АБ тест фото бесплатно</a>
+          </div>
+          <div class="col-md-6 position-relative abImgContainer">
             <img class="abContainerImg" src="assets/img/CTR___Wildberries.png">
           </div>
         </div>
@@ -325,9 +503,9 @@
         </span>
       </div>
       <div>
-        <img class="w-100 only-pc" src="assets/img/board.png" alt="board">
+        <img class="w-100 only-pc boradImgPc" src="assets/img/board.png" alt="board">
         <img class="only-mobile boardImg" src="assets/img/board2.png" alt="board">
-        <img class="only-tablet boardImg" src="assets/img/boardTablet.png" alt="board">
+        <img class="only-tablet boardImg boardImgTablet" src="assets/img/boardTablet.png" alt="board">
       </div>
       <div class="d-flex align-items-center justify-content-between only-tablet px-5">
         <div class="underBoardFormula">
@@ -357,7 +535,8 @@
       </div>
     </div>
 
-    <div class="abDivider">
+    <div class="abDivider position-relative">
+      <img src="assets/img/opiaty_krug.png" class="opiaty_krug">
       <div class="container">
         <div class="abDividerContainer">
           <div class="abDividerContainerText">
@@ -367,7 +546,7 @@
         <div class="title-h1 my-4 white">
           ПОПРОБУЙ НОВЫЙ МОДУЛЬ A/B <br class="only-pc"> ТЕСТИРОВАНИЯ ФОТОГРАФИЙ ОТ MARPLA
         </div>
-        <a class="info-btn topBtn">Попробовать бесплатно</a>
+        <a href="#" class="info-btn topBtn">Попробовать бесплатно</a>
       </div>
     </div>
     
@@ -471,7 +650,8 @@
       </div>
     </div>
 
-    <div class="aim">
+    <div class="aim position-relative">
+      <img src="assets/img/opiaty_krug.png" class="opiaty_krug">
       <div class="container">
         <h1 class="title-h1 aimTitle white">
           Цель: тестирование первой <br class="only-pc"> фотографии карточки товара
@@ -481,9 +661,9 @@
           class="only-pc"> на Wildberries необходимо следовать нескольким шагам:
         </div>
         <hr class="aimIconLine only-pc">
-        <div class="only-pc pcblock">
+        <div class="only-pc pcblock pcColumn">
           <div class="d-flex row align-items-center mt-5">
-            <div class="col-lg-4 col-md-12">
+            <div class="col-lg-4 col-md-12 aimCol">
               <div class="aimNumber">
                 01
               </div>
@@ -491,7 +671,7 @@
                 Во-первых, определите цель  тестирования - увеличение  продаж, улучшение конверсии  или увеличение среднего чека.
               </div>
             </div>
-            <div class="col-lg-4 col-md-12">
+            <div class="col-lg-4 col-md-12 aimCol">
               <div class="aimNumber">
                 02
               </div>
@@ -499,7 +679,7 @@
                 Затем выберите два варианта  фотографий для тестирования ,  исходя из их качества, композиции, освещения и т.д.
               </div>
             </div>
-            <div class="col-lg-4 col-md-12">
+            <div class="col-lg-4 col-md-12 aimCol">
               <div class="aimNumber">
                 03
               </div>
@@ -775,6 +955,45 @@
           </div>
         </div>
 
+        <div class="d-none pinkGrid mt-5 position-relative">
+          <div class="position-relative">
+            <div class="pinkBlock">
+              <div class="nomer position-static mb-3">
+                01
+              </div>
+              <div class="text-p white">
+                Создайте две и&nbsp;более версии фотографий (например, студийная, предметная, с&nbsp;инфографикойи&nbsp;другие варианты)
+              </div>
+            </div>
+            <div class="pinkSvg1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.18359375 16.4814453125" fill="none"> <path d="M1.0840013300304878 1.0548613490853658L8.046479668445123 8.017344655106708L1.0840013300304878 15.366620722179878" stroke="white" stroke-width="3"></path> </svg>
+            </div>
+          </div>
+          <div class="position-relative">
+            <div class="pinkBlock">
+              <div class="nomer position-static mb-3">
+                02
+              </div>
+              <div class="text-p white">
+                Запустите тест в сервисе Marpla c версиями фотографий.
+              </div>
+            </div>
+            <div class="pinkSvg2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.18359375 16.4814453125" fill="none"> <path d="M1.0840013300304878 1.0548613490853658L8.046479668445123 8.017344655106708L1.0840013300304878 15.366620722179878" stroke="white" stroke-width="3"></path> </svg>
+            </div>
+          </div>
+          <div class="position-relative">
+            <div class="pinkBlock">
+              <div class="nomer position-static mb-3">
+                03
+              </div>
+              <div class="text-p white">
+                Сравните результаты (CTR, количество кликов, конверсия) и определите наиболее эффективную версию фотографии.
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="d-flex gap-3 align-items-center mt-4">
           <div>
             <img width="28px" height="28px" src="assets/img/Vector-2.png">
@@ -786,7 +1005,8 @@
       </div>
     </div>
 
-    <div class="abDivider">
+    <div class="abDivider position-relative">
+      <img src="assets/img/opiaty_krug2.png" class="opiaty_krug2">
       <div class="container">
         <div class="abDividerContainer">
           <div class="abDividerContainerText">
@@ -796,7 +1016,7 @@
         <div class="title-h1 my-4 white">
           ПОПРОБУЙ НОВЫЙ МОДУЛЬ A/B <br class="only-pc"> ТЕСТИРОВАНИЯ ФОТОГРАФИЙ ОТ MARPLA
         </div>
-        <a class="info-btn topBtn">Попробовать бесплатно</a>
+        <a href="#" class="info-btn topBtn">Попробовать бесплатно</a>
       </div>
     </div>
 
