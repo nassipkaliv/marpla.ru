@@ -63,13 +63,17 @@ header.scrolled {
 .sticky-category {
   position: fixed;
   width: 100%;
-  z-index: 1030;
+  z-index: 0;
   background: #fff;
 }
 
 body {
   background-color: #fafafa;
   overflow-x: hidden;
+}
+
+.kategoriesBg {
+  background: #fafafa;
 }
 
 .pluginBg {
@@ -2376,7 +2380,7 @@ body {
   font-family: 'Cera Pro', sans-serif;
   text-transform: uppercase;
   margin-bottom: 25px;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .samovikup-text {
