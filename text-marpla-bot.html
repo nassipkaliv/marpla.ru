@@ -33,6 +33,10 @@
           width: 125%;
           max-width: max-content;
         }
+
+        .automatTabletBlock {
+          display: block !important;
+        }
     }
 
 
@@ -51,11 +55,23 @@
       }
       
 
+      @media (min-width: 768px) and (max-width: 959px) {
+        .adv-row {
+          display: block !important;
+        }
 
+        .adv-right, .adv-left {
+          width: 100% !important;
+        }
+      }
 
 
 
       @media (max-width: 480px) {
+
+        .to480 {
+          display: block !important;
+        }
 
         .telephone {
           max-width: 100%;
@@ -153,10 +169,18 @@
 
       @media (min-width: 480px) and (max-width: 959px) {
         
+        .adv-title {
+          margin-left: 0;
+        }
+
+        .adv-right {
+          padding-left: 5rem;
+        }
+
         .two-block-block {
           position: static;
-          padding: 40px 45px;
-          max-width: 67%;
+          padding: 50px 45px;
+          max-width: 80%;
           padding-bottom: 60px;
         }
 
@@ -172,7 +196,7 @@
         .someBg {
           background: url(../assets/img/some.png);
           background-size: cover;
-          height: 1000px;
+          height: 1100px;
           position: relative;
         }
 
@@ -299,6 +323,10 @@
 
         .automatTabletBlock {
           display: block !important;
+        }
+
+        .centner {
+          text-align: center;
         }
 
       }
@@ -708,7 +736,7 @@
         </div>
       </div>
       <div class="goluboy">
-        <h1 class="title-h1 black333 cent">Такая система может включать <br> в себя несколько этапов:</h1>
+        <h1 class="title-h1 black333 centner">Такая система может включать <br> в себя несколько этапов:</h1>
         <div class="to960px">
           <div class="d-flex mt-5 gap-2">
             <div class="block-card">
@@ -793,7 +821,7 @@
     </div>
 
     
-    <div class="container section automatTabletBlock">
+    <div class="container section d-none automatTabletBlock">
       <h1 class="title-h1 mb-lg-5">
         Преимущества использования GPT <br class="only-pc"> для ответов на отзывы:
       </h1>
@@ -911,7 +939,7 @@
       </div>
     </div>
 
-    <div class="container section only-mobile">
+    <div class="container section d-none to480">
       <h1 class="title-h1 mb-lg-5">
         Преимущества использования GPT <br class="only-pc"> для ответов на отзывы:
       </h1>
@@ -1309,7 +1337,7 @@
                 </div>
               </div>
               <div class="techContainer tchCon only-mobile my-4">
-                <div class="techText">
+                <div class="techText cent">
                   Техподдержка пользователей дежурит круглосуточно, чтобы ответить на любые возникшие воросы.
                 </div>
               </div>

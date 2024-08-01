@@ -2735,8 +2735,9 @@ body {
   background: url("../assets/img/negative-block.png");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 400px;
+  min-height: 375px;
   padding: 30px 40px;
+  border-radius: 25px;
 }
 
 .negative-block-img {
