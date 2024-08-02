@@ -155,6 +155,40 @@
 
     }
 
+    @media (max-width: 640px) {
+      .abContainerImg {
+        position: static;
+        max-width: 126% !important;
+        border-radius: 8px;
+        margin-top: 30px;
+      }
+
+      .abContainerNumber {
+        width: fit-content;
+        padding-right: 15px;
+      }
+      
+    }
+
+    @media (min-width: 640px) {
+      .abContainerNumber {
+        width: fit-content;
+        padding-right: 15px;
+      }
+    }
+
+    @media (min-width: 480px) {
+      .featRow {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+      }
+    }
+
+
   </style>
 
 </head>

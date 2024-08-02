@@ -5986,8 +5986,9 @@ text {
 
   .abContainerImg {
     position: static;
-    height: 329px;
-    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
     margin-top: 30px;
   }
 
