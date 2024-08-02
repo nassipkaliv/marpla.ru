@@ -10,6 +10,35 @@
     <script src="https://unpkg.com/@panzoom/panzoom@4.4.2/dist/panzoom.min.js"></script>
     <title>Marpla Bidder</title>
 
+
+    <style>
+      @media (min-width: 960px) {
+        .min960 {
+         display: block !important;
+        }
+
+        .divierBlock {
+          width: 50% !important;
+          max-width: 50% !important;
+        } 
+
+        .divider-small {
+          flex-direction: row !important;
+        }
+
+        .steppT {
+          display: flex;
+          text-align: start !important;
+        }
+      }
+
+      @media (max-width: 960px) {
+        .max960 {
+          display: block !important;
+        }
+      }
+    </style>
+
 </head>
 <body>
 
@@ -368,144 +397,284 @@
         Работа биддера выглядит следующим образом:
       </h2>
 
-      <div class="row d-flex align-items-center mb-5">
-        <div class="col-lg-5 col-md-12 orderTwo">
-          <div class="d-flex align-items-center gap-3">
-            <div>
-              <div class="steps">
-                01
+      <div class="d-none min960">
+        <div class="row d-flex align-items-center mb-5">
+          <div class="col-md-5">
+            <div class="d-flex align-items-center gap-3">
+              <div>
+                <div class="steps">
+                  01
+                </div>
               </div>
+              <div class="step-title">Сбор, вводных данных и анализ</div>
             </div>
-            <div class="step-title">Сбор, вводных данных и анализ</div>
+            <div class="step-text mt-4">
+              Сервис начинает свою работу со сбора данных о рекламной кампании и целевой аудитории. Анализирует ключевые слова, релевантность объявлений, выделенный бюджет и другие параметры.
+            </div>
           </div>
-          <div class="step-text mt-4">
-            Сервис начинает свою работу со сбора данных о рекламной кампании и целевой аудитории. Анализирует ключевые слова, релевантность объявлений, выделенный бюджет и другие параметры.
+          <div class="col-md-7">
+            <img class="img-fluid" src="assets/img/step1.png" alt="step1">
           </div>
         </div>
-        <div class="col-lg-7 col-md-12 orderOne">
-          <img class="img-fluid" src="assets/img/step1.png" alt="step1">
+  
+        <div class="row d-flex align-items-center mb-5">
+          <div class="col-md-7">
+            <img class="img-fluid" src="assets/img/step2.png" alt="step2">
+          </div>
+          <div class="col-md-5">
+            <div class="d-flex align-items-center gap-3">
+              <div>
+                <div class="steps">
+                  02
+                </div>
+              </div>
+              <div class="step-title">Формирование алгоритма</div>
+            </div>
+            <div class="step-text mt-4">
+              На основе систематизированных данных система принимает решения о ставках на ключевые слова и показы объявлений. <br>
+              При этом учитывается ряд факторов, таких как конкуренция, ожидаемая ценность клика (CTR), данные о целевой аудитории, бюджет.
+            </div>
+          </div>
+        </div>
+  
+        <div class="row d-flex align-items-center mb-5">
+          <div class="col-md-6">
+            <div class="d-flex align-items-center gap-3">
+              <div>
+                <div class="steps">
+                  03
+                </div>
+              </div>
+              <div class="step-title">Динамическое управление кампанией</div>
+            </div>
+            <div class="step-text mt-4">
+              Биддер постоянно отслеживает изменения на площадках и адаптирует рекламу в реальном времени. Например, если определенное ключевое слово становится популярным, алгоритм может увеличить ставку, чтобы поднять соответствующие объявления в выдаче.
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="img-fluid" src="assets/img/step3.png" alt="step3">
+          </div>
+        </div>
+  
+        <div class="row d-flex align-items-center mb-5">
+          <div class="col-md-7">
+            <img class="img-fluid" src="assets/img/step4.png" alt="step4">
+          </div>
+          <div class="col-md-5">
+            <div class="d-flex align-items-center gap-3">
+              <div>
+                <div class="steps">
+                  04
+                </div>
+              </div>
+              <div class="step-title">Таргетирование аудитории</div>
+            </div>
+            <div class="step-text mt-4">
+              Сервис помогает рекламодателям определять целевую аудиторию на основе различных параметров, таких как пол, возраст, интересы и местоположение. Это позволяет создавать релевантные и персонализированные объявления, повышающие конверсию.
+            </div>
+          </div>
+        </div>
+  
+        <div class="row d-flex align-items-center mb-5">
+          <div class="col-md-6">
+            <div class="d-flex align-items-center gap-3">
+              <div>
+                <div class="steps">
+                  05
+                </div>
+              </div>
+              <div class="step-title">Мониторинг и оптимизация</div>
+            </div>
+            <div class="step-text mt-4">
+              Биддер постоянно мониторит результаты рекламных кампаний и проводит их оптимизацию. Он может приостанавливать неэффективные объявления, перераспределять бюджет на успешные ключевые слова или площадки, а также проводить A/B-тестирование для определения перспективных стратегий.
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="img-fluid" src="assets/img/step5.png" alt="step5">
+          </div>
+        </div>
+  
+        <div class="row d-flex align-items-center mb-5">
+          <div class="col-md-7">
+            <img class="img-fluid" src="assets/img/step6.png" alt="step6">
+          </div>
+          <div class="col-md-5">
+            <div class="d-flex align-items-center gap-3">
+              <div>
+                <div class="steps">
+                  06
+                </div>
+              </div>
+              <div class="step-title">Реагирование <br>
+                на изменения рынка</div>
+            </div>
+            <div class="step-text mt-4">
+              Алгоритм также учитывает внешние факторы, такие как сезонность, новости рынка или тенденции, чтобы адаптировать рекламные кампании в соответствии с ними.
+            </div>
+          </div>
+        </div>
+  
+        <div class="row d-flex align-items-center mb-5">
+          <div class="col-md-6">
+            <div class="d-flex align-items-center gap-3">
+              <div>
+                <div class="steps">
+                  07
+                </div>
+              </div>
+              <div class="step-title">Репортинг и аналитика</div>
+            </div>
+            <div class="step-text mt-4">
+              В процессе работы рекламодатели получают подробные отчеты и аналитику о ходе кампании, что позволяет оценивать ROI и принимать более обоснованные решения.
+            </div>
+        </div>
+        <div class="col-md-6">
+          <img class="img-fluid" src="assets/img/step7.png" alt="step7">
+        </div>
+  
         </div>
       </div>
 
-      <div class="row d-flex align-items-center mb-5">
-        <div class="col-lg-7 col-md-12">
-          <img class="img-fluid" src="assets/img/step2.png" alt="step2">
-        </div>
-        <div class="col-lg-5 col-md-12">
-          <div class="d-flex align-items-center gap-3">
-            <div>
-              <div class="steps">
-                02
+      <div class="d-none max960">
+        <div class="row d-flex align-items-center mb-5 max960">
+          <div class="col-lg-5 col-md-12 orderTwo">
+            <div class="d-flex align-items-center gap-3">
+              <div>
+                <div class="steps">
+                  01
+                </div>
               </div>
+              <div class="step-title">Сбор, вводных данных и анализ</div>
             </div>
-            <div class="step-title">Формирование алгоритма</div>
+            <div class="step-text mt-4">
+              Сервис начинает свою работу со сбора данных о рекламной кампании и целевой аудитории. Анализирует ключевые слова, релевантность объявлений, выделенный бюджет и другие параметры.
+            </div>
           </div>
-          <div class="step-text mt-4">
-            На основе систематизированных данных система принимает решения о ставках на ключевые слова и показы объявлений. <br>
-            При этом учитывается ряд факторов, таких как конкуренция, ожидаемая ценность клика (CTR), данные о целевой аудитории, бюджет.
+          <div class="col-lg-7 col-md-12 orderOne">
+            <img class="img-fluid" src="assets/img/step1.png" alt="step1">
           </div>
         </div>
-      </div>
-
-      <div class="row d-flex align-items-center mb-5">
-        <div class="col-lg-6 col-md-12 orderTwo">
-          <div class="d-flex align-items-center gap-3">
-            <div>
-              <div class="steps">
-                03
+  
+        <div class="row d-flex align-items-center mb-5">
+          <div class="col-lg-7 col-md-12">
+            <img class="img-fluid" src="assets/img/step2.png" alt="step2">
+          </div>
+          <div class="col-lg-5 col-md-12">
+            <div class="d-flex align-items-center gap-3">
+              <div>
+                <div class="steps">
+                  02
+                </div>
               </div>
+              <div class="step-title">Формирование алгоритма</div>
             </div>
-            <div class="step-title">Динамическое управление кампанией</div>
+            <div class="step-text mt-4">
+              На основе систематизированных данных система принимает решения о ставках на ключевые слова и показы объявлений. <br>
+              При этом учитывается ряд факторов, таких как конкуренция, ожидаемая ценность клика (CTR), данные о целевой аудитории, бюджет.
+            </div>
           </div>
-          <div class="step-text mt-4">
-            Биддер постоянно отслеживает изменения на площадках и адаптирует рекламу в реальном времени. Например, если определенное ключевое слово становится популярным, алгоритм может увеличить ставку, чтобы поднять соответствующие объявления в выдаче.
+        </div>
+  
+        <div class="row d-flex align-items-center mb-5">
+          <div class="col-lg-6 col-md-12 orderTwo">
+            <div class="d-flex align-items-center gap-3">
+              <div>
+                <div class="steps">
+                  03
+                </div>
+              </div>
+              <div class="step-title">Динамическое управление кампанией</div>
+            </div>
+            <div class="step-text mt-4">
+              Биддер постоянно отслеживает изменения на площадках и адаптирует рекламу в реальном времени. Например, если определенное ключевое слово становится популярным, алгоритм может увеличить ставку, чтобы поднять соответствующие объявления в выдаче.
+            </div>
           </div>
+          <div class="col-lg-6 col-md-12 orderOne">
+            <img class="img-fluid" src="assets/img/step3.png" alt="step3">
+          </div>
+        </div>
+  
+        <div class="row d-flex align-items-center mb-5">
+          <div class="col-lg-7 col-md-12">
+            <img class="img-fluid" src="assets/img/step4.png" alt="step4">
+          </div>
+          <div class="col-lg-5 col-md-12">
+            <div class="d-flex align-items-center gap-3">
+              <div>
+                <div class="steps">
+                  04
+                </div>
+              </div>
+              <div class="step-title">Таргетирование аудитории</div>
+            </div>
+            <div class="step-text mt-4">
+              Сервис помогает рекламодателям определять целевую аудиторию на основе различных параметров, таких как пол, возраст, интересы и местоположение. Это позволяет создавать релевантные и персонализированные объявления, повышающие конверсию.
+            </div>
+          </div>
+        </div>
+  
+        <div class="row d-flex align-items-center mb-5">
+          <div class="col-lg-6 col-md-12 orderTwo">
+            <div class="d-flex align-items-center gap-3">
+              <div>
+                <div class="steps">
+                  05
+                </div>
+              </div>
+              <div class="step-title">Мониторинг и оптимизация</div>
+            </div>
+            <div class="step-text mt-4">
+              Биддер постоянно мониторит результаты рекламных кампаний и проводит их оптимизацию. Он может приостанавливать неэффективные объявления, перераспределять бюджет на успешные ключевые слова или площадки, а также проводить A/B-тестирование для определения перспективных стратегий.
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 orderOne">
+            <img class="img-fluid" src="assets/img/step5.png" alt="step5">
+          </div>
+        </div>
+  
+        <div class="row d-flex align-items-center mb-5">
+          <div class="col-lg-7 col-md-12">
+            <img class="img-fluid" src="assets/img/step6.png" alt="step6">
+          </div>
+          <div class="col-lg-5 col-md-12">
+            <div class="d-flex align-items-center gap-3">
+              <div>
+                <div class="steps">
+                  06
+                </div>
+              </div>
+              <div class="step-title">Реагирование <br>
+                на изменения рынка</div>
+            </div>
+            <div class="step-text mt-4">
+              Алгоритм также учитывает внешние факторы, такие как сезонность, новости рынка или тенденции, чтобы адаптировать рекламные кампании в соответствии с ними.
+            </div>
+          </div>
+        </div>
+  
+        <div class="row d-flex align-items-center mb-5">
+          <div class="col-lg-6 col-md-12 orderTwo">
+            <div class="d-flex align-items-center gap-3">
+              <div>
+                <div class="steps">
+                  07
+                </div>
+              </div>
+              <div class="step-title">Репортинг и аналитика</div>
+            </div>
+            <div class="step-text mt-4">
+              В процессе работы рекламодатели получают подробные отчеты и аналитику о ходе кампании, что позволяет оценивать ROI и принимать более обоснованные решения.
+            </div>
         </div>
         <div class="col-lg-6 col-md-12 orderOne">
-          <img class="img-fluid" src="assets/img/step3.png" alt="step3">
+          <img class="img-fluid" src="assets/img/step7.png" alt="step7">
         </div>
-      </div>
-
-      <div class="row d-flex align-items-center mb-5">
-        <div class="col-lg-7 col-md-12">
-          <img class="img-fluid" src="assets/img/step4.png" alt="step4">
+  
         </div>
-        <div class="col-lg-5 col-md-12">
-          <div class="d-flex align-items-center gap-3">
-            <div>
-              <div class="steps">
-                04
-              </div>
-            </div>
-            <div class="step-title">Таргетирование аудитории</div>
-          </div>
-          <div class="step-text mt-4">
-            Сервис помогает рекламодателям определять целевую аудиторию на основе различных параметров, таких как пол, возраст, интересы и местоположение. Это позволяет создавать релевантные и персонализированные объявления, повышающие конверсию.
-          </div>
+  
+        <div class="d-flex align-items-center justify-content-center position-relative">
+          <a href="#" class="info-btn">Попробовать бесплатно</a>
         </div>
-      </div>
-
-      <div class="row d-flex align-items-center mb-5">
-        <div class="col-lg-6 col-md-12 orderTwo">
-          <div class="d-flex align-items-center gap-3">
-            <div>
-              <div class="steps">
-                05
-              </div>
-            </div>
-            <div class="step-title">Мониторинг и оптимизация</div>
-          </div>
-          <div class="step-text mt-4">
-            Биддер постоянно мониторит результаты рекламных кампаний и проводит их оптимизацию. Он может приостанавливать неэффективные объявления, перераспределять бюджет на успешные ключевые слова или площадки, а также проводить A/B-тестирование для определения перспективных стратегий.
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-12 orderOne">
-          <img class="img-fluid" src="assets/img/step5.png" alt="step5">
-        </div>
-      </div>
-
-      <div class="row d-flex align-items-center mb-5">
-        <div class="col-lg-7 col-md-12">
-          <img class="img-fluid" src="assets/img/step6.png" alt="step6">
-        </div>
-        <div class="col-lg-5 col-md-12">
-          <div class="d-flex align-items-center gap-3">
-            <div>
-              <div class="steps">
-                06
-              </div>
-            </div>
-            <div class="step-title">Реагирование <br>
-              на изменения рынка</div>
-          </div>
-          <div class="step-text mt-4">
-            Алгоритм также учитывает внешние факторы, такие как сезонность, новости рынка или тенденции, чтобы адаптировать рекламные кампании в соответствии с ними.
-          </div>
-        </div>
-      </div>
-
-      <div class="row d-flex align-items-center mb-5">
-        <div class="col-lg-6 col-md-12 orderTwo">
-          <div class="d-flex align-items-center gap-3">
-            <div>
-              <div class="steps">
-                07
-              </div>
-            </div>
-            <div class="step-title">Репортинг и аналитика</div>
-          </div>
-          <div class="step-text mt-4">
-            В процессе работы рекламодатели получают подробные отчеты и аналитику о ходе кампании, что позволяет оценивать ROI и принимать более обоснованные решения.
-          </div>
-      </div>
-      <div class="col-lg-6 col-md-12 orderOne">
-        <img class="img-fluid" src="assets/img/step7.png" alt="step7">
-      </div>
-
-      </div>
-
-      <div class="d-flex align-items-center justify-content-center position-relative">
-        <a href="#" class="info-btn">Попробовать бесплатно</a>
       </div>
 
     </div>
@@ -645,7 +814,7 @@
     <div class="divider big">
         <div class="container">
             <div class="row">
-              <div class="col-lg-6 col-md-12">
+              <div class="col-lg-6 col-md-12 divierBlock">
                 <a class="goTop" href="#">
                   ВЫХОДИТЕ В ТОП НА WILDBERRIES
                 </a>
@@ -678,7 +847,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-12 mt-4 d-flex align-items-center justify-content-center">
+              <div class="col-lg-6 col-md-12 mt-4 d-flex align-items-center justify-content-center  divierBlock">
                 <img class="img-fluid" src="assets/img/divider.png" alt="dividerImg">
               </div>
             </div>
@@ -806,7 +975,7 @@
     <div class="divider big">
       <div class="container">
           <div class="row">
-            <div class="col-lg-6 col-md-12">
+            <div class="col-lg-6 col-md-12  divierBlock">
               <a class="goTop" href="#">
                 ВЫХОДИТЕ В ТОП НА WILDBERRIES
               </a>
@@ -839,7 +1008,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-12 mt-4 d-flex align-items-center justify-content-center">
+            <div class="col-lg-6 col-md-12 mt-4 d-flex align-items-center justify-content-center  divierBlock">
               <img class="img-fluid" src="assets/img/divider.png" alt="dividerImg">
             </div>
           </div>
