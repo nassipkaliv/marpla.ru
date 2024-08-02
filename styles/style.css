@@ -4456,12 +4456,6 @@ text {
   width: 83%;
 }
 
-.imageCarouselContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .full-width {
   position: absolute;
   top: 3%;
