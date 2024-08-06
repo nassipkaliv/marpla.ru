@@ -3227,6 +3227,7 @@ body {
   display: flex;
   align-items: center;
   padding-top: 60px;
+  z-index: 1;
 }
 
 .seoTitle {
@@ -4426,6 +4427,29 @@ body {
   left: 9%;
   z-index: -1;
 }
+
+.bigCircleContainer {
+  border-width: 1px;
+  border-radius: 3000px;
+  opacity: 0.05;
+  background-position: center center;
+  border-color: #9b8f8f;
+  border-style: solid;
+  position: absolute;
+  height: 70rem;
+  width: 100%;
+  z-index: 0;
+  top: 0;
+}
+
+.leftCircle {
+  left: -86%;
+}
+
+.rightCircle {
+  right: -86%;
+}
+
 
 @keyframes countdown {
   from {
